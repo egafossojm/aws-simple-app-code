@@ -76,7 +76,7 @@ RUN composer install --optimize-autoloader --no-dev
 # Install WP-CLI
 RUN curl -o /usr/local/bin/wp https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && \
   chmod +x /usr/local/bin/wp
-
+ARG NODE_VERSION=16
 # Multi-stage build: Build static assets
 # This allows us to not include Node within the final container
 FROM node:${NODE_VERSION} as node_modules_image
