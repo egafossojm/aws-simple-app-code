@@ -61,7 +61,7 @@ RUN mkdir -p /var/log/supervisor
 # Copy default configuration
 COPY ./docker/nginx/nginx.conf /etc/nginx/conf.d/default.conf
 COPY ./docker/supervisor/ /etc/supervisor/
-COPY ./entrypoint.sh /entrypoint
+COPY ./docker/php/entrypoint.sh /entrypoint
 
 WORKDIR /var/www/html
 
