@@ -1,0 +1,125 @@
+{
+    "key": "group_58c03cc33f7d4",
+    "title": "Editors section - Top stories | Meilleures histoires",
+    "fields": [
+        {
+            "key": "field_58c03daad9300",
+            "label": "Articles",
+            "name": "homepage_articles",
+            "type": "repeater",
+            "instructions": "You can add from 7 to 12 articles on the homepage here.<br \/>\r\nThe first \"<b>Top story<\/b>\" must not have sub-articles. <br><br> Vous pouvez ajouter de 7 à 12 articles sur la page d'accueil ici. <br \/>\r\nLa première \"<b> Meilleure histoire <\/ b>\" ne doit pas comporter de sous-articles.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 7,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add an article",
+            "sub_fields": [
+                {
+                    "key": "field_58c03de3d9301",
+                    "label": "Article",
+                    "name": "article",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "post"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                },
+                {
+                    "key": "field_59272c1f3cae9",
+                    "label": "Linked Article(s) | Articles liés",
+                    "name": "homepage_r_linked_article",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 3,
+                    "layout": "table",
+                    "button_label": "Add a linked article | Ajouter un article lié",
+                    "sub_fields": [
+                        {
+                            "key": "field_59272c583caea",
+                            "label": "Linked Article | Article lié",
+                            "name": "homepage_linked_article",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "id",
+                            "ui": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "top_stories"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1531322595
+}

@@ -1,0 +1,1911 @@
+{
+    "key": "group_59a453cd77865",
+    "title": "Article",
+    "fields": [
+        {
+            "key": "field_58d2c00a455ac",
+            "label": "Média \/ Medias",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_598cb37027397",
+            "label": "Image",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "La taille minimum de l'image doit être de <b>1200 x 630px<\/b>.<br \/>\r\n<hr \/>\r\nThe minimum image size must be <b>1200 x 630px<\/b>.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_598ca11c87078",
+            "label": "Image",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": "acf_article_img"
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_598cad7fd427c",
+            "label": "Ajout de médias \/ Add medias",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Sur la page d'<i>accueil<\/i> et sur les <i>pages de catégories<\/i>, une icône sera affiché suivant l'ordre de priorité identifié dans la liste ci-contre:<br \/>\r\n<hr \/>\r\nOn <i>Homepage<\/i> and <i>categories sections<\/i>, this will show an icon following the priority order as identified in the list aside:",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_598ca14387079",
+            "label": "Ajout de médias \/ Add medias",
+            "name": "acf_article_media",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "video": "1- Vidéo \/ Video",
+                "slideshow": "2- Carrousel \/ Slideshow",
+                "chart": "3- Graphique \/ Chart",
+                "docs": "4- Documents",
+                "podcast": "5- Podcast"
+            },
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_598cb526bbf46",
+            "label": "Vidéo \/ Video (Brightcove ID)",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Si aucune \"<i>Image<\/i>\" n'est présente, une nouvelle image sera automatiquement importé de Brightcove lors de l'enregistrement de l'article.\r\nLier une vidéo de :<br \/>\r\n<hr \/>\r\nIf no \"<i>Image<\/i>\" has been saved, a new one will be imported from Brightcove  when saving the article.\r\nLink a video from :<br \/>\r\n<a href=\"https:\/\/studio.brightcove.com\/products\/videocloud\/home\" target=\"_blank\">Brightcove <span class=\"dashicons dashicons-external\" target=\"_blank\"><\/span><\/a>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_58bdcea6b0bce",
+            "label": "Vidéo \/ Video (Brightcove ID)",
+            "name": "acf_article_video",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_598cb44e90504",
+            "label": "Carrousel \/ Slideshow",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "slideshow"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Les carrousels sont créés dans la section <i>Slideshows<\/i> et sont intégré par l'éditeur de texte de cet article.<br \/>\r\n<hr \/>\r\nSlidershows are created in section <i>Slideshows<\/i> and must be integrated with the WYSIWYGon this page.<br \/>\r\n<a href=\"\/wp-admin\/edit.php?post_type=slideshow\" target=\"_blank\"><i>Slidershows<\/i> <span class=\"dashicons dashicons-admin-links\"><\/span><\/a>.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_598cb49b90505",
+            "label": "Graphique \/ Chart",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "chart"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Les graphiques sont créés dans la section <i>Charts<\/i> et sont intégré par l'éditeur de texte de cet article.<br \/>\r\n<hr \/>\r\nCharts are created n section <i>Charts<\/i> and must be integrated with the WYSIWYGon this page.<br \/>\r\n<a href=\"\/wp-admin\/edit.php?post_type=easy_charts\" target=\"_blank\"><i>Charts<\/i> <span class=\"dashicons dashicons-admin-links\"><\/span><\/a>.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_598cb820c96a0",
+            "label": "Documents",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "docs"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Permet d'afficher des documents sur la page d'article dans la colonne de droite.<br \/>\r\n<hr \/>\r\nAllow you to display documents on article page in the right column.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_591dbd4882ea8",
+            "label": "Documents",
+            "name": "acf_article_pdf",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "docs"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Ajouter un document \/ Add a document",
+            "sub_fields": [
+                {
+                    "key": "field_591dbdb482ea9",
+                    "label": "Titre \/ Title",
+                    "name": "acf_article_pdf_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_591dbdf982eaa",
+                    "label": "Document",
+                    "name": "acf_article_pdf_url",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "uploadedTo",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "pdf, docs, doc,docx, xls, xlsx, ppt, pot, pps, pptx"
+                }
+            ]
+        },
+        {
+            "key": "field_5b685a159e2c7",
+            "label": "Podcast Related article",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "podcast"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Balados relié à un article<br \/>\r\n<hr \/>\r\nPodcast Related article<br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5b6855449b3c8",
+            "label": "Podcast Related article",
+            "name": "acf_podcast_related_article",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "podcast"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5b685b9c9e2c8",
+            "label": "Podcast Related video",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Balados relié à une vidéo<br \/>\r\n<hr \/>\r\nPodcast Related video<br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5b6856df08c97",
+            "label": "Podcast Related video",
+            "name": "acf_podcast_related_video",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "podcast"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": [],
+            "allow_null": 1,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5af322f796cd0",
+            "label": "URL audio archive",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "podcast"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "L'<i>URL audio<\/i><br \/>\r\n<hr \/>\r\n<i>URL audio<\/i> <br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5af322fd96cd1",
+            "label": "URL audio",
+            "name": "acf_article_audio_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "podcast"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b281750628a8",
+            "label": "URL video archive",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "podcast"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "L'<i>URL video du podcast<\/i><br \/>\r\n<hr \/>\r\n<i>URL video<\/i> <br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5b281755628a9",
+            "label": "URL video",
+            "name": "acf_article_video_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "podcast"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b462da213548",
+            "label": "URL document archive",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598ca14387079",
+                        "operator": "==",
+                        "value": "podcast"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "L'<i>URL du document<\/i><br \/>\r\n<hr \/>\r\n<i>URL document<\/i> <br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5b462da013547",
+            "label": "URL document",
+            "name": "acf_article_document_url_advisor_to_client",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5b462f184aba6",
+            "label": "Action Steps",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "<i>Action Step<\/i><br \/>\r\n<hr \/>\r\n<i>Action Steps<\/i> <br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5b462f164aba5",
+            "label": "Action Steps",
+            "name": "acf_article_action_step_advisor_to_client",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_592c834f9570a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5b46415940d0e",
+                    "label": "Action Step Article Title",
+                    "name": "acf_action_step_article_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_58d426c5e851d",
+            "label": "Informations relative \/ Related information",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_598cb62d44b73",
+            "label": "Article type",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Déterminer si l'article fait partit des \"<i>Dossiers<\/i>\", \"<i>Savoir d'entreprises<\/i>\", ou \"<i>Archives<\/i>\". <br \/>\r\n<hr \/>\r\nDetermine if the article is linked to a \"<i>Feature<\/i>\", a\"<i>Brand<\/i>\", or a \"<i>Newspaper<\/i>\".",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5970dadf7e51f",
+            "label": "Article type",
+            "name": "acf_article_type",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Article régulier \/ Regular Article",
+                "columnist": "Blogueur \/ Columnist",
+                "feature": "Dossier \/ Feature",
+                "brand": "Entreprise \/ Brand",
+                "microsite": "Microsite",
+                "advisortoclient": "Advisor To Client",
+                "careers": "Carrières \/ Careers"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d66d38fc1dcd",
+            "label": "Location Career",
+            "name": "acf_location_career",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "careers"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d66d5e6bdad6",
+            "label": "Date Posted Career",
+            "name": "acf_date_posted_career",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "careers"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_5d66d5e5bdad5",
+            "label": "Date Closed Career",
+            "name": "acf_date_closed_career",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "careers"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_5d66d5e4bdad4",
+            "label": "Employment Status",
+            "name": "acf_employment_status",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "careers"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "full-time": "Full Time",
+                "part-time": "Part Time"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d66d5e2bdad3",
+            "label": "Website Career",
+            "name": "acf_website_career",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "careers"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d38871571cee",
+            "label": "Imported Site Origin",
+            "name": "imported_site_origin",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "main site origin",
+                "CIR": "Originally from CIR"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_596649c9a2a49",
+            "label": "Auteur \/ Author",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "<i>Auteur(s)<\/i> ou <i>blogueur<\/i> associé(s) à l'article.<br \/>\r\n<hr \/>\r\n<i>Author(s)<\/i> or <i>columnist<\/i> associated to the article.<br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_594047dc976d0",
+            "label": "Auteur \/ Author",
+            "name": "acf_article_author",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "writer"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_59664a2da2a4a",
+            "label": "Source",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "<i>Source<\/i> de l'article.<br \/>\r\n<hr \/>\r\n<i>Source<\/i> of the article.<br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5925dc1041eb1",
+            "label": "Nom \/ Name",
+            "name": "acf_article_source",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "35",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5925dde241eb2",
+            "label": "Source URL",
+            "name": "acf_article_source_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "35",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59df6672d8bac",
+            "label": "Newspaper Date",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5b1abf79b752f",
+            "label": "Newspaper Date",
+            "name": "acf_article_newspaper",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "newspaper"
+            ],
+            "taxonomy": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5b15401fea9be",
+            "label": "Microsite",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5b154150ea9bf",
+            "label": "Microsite",
+            "name": "acf_article_microsite",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "microsite"
+            ],
+            "taxonomy": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_59664ab16be90",
+            "label": "Mot(s) clé(s) \/ Keyword(s)",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Les <i>mot(s) clé(s)<\/i> permettent de tagger l'article. Apparait dans la colonne de droite de l'article.<br \/>\r\n<hr \/>\r\n<i>Keywords<\/i> tag the article. It's display in the right column of article page.<br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_58e661b8c7222",
+            "label": "Mot(s) clé(s) \/ Keyword(s)",
+            "name": "acf_article_keywords",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_tag",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_59664acb6be91",
+            "label": "Companie(s) \/ Company",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Les <i>compagnies<\/i> permettent de tagger l'article. Apparait dans la colonne de droite de l'article.<br \/>\r\n<hr \/>\r\n<i>Companies<\/i> tag the article. It's display in the right column of article page.<br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_591b5ca7637bc",
+            "label": "Companie(s) \/ Company",
+            "name": "acf_article_company",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_company",
+            "field_type": "multi_select",
+            "allow_null": 1,
+            "add_term": 0,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_595d42f8a6be7",
+            "label": "Dossier \/ Feature",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "feature"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "newspaper"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Si l'article est dans la catégorie \"<i>Dossier<\/i>\", associer avec l'un des dossiers existants.<br \/>\r\n<hr \/>\r\nIf this article is in the category \"<i>In-Depth<\/i>\", associate with one of this existing features.<br \/>\r\n<a href=\"\/wp-admin\/edit.php?post_type=feature\" target=\"_blank\"><i>Feature<\/i> <span class=\"dashicons dashicons-admin-links\"><\/span><\/a>.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_595d42534127e",
+            "label": "Dossier \/ Feature",
+            "name": "acf_article_feature",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "feature"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "newspaper"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "feature"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5963e5cf7a624",
+            "label": "Entreprise \/ Brand",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "brand"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Si l'article est dans la catégorie \"<i>Savoir d'entreprise<\/i>\", associer avec l'une des entreprises existantes (\"<i>Brands<\/i>\") ainsi qu'une thématique.<br \/>\r\n<hr \/>\r\nIf this article is in the category \"<i>Brand Knowledge<\/i>\", associate with one of this existing brands adn topcis.<br \/>\r\n<a href=\"\/wp-admin\/edit.php?post_type=brand\" target=\"_blank\"><i>Brands<\/i> <span class=\"dashicons dashicons-admin-links\"><\/span><\/a><br \/>\r\n<a href=\"\/wp-admin\/edit-tags.php?taxonomy=post_brand_topic\" target=\"_blank\"><i>Brand Knowledge Topics<\/i> <span class=\"dashicons dashicons-admin-links\"><\/span><\/a>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5963e5d97a625",
+            "label": "Entreprise \/ Brand",
+            "name": "acf_article_brand",
+            "type": "post_object",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "brand"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "35",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "brand"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5970ab1734cdf",
+            "label": "Thématiques \/ Topics",
+            "name": "acf_article_brand_topic",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "brand"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "35",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_brand_topic",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5a1728bfd70e5",
+            "label": "Sponsor",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "default"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "advisortoclient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Le <i>sponsor<\/i><br \/>\r\n<hr \/>\r\n<i>Sponsor<\/i> <br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5a16e3372aa2f",
+            "label": "Sponsor",
+            "name": "acf_article_sponsor",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "default"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "advisortoclient"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_sponsor",
+            "field_type": "select",
+            "allow_null": 1,
+            "add_term": 0,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5b27d6aa83834",
+            "label": "Region",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "default"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "La <i>r&eacute;gion<\/i><br \/>\r\n<hr \/>\r\n<i>Region<\/i> <br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5b27d6b083835",
+            "label": "Region",
+            "name": "acf_article_region",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5970dadf7e51f",
+                        "operator": "==",
+                        "value": "default"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_region",
+            "field_type": "multi_select",
+            "allow_null": 1,
+            "add_term": 0,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5af2fd5f68acd",
+            "label": "DTM Custom",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Le <i>DTM Custom<\/i><br \/>\r\n<hr \/>\r\n<i>DTM Custom<\/i> <br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5af2fd6868ace",
+            "label": "DTM Custom",
+            "name": "acf_article_dtm_custom",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_592c834295709",
+            "label": "Informations à montrer \/ Displayed information",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_592d98a321a41",
+            "label": "Information basique \/ Basic information",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_592c87ccf0c92",
+            "label": "Auteur \/ Author",
+            "name": "acf_article_author_show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide"
+        },
+        {
+            "key": "field_592d878c330ac",
+            "label": "Source",
+            "name": "acf_article_source_show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide"
+        },
+        {
+            "key": "field_592c86f8f377b",
+            "label": "Date et heure \/ Date and Hour",
+            "name": "acf_article_date_show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide"
+        },
+        {
+            "key": "field_592d9bd921a42",
+            "label": "Informations complémentaires \/ More displayable items",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_592c834f9570a",
+            "label": "Catégorie \/ Category",
+            "name": "acf_article_category_show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide"
+        },
+        {
+            "key": "field_592c8820f0c93",
+            "label": "Image miniature \/ Thumbnail",
+            "name": "acf_article_thumbnail_show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide"
+        },
+        {
+            "key": "field_594bfe1a5a6cd",
+            "label": "IMPORT - Asset Id",
+            "name": "acf_wp_all_import_asset_id",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "acf_wp_all_import_asset_id"
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_59e10350125c5",
+            "label": "IMPORT - Back Issue Date",
+            "name": "acf_wp_all_import_back_issue_date",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_598c6d595292f",
+            "label": "IMPORT - Slug",
+            "name": "acf_wp_all_import_slug",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_591ee44a8aa0b",
+            "label": "IMPORT - Author Name",
+            "name": "acf_wp_all_import_author_name",
+            "type": "text",
+            "instructions": "This field is only used for the import, that's why it's hidden",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": "acf_wp_all_import_author_name"
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5963e85be40db",
+            "label": "IMPORT - Brand Name",
+            "name": "acf_wp_all_import_brand_name",
+            "type": "text",
+            "instructions": "This field is only used for the import, that's why it's hidden",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b27f7d7327d0",
+            "label": "IMPORT - Sponsor Name",
+            "name": "acf_wp_all_import_sponsor_name",
+            "type": "text",
+            "instructions": "This field is only used for the import, that's why it's hidden",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_592f03069fcde",
+            "label": "IMPORT WP All Import ID",
+            "name": "acf_wp_all_import_id",
+            "type": "text",
+            "instructions": "This field is only used for the import, that's why it's hidden",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a05ff9b7988c",
+            "label": "IMPORT WP All Import Featured Image",
+            "name": "acf_wp_all_import_featured_image",
+            "type": "text",
+            "instructions": "This field is only used for the import, that's why it's hidden",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a3ad5308526b",
+            "label": "IMPORT WP All Import Edition Volume",
+            "name": "acf_wp_all_import_edition_volume",
+            "type": "text",
+            "instructions": "This field is only used for the import, that's why it's hidden\r\nFor FI Import.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b72c936d9a21",
+            "label": "IMPORT WP All Import Related Article Podcast",
+            "name": "acf_wp_all_import_related_article_podcast",
+            "type": "text",
+            "instructions": "This field is only used for the import, that's why it's hidden\r\nFor FI Import.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a3ad5a8d49f5",
+            "label": "IMPORT WP All Import Edition Date",
+            "name": "acf_wp_all_import_edition_date",
+            "type": "text",
+            "instructions": "This field is only used for the import, that's why it's hidden\r\nFor FI Import.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5aec980072b06",
+            "label": "IMPORT WP All Import Main Sub Category",
+            "name": "import_wp_all_import_main_sub_category",
+            "type": "text",
+            "instructions": "This field is only used for the import, that's why it's hidden\r\nFor FI Import.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ace1f9cf5d77",
+            "label": "IMPORT WP All Import Categories",
+            "name": "acf_wp_all_import_categories",
+            "type": "text",
+            "instructions": "This field is only used for the import, that's why it's hidden\r\nFor FI Import.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5af1ad4513a0c",
+            "label": "IMPORT WP All Import Html Include",
+            "name": "acf_wp_all_import_html_include",
+            "type": "text",
+            "instructions": "This field is only used for the import, that's why it's hidden\r\nFor FI Import.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b4cfb60c9e9b",
+            "label": "IMPORT WP All Import Keywords",
+            "name": "acf_wp_all_import_keywords",
+            "type": "text",
+            "instructions": "This field is only used for the import, that's why it's hidden\r\nFor FI Import.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_598b6af5ce752",
+            "label": "<span class=\"dashicons dashicons-editor-help\"><\/span>",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_592d936163e1d",
+            "label": "Média \/ Medias",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "La section <b>Médias<\/b> sert à insérer une image, une vidéo, et des documents aux articles. Cela affiche également une icône dans les listing (comme dans les catégories) dans cet ordre de priorité:\r\n 1- vidéo\r\n 2- carrousel\r\n 3- graphique\r\n 4- document.<br \/>\r\n\r\n<hr \/>\r\n\r\nSection <b>Medias<\/b> is used to insert an image, a video, and documents in articles. It also insert an icon in listings (as categories) in this order of priority:\r\n 1- video\r\n 2- slideshow\r\n 3- charts\r\n 4- document.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_598c8189a623c",
+            "label": "Informations relative \/ Related information",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "Toutes informations relative à l'article sont lié dans cette section (Auteur, mots clés, etc...).\r\n\r\n<hr \/>\r\n\r\nAll informations relative to the article are link in this section (Author, Keywords, etc...).",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_598c81bca623d",
+            "label": "Informations à montrer \/ Displayed information",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "Choisir quelles informations afficher sur toutes les autres pages que la page d'article.\r\n\r\n<b>1-Liens gris :<\/b>\r\n[<i>Auteur(s)<\/i>] | [<i>Source<\/i>] | [<i>Date<\/i>] | [<i>Heure<\/i>].\r\n<b>2-Catégorie:<\/b>\r\nAffiche la sous-catégorie principale (sélectionnable dans \"Sous-catégorie principale\" dans la colonne de droite de cette page).\r\n<b>3-Image miniature:<\/b>\r\nAffiche l'\"Image miniature\" de l'article (sélectionnable dans \"Médias\").\r\n\r\n<hr \/>\r\n\r\nChoose what information to show on other page than article.\r\n\r\n<b>1-Grey links :<\/b>\r\n[<i>Author(s)<\/i>] | [<i>Source<\/i>] | [<i>Date<\/i>] | [<i>Hour<\/i>].\r\n<b>2-Category:<\/b>\r\nShow the main category of this article (selectable in \"Articles - Main Sub-Category\" on the right side).\r\n<b>3-Thumbnail:<\/b>\r\nShow the \"Featured Image\" of this article (selectable in \"Medias\").\r\n\r\n<img src=\"wp-content\/themes\/avatar-tcm\/assets\/images\/admin_help_article_displayed_info.jpg\" style=\"display:block; width:100%;\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1567090711
+}

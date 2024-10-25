@@ -1,0 +1,136 @@
+// Grid elements
+header {
+	.advertisement {
+		display: none;
+		@include breakpoint(sm) {
+			display: block;
+			margin: 35px 0 0;
+			text-align: center;
+			@include clearfix();
+		}
+	}
+}
+
+// Left element
+.left-content{
+	border-right: none;
+	@include breakpoint(md) {
+		border-right: $default-border;
+
+	}
+}
+
+// Different versions of aside element
+
+aside {
+	//regular right sided aside
+	&.primary {
+			border-left: none;
+			margin-top: 15px;
+			@include breakpoint(md) {
+				margin-top: 0px;
+			}
+			//big box ad bloc
+			.advertisement {
+				margin-left: -4px;
+				margin-right: -4px;
+				margin-bottom: 25px;
+				padding-top: 25px;
+				@include breakpoint(sm) {
+					clear: both;
+					margin-left: 0;
+					margin-right: 0;
+					text-align: center;
+				}
+			}
+	}
+}
+
+// Standard 2 column article listing layout
+
+
+.regular-listing.left-content {
+/// manual listing articles on home page
+	&>.row:not(.top-featured) {
+		.home & {
+			padding: 0px;
+		}
+	}
+	&>.row.top-featured .secondary-featured li {
+		.home & {
+			padding: 25px 0px;
+			@include breakpoint(sm) {
+				padding: 0 0 15px 0;
+			}
+		}
+	}
+	&>.row>div>div  {
+	 	.home &{
+	 		border-top: $default-border;
+			padding-top: 25px;
+			padding-bottom: 25px;
+	 	}
+	}
+}
+
+// Primary featured article listing style (used on home and categories pages)
+
+.article-thumbnail {
+	//height: 200px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
+// icon classes to add to titles when media is present
+h2 {
+	&.icon-video {
+		@include font-awesome-icon-after('\f03d', false, 14px);
+	}
+	&.icon-chart {
+		@include font-awesome-icon-after('\f080', false, 14px);
+	}
+	&.icon-slideshow {
+		@include font-awesome-icon-after('\f03e', false, 14px);
+	}
+	&.icon-docs {
+		@include font-awesome-icon-after('\f0f6', false, 14px);
+	}
+	&.icon-podcast {
+		@include font-awesome-icon-after('\f0da', false, 14px);
+	}
+	&.icon-headphones {
+		@include font-awesome-icon-after('\f025', false, 14px);
+	}
+}
+
+.row.equal-col-xs{
+	@include breakpoint(xs) {
+ 		display: flex;
+	    -webkit-flex-flow: row;
+		-webkit-flex-flow: wrap;
+	}
+
+}
+.row.equal-col{
+	@include breakpoint(sm) {
+ 		display: flex;
+	    -webkit-flex-flow: row;
+		-webkit-flex-flow: wrap;
+  	}
+
+}
+.row.equal-col-md{
+	@include breakpoint(md) {
+ 		display: flex;
+	    -webkit-flex-flow: row;
+		-webkit-flex-flow: wrap;
+  	}
+
+}

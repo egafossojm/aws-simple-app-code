@@ -1,0 +1,2166 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-30 17:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: archive.php:2
+msgid "Archive page"
+msgstr ""
+
+msgid "Promo Button"
+msgstr "Bouton Promo"
+
+msgid "Block title"
+msgstr "Titre du bloc"
+
+msgid "Button text"
+msgstr "Texte du bouton"
+
+msgid "Button Url"
+msgstr "Url du lien du bouton"
+ 
+#: category.php:58
+msgid "Top Stories"
+msgstr ""
+
+#: category.php:61 templates/article/articles-bottom.php:58
+msgid "Latest news"
+msgstr ""
+
+#: category.php:64
+msgid " in "
+msgstr ""
+
+#: category.php:199
+msgid "There is currently no post for this Category"
+msgstr ""
+
+#: footer.php:91
+msgid "Current Issue"
+msgstr ""
+
+#: footer.php:91
+msgid "Free Subscription"
+msgstr ""
+
+#: footer.php:148
+msgid "Transcontinental Media Inc. All rights reserved."
+msgstr ""
+
+#: header.php:34
+msgid "Toggle navigation"
+msgstr ""
+
+#: header.php:54 header.php:103 header.php:105 header.php:105 search.php:25
+#: search.php:100 functions/menu/menu-bootstrap-navwalker.php:256
+msgid "Search"
+msgstr ""
+
+#: index.php:3
+msgid "Create a page and choose \"Homepage\" template from page attribute"
+msgstr ""
+
+#. Name of the template
+msgid "Brand Knowledge: IndexPage"
+msgstr ""
+
+#: page-brandknowledge-homepage.php:79
+#: templates/article/article-brand-footer.php:58
+#, php-format
+msgid "%s Article"
+msgid_plural "%s Articles"
+msgstr[0] ""
+msgstr[1] ""
+
+#: page-brandknowledge-homepage.php:184 templates/template-sign-in.php:101
+#: templates/article/articles-bottom.php:93
+#: templates/article/articles-bottom.php:127
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#. Name of the template
+#: templates/user/user-profile-contact-us.php:39
+msgid "Contact Us"
+msgstr ""
+
+#. Name of the template
+msgid "Advisor Central (EquiSoft)"
+msgstr ""
+
+#: page-equisoft-login.php:132
+msgid "Cannot connect to EquiSoft, please try later again."
+msgstr ""
+
+#. Name of the template
+msgid "Full Width Page"
+msgstr ""
+
+#. Name of the template
+msgid "Page : HomePage"
+msgstr ""
+
+#. Name of the template
+msgid "In Depth : IndexPage"
+msgstr ""
+
+#: page-indepth-homepage.php:29
+msgid "In Depth Options are empty"
+msgstr ""
+
+#: page-indepth-homepage.php:52
+msgid "Featured"
+msgstr ""
+
+#: page-indepth-homepage.php:53
+msgid "In Depth"
+msgstr ""
+
+#: page-indepth-homepage.php:89 page-indepth-homepage.php:177
+#: templates/homepage/component-in-depth.php:82
+msgid "No Feature found."
+msgstr ""
+
+#: page-indepth-homepage.php:133 page-indepth-subpage.php:84
+#: page-video-homepage.php:159 templates/category/latest-in-depth.php:46
+msgid "Latest"
+msgstr ""
+
+#. Name of the template
+msgid "In Depth : SubPage"
+msgstr ""
+
+#: page-indepth-subpage.php:132
+msgid "No Feature Posts found."
+msgstr ""
+
+#. Name of the template
+msgid "Inside Track: IndexPage"
+msgstr ""
+
+#: page-inside-track.php:51
+msgid "Latest columns in"
+msgstr ""
+
+#: page-inside-track.php:76
+msgid "All columns"
+msgstr ""
+
+#: page-inside-track.php:161
+msgid "There is currently no post"
+msgstr ""
+
+#: page-inside-track.php:165
+msgid "Next Page"
+msgstr ""
+
+#. Name of the template
+msgid "Newspaper: IndexPage"
+msgstr ""
+
+#: page-newspaper-homepage.php:62
+msgid "Latest issue of the newspaper"
+msgstr ""
+
+#: page-newspaper-homepage.php:74 single-newspaper.php:46
+msgid "Years"
+msgstr ""
+
+#: page-newspaper-homepage.php:87 single-newspaper.php:59
+#: functions/post/posts.php:949
+msgid "Month"
+msgstr ""
+
+#: page-newspaper-homepage.php:91 single-newspaper.php:63
+msgid "Find Issue"
+msgstr ""
+
+#. Name of the template
+msgid "Tools"
+msgstr ""
+
+#. Name of the template
+msgid "User : DI Webhook"
+msgstr ""
+
+#. Name of the template
+msgid "User : Login"
+msgstr ""
+
+#: page-user-login.php:46
+msgid "Required fields are missing"
+msgstr ""
+
+#: page-user-login.php:49 page-user-profil.php:31
+#: functions/user/user-register.php:442
+msgid "Passwords do not match"
+msgstr ""
+
+#: page-user-login.php:52 page-user-profil.php:34
+#: functions/user/user-register.php:445
+msgid "Password length must be greater than 8"
+msgstr ""
+
+#: page-user-login.php:55
+msgid "Password  must have uppercase letter"
+msgstr ""
+
+#: page-user-login.php:58
+msgid "Password  must have lowercase letter"
+msgstr ""
+
+#: page-user-login.php:61
+msgid "Password  must have number"
+msgstr ""
+
+#: page-user-login.php:66 page-user-profil.php:60
+#: functions/user/user-register.php:466
+#: templates/user/form-forget-password.php:31
+msgid "Email is invalid"
+msgstr ""
+
+#: page-user-login.php:73
+msgid "The key is not valid. Please try to log-in again."
+msgstr ""
+
+#: page-user-login.php:109 templates/template-sign-in.php:20
+msgid "Bad user ID"
+msgstr ""
+
+#: page-user-login.php:119 page-user-resend.php:29
+#: templates/template-sign-in.php:30
+msgid "Activation code is not valid"
+msgstr ""
+
+#: page-user-login.php:125 page-user-resend.php:35
+#: templates/template-sign-in.php:36
+msgid "Activation code does not exist"
+msgstr ""
+
+#: page-user-login.php:131
+msgid "User ID does not exist"
+msgstr ""
+
+#: page-user-login.php:158
+msgid "The username email field is empty."
+msgstr ""
+
+#: page-user-login.php:161
+msgid "The password field is empty."
+msgstr ""
+
+#: page-user-login.php:170
+msgid "This email does not exist"
+msgstr ""
+
+#: page-user-login.php:176
+msgid "This username does not exist"
+msgstr ""
+
+#: page-user-login.php:191
+msgid "Wrong password"
+msgstr ""
+
+#: page-user-login.php:242 page-user-resend.php:93
+msgid "Activation failed!"
+msgstr ""
+
+#: page-user-login.php:244 page-user-resend.php:96
+msgid "Wrong URL"
+msgstr ""
+
+#: page-user-login.php:274 templates/template-sign-in.php:87
+msgid "No account yet?"
+msgstr ""
+
+#: page-user-login.php:275 templates/template-sign-in.php:88
+#: functions/user/user-register.php:389
+msgid "Create my account"
+msgstr ""
+
+#. Name of the template
+msgid "User : Profil"
+msgstr ""
+
+#: page-user-profil.php:37 functions/user/user-register.php:448
+msgid "Password must have uppercase letter"
+msgstr ""
+
+#: page-user-profil.php:40 functions/user/user-register.php:451
+msgid "Password must have lowercase letter"
+msgstr ""
+
+#: page-user-profil.php:43
+msgid "Password must have number"
+msgstr ""
+
+#: page-user-profil.php:48
+msgid "Required field \"Frist Name\" is empty"
+msgstr ""
+
+#: page-user-profil.php:51 functions/user/user-register.php:460
+msgid "Required field \"Last Name\" is empty"
+msgstr ""
+
+#: page-user-profil.php:54
+msgid "Required field \"Company Name\" is empty"
+msgstr ""
+
+#: page-user-profil.php:63
+msgid "Email already in use"
+msgstr ""
+
+#: page-user-profil.php:69 functions/user/user-register.php:473
+msgid "Select which product you sell"
+msgstr ""
+
+#: page-user-profil.php:74 functions/user/user-register.php:478
+msgid "Select what is your main responsibility/role within your firm"
+msgstr ""
+
+#: page-user-profil.php:136 functions/user/user-register.php:509
+msgid "Field \"Business address\" is mandatory"
+msgstr ""
+
+#: page-user-profil.php:140 functions/user/user-register.php:513
+msgid "Field \"City\" is mandatory"
+msgstr ""
+
+#: page-user-profil.php:144 functions/user/user-register.php:517
+msgid "Field \"Country\" is mandatory"
+msgstr ""
+
+#: page-user-profil.php:148 functions/user/user-register.php:521
+msgid "Field \"Postal Code\" is mandatory"
+msgstr ""
+
+#: page-user-profil.php:152 functions/user/user-register.php:525
+msgid "Field \"Telephone\" is mandatory"
+msgstr ""
+
+#: page-user-profil.php:156 functions/user/user-register.php:529
+msgid "Invalid postal code length"
+msgstr ""
+
+#: page-user-profil.php:160 functions/user/user-register.php:533
+msgid "Field \"Province\" is mandatory"
+msgstr ""
+
+#: page-user-profil.php:169 functions/user/user-register.php:542
+msgid "Invalid Canadian Postal Code"
+msgstr ""
+
+#: page-user-profil.php:180 functions/user/user-register.php:553
+msgid "Invalid United States Zip Code"
+msgstr ""
+
+#: page-user-profil.php:205
+#, php-format
+msgid "%s account update"
+msgstr ""
+
+#: page-user-profil.php:224 functions/user/user-register.php:78
+msgid "Hi"
+msgstr ""
+
+#: page-user-profil.php:226
+msgid "What do you want to manage?"
+msgstr ""
+
+#: page-user-profil.php:232
+msgid "Your password must be updated to conform to our new security standards."
+msgstr ""
+
+#. Name of the template
+msgid "User : Register"
+msgstr ""
+
+#: page-user-register.php:21 page-user-resend.php:51
+#: functions/user/user-register.php:75
+msgid "Create your account"
+msgstr ""
+
+#: page-user-register.php:29
+msgid "Why you should subscribe?"
+msgstr ""
+
+#: page-user-register.php:31
+msgid ""
+"Access the leading Canadian news source for financial industry professionals "
+"anytime, anywhere"
+msgstr ""
+
+#: page-user-register.php:32
+msgid "Receive free and exclusive content through our e-newsletters."
+msgstr ""
+
+#: page-user-register.php:33
+msgid ""
+"Earn free continuing education credits at CE Place and find client "
+"prospecting tools at Advisor Central"
+msgstr ""
+
+#: page-user-register.php:34
+msgid "Special offers webinars, surveys, research and much more!"
+msgstr ""
+
+#. Name of the template
+msgid "User : Resend Activation Email"
+msgstr ""
+
+#: page-user-resend.php:19
+msgid "This Email do not exist"
+msgstr ""
+
+#: page-user-resend.php:41
+msgid "User email do not exist"
+msgstr ""
+
+#: page-user-resend.php:46 functions/user/user-register.php:66
+msgid "Confirm your account"
+msgstr ""
+
+#: page-user-resend.php:53
+#, php-format
+msgid "Hi %s"
+msgstr ""
+
+#: page-user-resend.php:54 functions/user/user-register.php:79
+msgid "Please confirm your account : "
+msgstr ""
+
+#: page-user-resend.php:55
+msgid "Confirm my account"
+msgstr ""
+
+#: page-user-resend.php:56
+msgid ""
+"Thank you for being part of the greatest financial community in Canada. If you "
+"have any problems, please write to :"
+msgstr ""
+
+#: page-user-resend.php:66
+msgid "User Email and the Activation Key do not exist"
+msgstr ""
+
+#. Name of the template
+msgid "Video: IndexPage"
+msgstr ""
+
+#: page-video-homepage.php:57
+msgid "Featured videos"
+msgstr ""
+
+#: page-video-homepage.php:60
+msgid "On "
+msgstr ""
+
+#. Name of the template
+msgid "Video: SubPage"
+msgstr ""
+
+#: page-video-subpage.php:53
+msgid "Latest video"
+msgstr ""
+
+#: page-video-subpage.php:56
+msgctxt "keep the space after the word"
+msgid "On "
+msgstr ""
+
+#: search.php:20
+msgid "Search Results for :"
+msgstr ""
+
+#: search.php:25 search.php:100
+msgid "New search"
+msgstr ""
+
+#: search.php:31 search.php:106 templates/search-tag.php:48
+#, php-format
+msgid "%s result found"
+msgid_plural "%s results found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: search.php:97
+msgid "Search Results for:"
+msgstr ""
+
+#: single-brand.php:83 templates/newsletter/newsletter_brandknowledge.php:27
+msgid "Brand Knowledge"
+msgstr ""
+
+#: single-brand.php:95 single-feature.php:93 single-writer.php:67
+#: templates/article/article-entity-share-top.php:16
+#: templates/article/article-share-bottom.php:6
+#: templates/article/article-share-top.php:16
+msgid "LinkedIn"
+msgstr ""
+
+#: single-brand.php:102 single-feature.php:100 single-writer.php:74
+#: templates/article/article-entity-share-top.php:21
+#: templates/article/article-share-bottom.php:7
+#: templates/article/article-share-top.php:21
+msgid "Twitter"
+msgstr ""
+
+#: single-brand.php:109 single-feature.php:107
+#: templates/article/article-entity-share-top.php:11
+#: templates/article/article-share-bottom.php:5
+#: templates/article/article-share-top.php:11
+msgid "Facebook"
+msgstr ""
+
+#: single-brand.php:116 single-feature.php:115 single-writer.php:82
+msgid "Visit website"
+msgstr ""
+
+#: single-brand.php:130
+msgid "All Topics"
+msgstr ""
+
+#: single-brand.php:169 single-feature.php:164
+msgid "There is currently no post for this feature"
+msgstr ""
+
+#: single-feature.php:63
+msgid "Partners Reports"
+msgstr ""
+
+#: single-feature.php:77
+#, php-format
+msgctxt "By name of partner (single feature)"
+msgid "By %s"
+msgstr ""
+
+#: single-feature.php:81
+#, php-format
+msgctxt "By name of sponsor (single feature)"
+msgid "Presented by %s"
+msgstr ""
+
+#: single-newsletter.php
+msgid "A.M. Bulletin"
+msgstr "Vos nouvelles du matin"
+
+#: single-newsletter.php:53
+msgid "Your Daily AM e-newsletter and alerts"
+msgstr ""
+
+#: single-newsletter.php:57
+msgid "Your Daily PM e-newsletter and alerts"
+msgstr ""
+
+#: single-newsletter.php:61
+msgid "Your Weekly e-newsletter and alerts"
+msgstr ""
+
+#: single-newsletter.php:62
+msgid "Week of"
+msgstr ""
+
+#: single-newsletter.php:65
+msgid "Your Monthly e-newsletter and alerts"
+msgstr ""
+
+#: single-newsletter.php:66
+msgid "Month of"
+msgstr ""
+
+#: single-newsletter.php:70
+msgid "Your e-newsletter and alerts"
+msgstr ""
+
+#: single-newsletter.php:467
+msgid "Go to website"
+msgstr ""
+
+#: single-newsletter.php:469
+msgid "Unsubscribe"
+msgstr ""
+
+#: single-newsletter.php:579
+msgid "Manage subscription"
+msgstr ""
+
+#: single-newsletter.php:580
+msgctxt "second part is: \"click here\""
+msgid "If you cannot view this e-mail correctly, please"
+msgstr ""
+
+#: single-newsletter.php:580
+msgctxt "first part is: \"If you cannot view this e-mail correctly, please\""
+msgid "click here"
+msgstr ""
+
+#: single-newsletter.php:586 functions/user/email-template-system.php:71
+msgid "Sent by Transcontinental Media G.P. or its"
+msgstr ""
+
+#: single-newsletter.php:586 functions/user/email-template-system.php:71
+msgid "affiliated companies"
+msgstr ""
+
+#: single-newsletter.php:587 functions/user/email-template-system.php:72
+msgid "Privacy Policy"
+msgstr ""
+
+#: single-newsletter.php:587 functions/user/email-template-system.php:72
+msgid "All Rights Reserved."
+msgstr ""
+
+#: single-newsletter.php:588 functions/user/email-template-system.php:73
+msgid "37 Front St. East, 2nd Floor, Toronto, ON, M5E 1B3, 416-847-5100"
+msgstr ""
+
+#: single-writer.php:60
+msgid "Mail"
+msgstr ""
+
+#: single-writer.php:151
+msgid "There is currently no post for this author"
+msgstr ""
+
+#: functions/customize-colors.php:24
+msgid "Primary Color"
+msgstr ""
+
+#: functions/enqueue-script-style.php:52
+msgid "View More"
+msgstr ""
+
+#: templates/search-tag.php:18
+#, php-format
+msgid "Keyword: %s"
+msgstr ""
+
+#: templates/search-tag.php:23
+#, php-format
+msgid "Company: %s"
+msgstr ""
+
+#: templates/search-tag.php:28
+#, php-format
+msgid "Tag : %s"
+msgstr ""
+
+#. Name of the template
+msgid "User : Sign in"
+msgstr ""
+
+#: templates/template-sign-in.php:42
+msgid "User ID do not exist"
+msgstr ""
+
+#: templates/template-sign-in.php:59
+msgid "User ID or Key do not exist"
+msgstr ""
+
+#: templates/template-sign-in.php:74 functions/user/user-register.php:179
+#: templates/user/form-forget-password.php:135
+#: templates/user/form-sign-in.php:11
+#: templates/user/user-profile-information.php:43
+msgid "Your email"
+msgstr ""
+
+#: templates/template-sign-in.php:75 templates/user/form-sign-in.php:20
+msgid "Your password"
+msgstr ""
+
+#: templates/template-sign-in.php:76
+msgid "Remember me"
+msgstr ""
+
+#: templates/template-sign-in.php:77 templates/user/form-sign-in.php:40
+msgid "Log In"
+msgstr ""
+
+#: functions/admin/newsletter.php:21
+msgid "Send a test to DI"
+msgstr ""
+
+#: functions/admin/newsletter.php:22
+msgid "Send to DI"
+msgstr ""
+
+#: functions/menu/menu-admin.php:13
+msgid "Articles"
+msgstr ""
+
+#: functions/menu/menu-admin.php:16
+msgid "All Articles"
+msgstr ""
+
+#: functions/menu/menu-admin.php:18
+msgid "Keywords"
+msgstr ""
+
+#: functions/menu/menu-admin.php:28
+msgid "Import XML News"
+msgstr ""
+
+#: functions/menu/menu-admin.php:32 functions/menu/menu-admin.php:33
+msgid "Entities"
+msgstr ""
+
+#: functions/menu/menu-admin.php:49 functions/menu/menu-admin.php:50
+msgid "Charts"
+msgstr ""
+
+#: functions/menu/menu-admin.php:68
+msgid "Theme Options"
+msgstr ""
+
+#: functions/menu/menu-admin.php:75
+msgid "API Keys"
+msgstr ""
+
+#: functions/menu/menu-admin.php:82
+msgid "Users"
+msgstr ""
+
+#: functions/menu/menu-admin.php:89
+msgid "Content Options"
+msgstr ""
+
+#: functions/menu/menu-admin.php:96
+msgid "Editor's section"
+msgstr ""
+
+#: functions/menu/menu-admin.php:105
+msgid "Top Stories (HomePage)"
+msgstr ""
+
+#: functions/menu/menu-admin.php:112
+msgid "Featured Reports"
+msgstr ""
+
+#: functions/menu/menu-admin.php:119
+msgid "Featured Video"
+msgstr ""
+
+#: functions/menu/menu-admin.php:126
+msgid "Newspaper (HomePage)"
+msgstr ""
+
+#: functions/menu/menu-admin.php:133
+msgid "Sale's section"
+msgstr ""
+
+#: functions/menu/menu-admin.php:142
+msgid "Sponsor Scheduler"
+msgstr ""
+
+#: functions/menu/menu-admin.php:149
+msgid "Newsletter Scheduler"
+msgstr ""
+
+#: functions/menu/menu-admin.php:156
+msgid "Partners Place"
+msgstr ""
+
+#: functions/menu/menu.php:24
+msgid "Header : Main navigation"
+msgstr ""
+
+#: functions/menu/menu.php:25
+msgid "Header : User Log Off"
+msgstr ""
+
+#: functions/menu/menu.php:26
+msgid "Header : User Log In"
+msgstr ""
+
+#: functions/menu/menu.php:27
+msgid "Header : Second navigation"
+msgstr ""
+
+#: functions/menu/menu.php:28
+msgid "Copyright"
+msgstr ""
+
+#: functions/post/post-related.php:30 functions/post/post-related.php:81
+#: functions/post/post-related.php:130
+msgid "Related news"
+msgstr ""
+
+#: functions/post/posts.php:88
+msgctxt "Used before authors files."
+msgid "By :"
+msgstr ""
+
+#: functions/post/posts.php:118
+msgctxt "Used before source."
+msgid "Source :"
+msgstr ""
+
+#: functions/post/posts.php:230
+msgctxt "Used before tag names."
+msgid "Keywords"
+msgstr ""
+
+#: functions/post/posts.php:256
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ""
+
+#: functions/post/posts.php:259
+msgctxt "Used before companies names."
+msgid "Companies"
+msgstr ""
+
+#: functions/post/posts.php:292
+msgctxt "Used before Documents files."
+msgid "Documents"
+msgstr ""
+
+#: functions/post/posts.php:954 functions/post/posts.php:976
+msgid "No Data"
+msgstr ""
+
+#: functions/post/posts.php:1033
+msgid "Brought to you by :"
+msgstr ""
+
+#: functions/user/user-register.php:55
+msgid "Investment Executive account update"
+msgstr ""
+
+#: functions/user/user-register.php:80
+msgid "CONFIRM MY ACCOUNT"
+msgstr ""
+
+#: functions/user/user-register.php:81
+msgid ""
+"Thank you for being part of the greatest financial community in Canada. If you "
+"have any problems, please write to:"
+msgstr ""
+
+#: functions/user/user-register.php:92
+msgid ""
+"Exception error register general user failed. Please contact your "
+"administrator"
+msgstr ""
+
+#: functions/user/user-register.php:95
+msgid ""
+"Exception error register general user failed. Please contact your DI "
+"administrator"
+msgstr ""
+
+#: functions/user/user-register.php:147
+#: templates/user/user-profile-information.php:21
+#: templates/user/user-profile-newspaper.php:44
+msgid "Form submission failed!"
+msgstr ""
+
+#: functions/user/user-register.php:150
+#: templates/user/form-forget-password.php:122
+#: templates/user/form-reset-password.php:16
+#: templates/user/user-profile-information.php:24
+#: templates/user/user-profile-newspaper.php:47
+msgid "Please verify these fields"
+msgstr ""
+
+#: functions/user/user-register.php:166
+msgid "Sign-up informations"
+msgstr ""
+
+#: functions/user/user-register.php:168 functions/user/user-register.php:195
+#: functions/user/user-register.php:328
+#: templates/user/user-profile-information.php:37
+#: templates/user/user-profile-information.php:63
+#: templates/user/user-profile-newspaper.php:63
+msgid "All fields are required"
+msgstr ""
+
+#: functions/user/user-register.php:170
+#: templates/user/user-profile-information.php:39
+msgid ""
+"Passwords must have at least 8 characters and contain at least one of the "
+"following: uppercase letters, lowercase letters and numbers."
+msgstr ""
+
+#: functions/user/user-register.php:182
+msgid "Create your password"
+msgstr ""
+
+#: functions/user/user-register.php:185
+msgid "Repeat your password"
+msgstr ""
+
+#: functions/user/user-register.php:193
+#: templates/user/user-profile-information.php:61
+msgid "About you"
+msgstr ""
+
+#: functions/user/user-register.php:200
+#: templates/user/user-profile-information.php:68
+msgid "First name"
+msgstr ""
+
+#: functions/user/user-register.php:205
+#: templates/user/user-profile-information.php:72
+msgid "Last name"
+msgstr ""
+
+#: functions/user/user-register.php:209
+#: templates/user/user-profile-information.php:171
+msgid "Company name"
+msgstr ""
+
+#: functions/user/user-register.php:216
+#: templates/user/user-profile-information.php:109
+msgid "Professional Information"
+msgstr ""
+
+#: functions/user/user-register.php:218
+#: templates/user/user-profile-information.php:111
+msgid "Answer required"
+msgstr ""
+
+#: functions/user/user-register.php:223
+#: templates/user/user-profile-information.php:116
+msgid "Are you licensed to sell financial products?"
+msgstr ""
+
+#: functions/user/user-register.php:227
+#: templates/user/user-profile-information.php:120
+msgid "Yes"
+msgstr ""
+
+#: functions/user/user-register.php:232
+#: templates/user/user-profile-information.php:125
+msgid "No"
+msgstr ""
+
+#: functions/user/user-register.php:240
+#: templates/user/user-profile-information.php:134
+msgid "Which products?"
+msgstr ""
+
+#: functions/user/user-register.php:258
+#: templates/user/user-profile-information.php:152
+msgid ""
+"What is your main responsibility/role within your firm? (check every role "
+"that fits with your responsibilities)"
+msgstr ""
+
+#: functions/user/user-register.php:296
+msgid "More options"
+msgstr ""
+
+#: functions/user/user-register.php:298 functions/user/user-register.php:330
+msgid "Optional"
+msgstr ""
+
+#: functions/user/user-register.php:326
+msgid "Newspaper subscription"
+msgstr ""
+
+#: functions/user/user-register.php:339
+msgid "Yes I would like to subscribe to the newspaper"
+msgstr ""
+
+#: functions/user/user-register.php:345
+#: templates/user/user-profile-information.php:213
+#: templates/user/user-profile-newspaper.php:68
+msgid "Business address"
+msgstr ""
+
+#: functions/user/user-register.php:348
+#: templates/user/user-profile-information.php:216
+#: templates/user/user-profile-newspaper.php:71
+msgid "Unit number"
+msgstr ""
+
+#: functions/user/user-register.php:351
+#: templates/user/user-profile-information.php:219
+#: templates/user/user-profile-newspaper.php:74
+msgid "City"
+msgstr ""
+
+#: functions/user/user-register.php:354
+#: templates/user/user-profile-information.php:224
+#: templates/user/user-profile-newspaper.php:79
+msgid "Country"
+msgstr ""
+
+#: functions/user/user-register.php:362
+#: templates/user/user-profile-information.php:233
+#: templates/user/user-profile-newspaper.php:88
+msgid "Province"
+msgstr ""
+
+#: functions/user/user-register.php:375
+msgid "Zip code"
+msgstr ""
+
+#: functions/user/user-register.php:377
+#: templates/user/user-profile-information.php:253
+#: templates/user/user-profile-newspaper.php:108
+msgid "Telephone with area code"
+msgstr ""
+
+#: functions/user/user-register.php:436
+msgid "Required form field \"Password\" is missing"
+msgstr ""
+
+#: functions/user/user-register.php:439
+msgid "Required form field \"Repeat Password\" is missing"
+msgstr ""
+
+#: functions/user/user-register.php:454
+msgid "Password must contain a number"
+msgstr ""
+
+#: functions/user/user-register.php:457
+msgid "Required field \"First Name\" is empty"
+msgstr ""
+
+#: functions/user/user-register.php:463
+msgid "Required field \"Company Name\" is missing"
+msgstr ""
+
+#: functions/user/user-register.php:469
+msgid "Email is already in use"
+msgstr ""
+
+#: functions/user/user-register.php:561
+msgid "The captcha must be validated."
+msgstr ""
+
+#: functions/user/user-register.php:571
+#: templates/user/form-forget-password.php:45
+msgid "The captcha must be validated"
+msgstr ""
+
+#: functions/user/user-register.php:589
+msgid "Thank you"
+msgstr ""
+
+#: functions/user/user-register.php:592
+msgid "A confirmation email has been sent to your email address : "
+msgstr ""
+
+#: functions/user/user-register.php:595
+msgid "Please confirm your registration by clicking on the link"
+msgstr ""
+
+#: functions/user/user-register.php:598
+msgid "The Investment Executive Team"
+msgstr ""
+
+#: functions/user/user-register.php:601
+msgid "Resend the confirmation email"
+msgstr ""
+
+#: functions/user/user-variables.php:17
+msgid "Publicly traded stocks and bonds"
+msgstr ""
+
+#: functions/user/user-variables.php:21
+msgid "Mutual funds"
+msgstr ""
+
+#: functions/user/user-variables.php:25
+msgid "ETFs"
+msgstr ""
+
+#: functions/user/user-variables.php:29
+msgid ""
+"Insurance products (segregated funds, life insurance, disability insurance, "
+"etc.)"
+msgstr ""
+
+#: functions/user/user-variables.php:33
+msgid "Exempt market products"
+msgstr ""
+
+#: functions/user/user-variables.php:37
+msgid "Banking products (GICs, banking notes, etc.)"
+msgstr ""
+
+#: functions/user/user-variables.php:41
+msgid "Options"
+msgstr ""
+
+#: functions/user/user-variables.php:45
+msgid "Futures"
+msgstr ""
+
+#: functions/user/user-variables.php:49 functions/user/user-variables.php:96
+#: functions/user/user-variables.php:179 functions/user/user-variables.php:335
+#: functions/user/user-variables.php:457
+msgid "Other"
+msgstr ""
+
+#: functions/user/user-variables.php:68
+msgid "Executive or senior manager"
+msgstr ""
+
+#: functions/user/user-variables.php:72
+msgid "Wholesaler from a product distributor firm"
+msgstr ""
+
+#: functions/user/user-variables.php:76
+msgid "Compliance officer"
+msgstr ""
+
+#: functions/user/user-variables.php:80
+msgid "Financial planner"
+msgstr ""
+
+#: functions/user/user-variables.php:84 functions/user/user-variables.php:119
+msgid "Accountant"
+msgstr ""
+
+#: functions/user/user-variables.php:88 functions/user/user-variables.php:155
+msgid "Lawyer"
+msgstr ""
+
+#: functions/user/user-variables.php:92
+msgid "Assistant or support staff"
+msgstr ""
+
+#: functions/user/user-variables.php:115 functions/user/user-variables.php:197
+#: functions/user/user-variables.php:234 functions/user/user-variables.php:275
+#: functions/user/user-variables.php:353 functions/user/user-variables.php:477
+msgid "None"
+msgstr ""
+
+#: functions/user/user-variables.php:123
+msgid "Assistant/Support"
+msgstr ""
+
+#: functions/user/user-variables.php:127
+msgid "Bank Investment Sales"
+msgstr ""
+
+#: functions/user/user-variables.php:131
+msgid "Branch Manager"
+msgstr ""
+
+#: functions/user/user-variables.php:135
+msgid "Compliance Officer"
+msgstr ""
+
+#: functions/user/user-variables.php:139
+msgid "Financial Analyst"
+msgstr ""
+
+#: functions/user/user-variables.php:143
+msgid "Financial Planner"
+msgstr ""
+
+#: functions/user/user-variables.php:147
+msgid "Investment Advisor"
+msgstr ""
+
+#: functions/user/user-variables.php:151
+msgid "Insurance Rep"
+msgstr ""
+
+#: functions/user/user-variables.php:159
+msgid "Mutual Funds Sales Rep"
+msgstr ""
+
+#: functions/user/user-variables.php:163
+msgid "Personal Banker"
+msgstr ""
+
+#: functions/user/user-variables.php:167
+msgid "Portfolio Manager"
+msgstr ""
+
+#: functions/user/user-variables.php:171
+msgid "Securities Broker"
+msgstr ""
+
+#: functions/user/user-variables.php:175
+msgid "Wholesaler"
+msgstr ""
+
+#: functions/user/user-variables.php:201
+msgid "Under $10 million"
+msgstr ""
+
+#: functions/user/user-variables.php:205
+msgid "$10 million to $50 million"
+msgstr ""
+
+#: functions/user/user-variables.php:209
+msgid "$50 million to $100 million"
+msgstr ""
+
+#: functions/user/user-variables.php:213
+msgid "$100 million to $250 million"
+msgstr ""
+
+#: functions/user/user-variables.php:217
+msgid "$250 million or more"
+msgstr ""
+
+#: functions/user/user-variables.php:238
+msgid "Under 50"
+msgstr ""
+
+#: functions/user/user-variables.php:242
+msgid "50 to 99"
+msgstr ""
+
+#: functions/user/user-variables.php:246
+msgid "100 to 249"
+msgstr ""
+
+#: functions/user/user-variables.php:250
+msgid "250 to 499"
+msgstr ""
+
+#: functions/user/user-variables.php:254
+msgid "500 to 999"
+msgstr ""
+
+#: functions/user/user-variables.php:258
+msgid "1000 or more"
+msgstr ""
+
+#: functions/user/user-variables.php:279
+msgid "CFA (Chartered Fin Analyst)"
+msgstr ""
+
+#: functions/user/user-variables.php:283
+msgid "CFP (Certified Financial Planner)"
+msgstr ""
+
+#: functions/user/user-variables.php:287
+msgid "CIC (Canadian Insurance Course) Prerequisite to LLQP"
+msgstr ""
+
+#: functions/user/user-variables.php:291
+msgid "CIM (Canadian Investment Manager)"
+msgstr ""
+
+#: functions/user/user-variables.php:295
+msgid "CLU (Chartered Life Underwriter)"
+msgstr ""
+
+#: functions/user/user-variables.php:299
+msgid "CPH (Conduct & Practices Handbook)"
+msgstr ""
+
+#: functions/user/user-variables.php:303
+msgid "CSC (Canadian Securities Course)"
+msgstr ""
+
+#: functions/user/user-variables.php:307
+msgid "CSWP (Chartered Strategic Wealth Professional)"
+msgstr ""
+
+#: functions/user/user-variables.php:311
+msgid "IFC (Investment Funds in Canada)"
+msgstr ""
+
+#: functions/user/user-variables.php:315
+msgid "LLQP (Life License Qualification Program)"
+msgstr ""
+
+#: functions/user/user-variables.php:319
+msgid "MFDC (Mutual Fund Dealer Compliance Course)"
+msgstr ""
+
+#: functions/user/user-variables.php:323
+msgid "PFP (Personal Financial Planner)"
+msgstr ""
+
+#: functions/user/user-variables.php:327
+msgid "RFP (Registered Fin Planner)"
+msgstr ""
+
+#: functions/user/user-variables.php:331
+msgid "WME (Wealth Management Essentials)"
+msgstr ""
+
+#: functions/user/user-variables.php:357
+msgid "Advocis - Financial Advisors Association of Canada"
+msgstr ""
+
+#: functions/user/user-variables.php:361
+msgid "AMF - Autorite des Marches Financiers"
+msgstr ""
+
+#: functions/user/user-variables.php:365
+msgid "British Colombia Securities Commission"
+msgstr ""
+
+#: functions/user/user-variables.php:369
+msgid "CAFC - Canadian Association of Financial Consultants"
+msgstr ""
+
+#: functions/user/user-variables.php:373
+msgid "CFA Institute - AIMR (Assoc of Fin Management & Research) CFA"
+msgstr ""
+
+#: functions/user/user-variables.php:377
+msgid "CSF - Chambre de la securite financiere"
+msgstr ""
+
+#: functions/user/user-variables.php:381
+msgid "CSI Global Education"
+msgstr ""
+
+#: functions/user/user-variables.php:385
+msgid "FICO - Financial Insurance Commission of Ontario"
+msgstr ""
+
+#: functions/user/user-variables.php:389
+msgid "FPSC - Financial Planning Standards Council"
+msgstr ""
+
+#: functions/user/user-variables.php:393
+msgid "IAFP - Institute of Advanced Financial Planners"
+msgstr ""
+
+#: functions/user/user-variables.php:397
+msgid "IFIC - Investment Funds Institute of Canada"
+msgstr ""
+
+#: functions/user/user-variables.php:401
+msgid "IMCA - Investment Management Consultants Association"
+msgstr ""
+
+#: functions/user/user-variables.php:405
+msgid "IIROC - Investment Industry Regulatory Organization of Canada"
+msgstr ""
+
+#: functions/user/user-variables.php:409
+msgid "Insurance Council of Alberta"
+msgstr ""
+
+#: functions/user/user-variables.php:413
+msgid "Insurance Council of British Colombia"
+msgstr ""
+
+#: functions/user/user-variables.php:417
+msgid "Insurance Council of Manitoba"
+msgstr ""
+
+#: functions/user/user-variables.php:421
+msgid "Insurance Council of Saskatchewan"
+msgstr ""
+
+#: functions/user/user-variables.php:425
+msgid "IQPF - Institut quebecois de planification financiere"
+msgstr ""
+
+#: functions/user/user-variables.php:429
+msgid "GRMI - Global Risk Management Institute"
+msgstr ""
+
+#: functions/user/user-variables.php:433
+msgid "MFDA - Mutual Funds Dealers Association"
+msgstr ""
+
+#: functions/user/user-variables.php:437
+msgid "OSC - Ontario Securities Commission"
+msgstr ""
+
+#: functions/user/user-variables.php:441
+msgid "RIBO (Reg Insurance Brokers of Ontario)"
+msgstr ""
+
+#: functions/user/user-variables.php:445
+msgid "Saskatchewan General Insurance Council"
+msgstr ""
+
+#: functions/user/user-variables.php:449
+msgid "Superintendent of Insurance"
+msgstr ""
+
+#: functions/user/user-variables.php:453
+msgid "STEP Canada - Society of Trust and Estate Practitioners"
+msgstr ""
+
+#: functions/user/user-variables.php:481
+msgid "Less than 1 year"
+msgstr ""
+
+#: functions/user/user-variables.php:485
+msgid "Less than 2 years"
+msgstr ""
+
+#: functions/user/user-variables.php:489
+msgid "Less than 3 years"
+msgstr ""
+
+#: functions/user/user-variables.php:493
+msgid "Less than 4 years"
+msgstr ""
+
+#: functions/user/user-variables.php:497
+msgid "Less than 5 years"
+msgstr ""
+
+#: functions/user/user-variables.php:501
+msgid "More than 5 years"
+msgstr ""
+
+#: functions/user/user-variables.php:1060
+msgid "Alberta"
+msgstr ""
+
+#: functions/user/user-variables.php:1061
+msgid "British Columbia"
+msgstr ""
+
+#: functions/user/user-variables.php:1062
+msgid "Manitoba"
+msgstr ""
+
+#: functions/user/user-variables.php:1063
+msgid "New Brunswick"
+msgstr ""
+
+#: functions/user/user-variables.php:1064
+msgid "Newfoundland and Labrador"
+msgstr ""
+
+#: functions/user/user-variables.php:1065
+msgid "Nova Scotia"
+msgstr ""
+
+#: functions/user/user-variables.php:1066
+msgid "Northwest Territories"
+msgstr ""
+
+#: functions/user/user-variables.php:1067
+msgid "Nunavut"
+msgstr ""
+
+#: functions/user/user-variables.php:1068
+msgid "Ontario"
+msgstr ""
+
+#: functions/user/user-variables.php:1069
+msgid "Prince Edward Island"
+msgstr ""
+
+#: functions/user/user-variables.php:1070
+msgid "Quebec"
+msgstr ""
+
+#: functions/user/user-variables.php:1071
+msgid "Saskatchewan"
+msgstr ""
+
+#: functions/user/user-variables.php:1072
+msgid "Yukon"
+msgstr ""
+
+#: functions/user/user-variables.php:1086
+msgid "Alabama"
+msgstr ""
+
+#: functions/user/user-variables.php:1087
+msgid "Alaska"
+msgstr ""
+
+#: functions/user/user-variables.php:1088
+msgid "Arizona"
+msgstr ""
+
+#: functions/user/user-variables.php:1089
+msgid "Arkansas"
+msgstr ""
+
+#: functions/user/user-variables.php:1090
+msgid "California"
+msgstr ""
+
+#: functions/user/user-variables.php:1091
+msgid "Colorado"
+msgstr ""
+
+#: functions/user/user-variables.php:1092
+msgid "Connecticut"
+msgstr ""
+
+#: functions/user/user-variables.php:1093
+msgid "Delaware"
+msgstr ""
+
+#: functions/user/user-variables.php:1094
+msgid "District of Columbia"
+msgstr ""
+
+#: functions/user/user-variables.php:1095
+msgid "Florida"
+msgstr ""
+
+#: functions/user/user-variables.php:1096
+msgid "Georgia"
+msgstr ""
+
+#: functions/user/user-variables.php:1097
+msgid "Hawaii"
+msgstr ""
+
+#: functions/user/user-variables.php:1098
+msgid "Idaho"
+msgstr ""
+
+#: functions/user/user-variables.php:1099
+msgid "Illinois"
+msgstr ""
+
+#: functions/user/user-variables.php:1100
+msgid "Indiana"
+msgstr ""
+
+#: functions/user/user-variables.php:1101
+msgid "Iowa"
+msgstr ""
+
+#: functions/user/user-variables.php:1102
+msgid "Kansas"
+msgstr ""
+
+#: functions/user/user-variables.php:1103
+msgid "Kentucky"
+msgstr ""
+
+#: functions/user/user-variables.php:1104
+msgid "Louisiana"
+msgstr ""
+
+#: functions/user/user-variables.php:1105
+msgid "Maine"
+msgstr ""
+
+#: functions/user/user-variables.php:1106
+msgid "Maryland"
+msgstr ""
+
+#: functions/user/user-variables.php:1107
+msgid "Massachusetts"
+msgstr ""
+
+#: functions/user/user-variables.php:1108
+msgid "Michigan"
+msgstr ""
+
+#: functions/user/user-variables.php:1109
+msgid "Minnesota"
+msgstr ""
+
+#: functions/user/user-variables.php:1110
+msgid "Mississippi"
+msgstr ""
+
+#: functions/user/user-variables.php:1111
+msgid "Missouri"
+msgstr ""
+
+#: functions/user/user-variables.php:1112
+msgid "Montana"
+msgstr ""
+
+#: functions/user/user-variables.php:1113
+msgid "Nebraska"
+msgstr ""
+
+#: functions/user/user-variables.php:1114
+msgid "Nevada"
+msgstr ""
+
+#: functions/user/user-variables.php:1115
+msgid "New Hampshire"
+msgstr ""
+
+#: functions/user/user-variables.php:1116
+msgid "New Jersey"
+msgstr ""
+
+#: functions/user/user-variables.php:1117
+msgid "New Mexico"
+msgstr ""
+
+#: functions/user/user-variables.php:1118
+msgid "New York"
+msgstr ""
+
+#: functions/user/user-variables.php:1119
+msgid "North Carolina"
+msgstr ""
+
+#: functions/user/user-variables.php:1120
+msgid "North Dakota"
+msgstr ""
+
+#: functions/user/user-variables.php:1121
+msgid "Ohio"
+msgstr ""
+
+#: functions/user/user-variables.php:1122
+msgid "Oklahoma"
+msgstr ""
+
+#: functions/user/user-variables.php:1123
+msgid "Oregon"
+msgstr ""
+
+#: functions/user/user-variables.php:1124
+msgid "Pennsylvania"
+msgstr ""
+
+#: functions/user/user-variables.php:1125
+msgid "Rhode Island"
+msgstr ""
+
+#: functions/user/user-variables.php:1126
+msgid "South Carolina"
+msgstr ""
+
+#: functions/user/user-variables.php:1127
+msgid "South Dakota"
+msgstr ""
+
+#: functions/user/user-variables.php:1128
+msgid "Tennessee"
+msgstr ""
+
+#: functions/user/user-variables.php:1129
+msgid "Texas"
+msgstr ""
+
+#: functions/user/user-variables.php:1130
+msgid "Utah"
+msgstr ""
+
+#: functions/user/user-variables.php:1131
+msgid "Vermont"
+msgstr ""
+
+#: functions/user/user-variables.php:1132
+msgid "Virginia"
+msgstr ""
+
+#: functions/user/user-variables.php:1133
+msgid "Washington"
+msgstr ""
+
+#: functions/user/user-variables.php:1134
+msgid "West Virginia"
+msgstr ""
+
+#: functions/user/user-variables.php:1135
+msgid "Wisconsin"
+msgstr ""
+
+#: functions/user/user-variables.php:1136
+msgid "Wyoming"
+msgstr ""
+
+#: functions/user/user-variables.php:1137
+msgid "American Samoa"
+msgstr ""
+
+#: functions/user/user-variables.php:1138
+msgid "Canal Zone"
+msgstr ""
+
+#: functions/user/user-variables.php:1139
+msgid "Commonwealth of the Northern Mariana Islands"
+msgstr ""
+
+#: functions/user/user-variables.php:1140
+msgid "Federated States of Micronesia"
+msgstr ""
+
+#: functions/user/user-variables.php:1141
+msgid "Guam"
+msgstr ""
+
+#: functions/user/user-variables.php:1142
+msgid "Marshall Islands"
+msgstr ""
+
+#: functions/user/user-variables.php:1143
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#: functions/user/user-variables.php:1144
+msgid "Palau"
+msgstr ""
+
+#: functions/user/user-variables.php:1145
+msgid "Philippine Islands"
+msgstr ""
+
+#: functions/user/user-variables.php:1146
+msgid "Puerto Rico"
+msgstr ""
+
+#: functions/user/user-variables.php:1147
+msgid "Trust Territory of the Pacific Islands"
+msgstr ""
+
+#: functions/user/user-variables.php:1148
+msgid "Virgin Islands"
+msgstr ""
+
+#: functions/user/user-variables.php:1149
+msgid "Armed Forces - Americas"
+msgstr ""
+
+#: functions/user/user-variables.php:1150
+msgid "Armed Forces - Europe, Canada, Middle East, Africa"
+msgstr ""
+
+#: functions/user/user-variables.php:1151
+msgid "Armed Forces - Pacific"
+msgstr ""
+
+#: functions/widgets/widgets.php:15
+#, php-format
+msgid "Footer column %1$s | row 1"
+msgstr ""
+
+#: functions/widgets/widgets.php:26
+#, php-format
+msgid "Footer column %1$s | row 2"
+msgstr ""
+
+#: functions/widgets/widgets.php:36
+#, php-format
+msgid "Footer column 5 | row %1$s"
+msgstr ""
+
+#: functions/widgets/widgets.php:46
+msgid "Footer more"
+msgstr ""
+
+#: functions/widgets/widgets.php:56
+#, php-format
+msgid "Copyright column %1$s"
+msgstr ""
+
+#: templates/article/article-entity-share-top.php:1
+#: templates/article/article-share-top.php:1
+msgctxt "Spaces has to be like this : %20 "
+msgid "I found this interesting for you!"
+msgstr ""
+
+#: templates/article/article-entity-share-top.php:2
+#: templates/article/article-share-top.php:2
+msgctxt "Article title - get_the_title, article URL - get_the_permalink"
+msgid ""
+" on the site Investment Executive%0A%0A\n"
+"Have a good day!"
+msgstr ""
+
+#: templates/article/article-entity-share-top.php:7
+#: templates/article/article-share-top.php:7
+msgid "Share"
+msgstr ""
+
+#: templates/article/article-entity-share-top.php:26
+#: templates/article/article-share-top.php:26
+msgid "Mail to a fried"
+msgstr ""
+
+#: templates/article/article-entity-share-top.php:32
+#: templates/article/article-share-top.php:32
+msgid "Print"
+msgstr ""
+
+#: templates/article/article-header-feature.php:29
+msgid "Presented by"
+msgstr ""
+
+#: templates/article/article-header-feature.php:44
+msgid "More from this feature"
+msgstr ""
+
+#: templates/article/article-header-writer.php:26
+msgid "More from this author"
+msgstr ""
+
+#: templates/article/article-share-bottom.php:3
+msgid "Share this article and your comments with peers on social media"
+msgstr ""
+
+#: templates/article/articles-bottom.php:61
+#, php-format
+msgid " In %s"
+msgstr ""
+
+#: templates/article/articles-bottom.php:98
+msgid "Today's top stories"
+msgstr ""
+
+#: templates/category/latest-in-depth.php:91
+msgid "No Latest Feature found."
+msgstr ""
+
+#: templates/category/more-columnists.php:42
+msgid "More columnists"
+msgstr ""
+
+#: templates/general/component-cxense-most.php:13
+msgid "Most popular"
+msgstr ""
+
+#: templates/general/component-cxense-most.php:16
+msgid "Most shared"
+msgstr ""
+
+#: templates/general/component-video-light.php:23
+msgid "Currently Featured"
+msgstr ""
+
+#: templates/homepage/component-newspaper-date.php:61
+msgid "View the e-edition"
+msgstr ""
+
+#: templates/homepage/component-newspaper-date.php:90
+msgid "View all Articles from the Newspaper"
+msgstr ""
+
+#: templates/homepage/component-newspaper-date.php:91
+msgid "Login Required"
+msgstr ""
+
+#: templates/homepage/component-partners-place.php:19
+#: templates/tools/component-partnersplace.php:12
+msgid "Partners Place Options are empty"
+msgstr ""
+
+#: templates/homepage/component-quick-subscribe-newsletters.php:13
+#, php-format
+msgctxt "Use variables for highlight the keywords"
+msgid ""
+"%1$sEach morning%2$s, get the financial news that matters in your inbox."
+msgstr ""
+
+#: templates/homepage/component-quick-subscribe-newsletters.php:22
+msgid "Newsletter's subscription"
+msgstr ""
+
+#: templates/homepage/component-quick-subscribe-newsletters.php:30
+msgid "Your email address"
+msgstr ""
+
+#: templates/homepage/component-quick-subscribe-newsletters.php:31
+msgid "Subscribe"
+msgstr ""
+
+#: templates/homepage/component-top-story.php:4
+msgid "Top stories"
+msgstr ""
+
+#: templates/homepage/component-top-story.php:12
+msgid "No articles selected for home page or the articles was deleted."
+msgstr ""
+
+#: templates/newsletter/newsletter_ceplace.php:13
+#: templates/tools/component-ceplace.php:11
+#: templates/tools/component-tools-and-ressources.php:74
+msgid "CE Place"
+msgstr ""
+
+#: templates/newsletter/newsletter_partner.php:37
+msgid "Partners' Place"
+msgstr ""
+
+#: templates/newsletter/newsletter_partner.php:56
+msgid "brought to you by:"
+msgstr ""
+
+#: templates/tools/component-advisorcentral.php:11
+msgid "Advisor Central"
+msgstr ""
+
+#: templates/tools/component-advisorcentral.php:13
+msgid "login required"
+msgstr ""
+
+#: templates/tools/component-advisorcentral.php:34
+msgid "Go to Advisor Central"
+msgstr ""
+
+#: templates/tools/component-ceplace.php:33
+msgid "Go to CE Place"
+msgstr ""
+
+#: templates/user/form-forget-password.php:36
+msgid "Please check the the captcha form."
+msgstr ""
+
+#: templates/user/form-forget-password.php:74
+msgid "Reset Password"
+msgstr ""
+
+#: templates/user/form-forget-password.php:75
+msgid "Password change request"
+msgstr ""
+
+#: templates/user/form-forget-password.php:76
+msgid "Dear"
+msgstr ""
+
+#: templates/user/form-forget-password.php:78
+msgid "You can reset your password for"
+msgstr ""
+
+#: templates/user/form-forget-password.php:79
+msgid "Click here"
+msgstr ""
+
+#: templates/user/form-forget-password.php:80
+msgid ""
+"If the above link doesn't work, copy and paste the text below in your browser"
+msgstr ""
+
+#: templates/user/form-forget-password.php:83
+msgid "Sincerely"
+msgstr ""
+
+#: templates/user/form-forget-password.php:85
+#: templates/user/form-forget-password.php:103
+msgid "IE team"
+msgstr ""
+
+#: templates/user/form-forget-password.php:92
+msgid "Forgot password"
+msgstr ""
+
+#: templates/user/form-forget-password.php:99
+#, php-format
+msgid "An email was sent to %s"
+msgstr ""
+
+#: templates/user/form-forget-password.php:100
+#: templates/user/form-forget-password.php:114
+msgid "Follow the link in the email to reset your password."
+msgstr ""
+
+#: templates/user/form-forget-password.php:102
+msgid "Kind regards"
+msgstr ""
+
+#: templates/user/form-forget-password.php:105
+#: templates/user/form-forget-password.php:146
+msgid "Back to sign in"
+msgstr ""
+
+#: templates/user/form-forget-password.php:140
+msgid "Submit"
+msgstr ""
+
+#: templates/user/form-reset-password.php:34
+msgid "Your new password"
+msgstr ""
+
+#: templates/user/form-reset-password.php:38
+msgid "Confirm your new password"
+msgstr ""
+
+#: templates/user/form-reset-password.php:42
+msgid "Change Password"
+msgstr ""
+
+#: templates/user/form-sign-in.php:7
+msgid " Your password has been updated!"
+msgstr ""
+
+#: templates/user/form-sign-in.php:34
+msgid "Stay connected"
+msgstr ""
+
+#: templates/user/form-sign-in.php:44
+msgid "Lost password?"
+msgstr ""
+
+#: templates/user/user-profile-contact-us.php:11
+msgid "Required field \"Subject\" is missing"
+msgstr ""
+
+#: templates/user/user-profile-contact-us.php:14
+msgid "The subject must not exceed 120 characters"
+msgstr ""
+
+#: templates/user/user-profile-contact-us.php:17
+msgid "Required form field \"Message\" is missing"
+msgstr ""
+
+#: templates/user/user-profile-contact-us.php:30
+msgid "IP address : "
+msgstr ""
+
+#: templates/user/user-profile-contact-us.php:31
+msgid "Date : "
+msgstr ""
+
+#: templates/user/user-profile-contact-us.php:32
+msgid "Name : "
+msgstr ""
+
+#: templates/user/user-profile-contact-us.php:33
+msgid "Email : "
+msgstr ""
+
+#: templates/user/user-profile-contact-us.php:34
+msgid "Website : "
+msgstr ""
+
+#: templates/user/user-profile-contact-us.php:57
+msgid "Message was sent. Thank you!"
+msgstr ""
+
+#: templates/user/user-profile-contact-us.php:61
+msgid "Subject"
+msgstr ""
+
+#: templates/user/user-profile-contact-us.php:77
+msgid "Send this message"
+msgstr ""
+
+#: templates/user/user-profile-information.php:8
+#: templates/user/user-profile-newspaper.php:4
+msgid "Profile was updated successfully. Thank you!"
+msgstr ""
+
+#: templates/user/user-profile-information.php:35
+msgid "Login information"
+msgstr ""
+
+#: templates/user/user-profile-information.php:46
+msgid "Change Your Password"
+msgstr ""
+
+#: templates/user/user-profile-information.php:49
+msgid "New password"
+msgstr ""
+
+#: templates/user/user-profile-information.php:52
+msgid "Repeat new password"
+msgstr ""
+
+#: templates/user/user-profile-information.php:77
+msgid "Gender"
+msgstr ""
+
+#: templates/user/user-profile-information.php:81
+msgid "Male"
+msgstr ""
+
+#: templates/user/user-profile-information.php:84
+msgid "Female"
+msgstr ""
+
+#: templates/user/user-profile-information.php:90
+msgid "Year of birth"
+msgstr ""
+
+#: templates/user/user-profile-information.php:168
+msgid "Job title"
+msgstr ""
+
+#: templates/user/user-profile-information.php:175
+msgid "Primary occupation"
+msgstr ""
+
+#: templates/user/user-profile-information.php:183
+msgid "Primary occupation (other)"
+msgstr ""
+
+#: templates/user/user-profile-information.php:187
+msgid "Years of Experience"
+msgstr ""
+
+#: templates/user/user-profile-information.php:197
+msgid "Asset under management"
+msgstr ""
+
+#: templates/user/user-profile-information.php:205
+msgid "Number of families served"
+msgstr ""
+
+#: templates/user/user-profile-information.php:249
+#: templates/user/user-profile-newspaper.php:104
+msgid "Postal code"
+msgstr ""
+
+#: templates/user/user-profile-information.php:262
+msgid "More information"
+msgstr ""
+
+#: templates/user/user-profile-information.php:266
+msgid "Your designations / Completed courses"
+msgstr ""
+
+#: templates/user/user-profile-information.php:275
+msgid "Your designations / Completed courses (other)"
+msgstr ""
+
+#: templates/user/user-profile-information.php:280
+msgid "Professional organizations"
+msgstr ""
+
+#: templates/user/user-profile-information.php:288
+msgid "Professional organizations (other)"
+msgstr ""
+
+#: templates/user/user-profile-information.php:299
+msgid "Update my profile"
+msgstr ""
+
+#: templates/user/user-profile-menu.php:86
+msgid "Logout"
+msgstr ""
+
+#: templates/user/user-profile-newsletters.php:108
+msgid "Save"
+msgstr ""
+
+#: templates/user/user-profile-newspaper.php:13
+msgid "You are subscribed to the newspaper. "
+msgstr ""
+
+#: templates/user/user-profile-newspaper.php:61
+msgid "Delivery Information"
+msgstr ""
+
+#: templates/user/user-profile-newspaper.php:117
+msgid "Update delivery address"
+msgstr ""
+
+#: templates/user/user-profile-newspaper.php:117
+msgid "Subscribe to newspaper"
+msgstr ""
+
+#. Name of the theme
+msgid "Avatar TC-Media"
+msgstr ""
+
+#. Description of the theme
+msgid "WordPress theme for TC-Media"
+msgstr ""
+
+#. Author of the theme
+msgid ""
+"Jean-Marc Jutras, Julien Lord, Julien Noël, Luc Mongeau, Marc-André "
+"Deschamps, Plantevin Jerome, René Jean, Valeriu Tihai"
+msgstr ""

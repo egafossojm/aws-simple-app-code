@@ -1,0 +1,82 @@
+/*
+ Author:       Jean-Marc Jutras, Julien Lord, Julien Noël, Luc Mongeau, Marc-André Deschamps, Plantevin Jerome, René Jean, Valeriu Tihai
+ Description:  WordPress theme for AV
+ Tags:         one-column, two-columns, right-sidebar, flexible-header, custom-menu, custom-logo, featured-images, footer-widgets, post-formats, sticky-post, theme-options, translation-ready
+ Template:     avatar-tcm
+ Text Domain:  avatar-av
+ Theme Name:   Avatar av
+ Version:      1.0.0
+*/
+
+.component-quick-subscribe-newsletters__button{
+	font-size: 14px !important;
+	text-transform: none;
+}
+
+.copyright .textwidget img {
+    max-width:120px !important;
+    display:block
+}
+
+
+.magazine-unsubscribe-text{
+    font-family: "Roboto",sans-serif,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    line-height: 18px;
+    /* padding-top: 30px; */
+    text-align: center;
+    width:100%;
+  }
+  
+  .magazine-unsubscribe-text a{
+    color:#ed1c24;
+  }
+
+    /*SPONSORED CONTENT*/
+    .partner-content-excerpt>p {
+      color: #626262;
+      font-size: 0.8em;
+      padding: 0 15px;
+    }
+  
+    h2.text-content__title--big--sponsored-content {
+      font-size: 1em !important;
+      text-align: center;
+      line-height: 1.5em !important;
+      text-transform: uppercase !important;
+    }
+
+    figure.image-container {
+      background-color: #eeeeee;
+      height: 250px;
+      width: 250px;
+      display: flex;
+      margin: auto;
+    }
+    figure.image-container-small {
+      background-color: #eeeeee;
+      height: 100px;
+      width: 100px;
+      display: flex;
+    }
+    img.display-partner-logo {
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+      max-width: 100%;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .content-area .content-wrapper {
+      display: flex;
+      align-content: flex-start;
+      width: 100%;
+      flex-wrap: wrap;
+  }
+
+  .micro-module .subscriptions{
+    gap:1rem;
+  }

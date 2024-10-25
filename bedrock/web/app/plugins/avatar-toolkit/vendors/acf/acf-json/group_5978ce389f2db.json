@@ -1,0 +1,123 @@
+{
+    "key": "group_5978ce389f2db",
+    "title": "Contact Us Options",
+    "fields": [
+        {
+            "key": "field_5978ce4716934",
+            "label": "Contact Point",
+            "name": "acf_contact_point",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Contact Point",
+            "sub_fields": [
+                {
+                    "key": "field_5978ceaa16935",
+                    "label": "Telephone",
+                    "name": "acf_contact_point_telephone",
+                    "type": "text",
+                    "instructions": "Phone format: +1-877-746-0909",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5978cf0616936",
+                    "label": "Contact Type",
+                    "name": "acf_contact_point_contacttype",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "baggage tracking": "Baggage Tracking",
+                        "bill payment": "Bill Payment",
+                        "billing support": "Billing Support",
+                        "credit card support": "Credit Card Support",
+                        "customer service": "Customer Service",
+                        "emergency": "Emergency",
+                        "package tracking": "Package Tracking",
+                        "reservations": "Reservations",
+                        "roadside assistance": "Roadside Assistance",
+                        "sales": "Sales",
+                        "technical support": "Technical Support"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5978d02616937",
+                    "label": "Contact Option",
+                    "name": "acf_contact_point_contactoption",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "TollFree": "Toll Free",
+                        "HearingImpairedSupported": "Hearing Impaired Supported"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-contact.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1504287528
+}

@@ -1,0 +1,452 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-27 21:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: custom-post-type/authors.php:42
+msgid "Author"
+msgstr ""
+
+#: custom-post-type/authors.php:46
+msgid "Authors"
+msgstr ""
+
+#: custom-post-type/authors.php:62 custom-post-type/brands.php:62
+#: custom-post-type/features.php:62 custom-post-type/newsletters.php:61
+#: custom-post-type/newspapers.php:62 custom-post-type/partners.php:61
+#: custom-post-type/slideshow.php:79 post/post-taxonomy.php:44
+#: post/post-taxonomy.php:81 post/post-taxonomy.php:116
+#: post/post-taxonomy.php:151
+msgid "Parent Item:"
+msgstr ""
+
+#: custom-post-type/authors.php:63 custom-post-type/brands.php:63
+#: custom-post-type/features.php:63 custom-post-type/newspapers.php:63
+#: custom-post-type/partners.php:62
+#, php-format
+msgctxt "Plural name"
+msgid "All %1$s"
+msgstr ""
+
+#: custom-post-type/authors.php:64 custom-post-type/brands.php:64
+#: custom-post-type/features.php:64 custom-post-type/newsletters.php:63
+#: custom-post-type/newspapers.php:64 custom-post-type/newspapers.php:84
+#: custom-post-type/partners.php:63 custom-post-type/slideshow.php:81
+#, php-format
+msgctxt "Singular name"
+msgid "Add New %1$s"
+msgstr ""
+
+#: custom-post-type/authors.php:65 custom-post-type/brands.php:65
+#: custom-post-type/features.php:65 custom-post-type/partners.php:64
+#: custom-post-type/slideshow.php:82
+#, php-format
+msgctxt "Singular name"
+msgid "Add %1$s"
+msgstr ""
+
+#: custom-post-type/authors.php:66 custom-post-type/brands.php:66
+#: custom-post-type/features.php:66 custom-post-type/newsletters.php:65
+#: custom-post-type/newspapers.php:66 custom-post-type/partners.php:65
+#: custom-post-type/slideshow.php:83
+#, php-format
+msgctxt "Singular name"
+msgid "New %1$s"
+msgstr ""
+
+#: custom-post-type/authors.php:67 custom-post-type/brands.php:67
+#: custom-post-type/features.php:67 custom-post-type/newsletters.php:66
+#: custom-post-type/newspapers.php:67 custom-post-type/partners.php:66
+#: custom-post-type/slideshow.php:84
+#, php-format
+msgctxt "Singular name"
+msgid "Edit %1$s"
+msgstr ""
+
+#: custom-post-type/authors.php:68 custom-post-type/brands.php:68
+#: custom-post-type/features.php:68 custom-post-type/newsletters.php:67
+#: custom-post-type/newspapers.php:68 custom-post-type/partners.php:67
+#: custom-post-type/slideshow.php:85
+#, php-format
+msgctxt "Singular name"
+msgid "Update %1$s"
+msgstr ""
+
+#: custom-post-type/authors.php:69 custom-post-type/brands.php:69
+#: custom-post-type/features.php:69 custom-post-type/newsletters.php:68
+#: custom-post-type/newspapers.php:69 custom-post-type/partners.php:68
+#: custom-post-type/slideshow.php:86
+#, php-format
+msgctxt "Singular name"
+msgid "View %1$s"
+msgstr ""
+
+#: custom-post-type/authors.php:70 custom-post-type/brands.php:70
+#: custom-post-type/features.php:70 custom-post-type/newsletters.php:69
+#: custom-post-type/newspapers.php:70 custom-post-type/partners.php:69
+#: custom-post-type/slideshow.php:87
+#, php-format
+msgctxt "Singular name"
+msgid "Search %1$s"
+msgstr ""
+
+#: custom-post-type/authors.php:71 custom-post-type/brands.php:71
+#: custom-post-type/features.php:71 custom-post-type/newsletters.php:70
+#: custom-post-type/newspapers.php:71 custom-post-type/partners.php:70
+#: custom-post-type/slideshow.php:88
+msgid "Not found"
+msgstr ""
+
+#: custom-post-type/authors.php:72 custom-post-type/brands.php:72
+#: custom-post-type/features.php:72 custom-post-type/newsletters.php:71
+#: custom-post-type/newspapers.php:72 custom-post-type/partners.php:71
+#: custom-post-type/slideshow.php:89
+msgid "Not found in Trash"
+msgstr ""
+
+#: custom-post-type/authors.php:84
+msgid "Add Author."
+msgstr ""
+
+#: custom-post-type/brands.php:42
+msgid "Brand"
+msgstr ""
+
+#: custom-post-type/brands.php:46
+msgid "Brands"
+msgstr ""
+
+#: custom-post-type/brands.php:84
+msgid "Add Brand."
+msgstr ""
+
+#: custom-post-type/features.php:42
+msgid "Feature"
+msgstr ""
+
+#: custom-post-type/features.php:46
+msgid "Features"
+msgstr ""
+
+#: custom-post-type/features.php:84
+msgid "Add Feature."
+msgstr ""
+
+#: custom-post-type/newsletters.php:41
+msgid "Newsletter"
+msgstr ""
+
+#: custom-post-type/newsletters.php:45
+msgid "Newsletters"
+msgstr ""
+
+#: custom-post-type/newsletters.php:62 custom-post-type/slideshow.php:80
+#, php-format
+msgctxt "Plural name"
+msgid "%1$s"
+msgstr ""
+
+#: custom-post-type/newsletters.php:64 custom-post-type/newspapers.php:65
+#, php-format
+msgctxt "Singular name"
+msgid "Add a %1$s"
+msgstr ""
+
+#: custom-post-type/newsletters.php:83
+msgid "Add a Newsletter."
+msgstr ""
+
+#: custom-post-type/newspapers.php:42
+msgid "Newspaper Date"
+msgstr ""
+
+#: custom-post-type/newspapers.php:46
+msgid "Newspaper Dates"
+msgstr ""
+
+#: custom-post-type/partners.php:41
+msgid "Partner"
+msgstr ""
+
+#: custom-post-type/partners.php:45
+msgid "Partners"
+msgstr ""
+
+#: custom-post-type/partners.php:83
+msgid "Add Partner."
+msgstr ""
+
+#: custom-post-type/slideshow.php:48
+msgid "Slideshow"
+msgstr ""
+
+#: custom-post-type/slideshow.php:52
+msgid "Slideshows"
+msgstr ""
+
+#: custom-post-type/slideshow.php:101
+msgid "Add Slideshow."
+msgstr ""
+
+#: custom-post-type/slideshow.php:271
+msgid "Author : "
+msgstr ""
+
+#: custom-post-type/slideshow.php:272
+msgid "Source : "
+msgstr ""
+
+#: custom-post-type/slideshow.php:273
+msgid "Copyright : "
+msgstr ""
+
+#: post/post-taxonomy.php:39 post/post-taxonomy.php:41
+msgid "Companies"
+msgstr ""
+
+#: post/post-taxonomy.php:40
+msgid "Company"
+msgstr ""
+
+#: post/post-taxonomy.php:42 post/post-taxonomy.php:79
+#: post/post-taxonomy.php:114 post/post-taxonomy.php:149
+msgid "All Items"
+msgstr ""
+
+#: post/post-taxonomy.php:43 post/post-taxonomy.php:80
+#: post/post-taxonomy.php:115 post/post-taxonomy.php:150
+msgid "Parent Item"
+msgstr ""
+
+#: post/post-taxonomy.php:45 post/post-taxonomy.php:82
+#: post/post-taxonomy.php:117 post/post-taxonomy.php:152
+msgid "New Item Name"
+msgstr ""
+
+#: post/post-taxonomy.php:46 post/post-taxonomy.php:118
+#: post/post-taxonomy.php:153
+msgid "Add New Item"
+msgstr ""
+
+#: post/post-taxonomy.php:47 post/post-taxonomy.php:84
+#: post/post-taxonomy.php:119 post/post-taxonomy.php:154
+msgid "Edit Item"
+msgstr ""
+
+#: post/post-taxonomy.php:48 post/post-taxonomy.php:85
+#: post/post-taxonomy.php:120 post/post-taxonomy.php:155
+msgid "Update Item"
+msgstr ""
+
+#: post/post-taxonomy.php:49 post/post-taxonomy.php:86
+#: post/post-taxonomy.php:121 post/post-taxonomy.php:156
+msgid "View Item"
+msgstr ""
+
+#: post/post-taxonomy.php:50 post/post-taxonomy.php:87
+#: post/post-taxonomy.php:122 post/post-taxonomy.php:157
+msgid "Separate items with commas"
+msgstr ""
+
+#: post/post-taxonomy.php:51 post/post-taxonomy.php:88
+#: post/post-taxonomy.php:123 post/post-taxonomy.php:158
+msgid "Add or remove items"
+msgstr ""
+
+#: post/post-taxonomy.php:52 post/post-taxonomy.php:89
+#: post/post-taxonomy.php:124 post/post-taxonomy.php:159
+msgid "Choose from the most used"
+msgstr ""
+
+#: post/post-taxonomy.php:53 post/post-taxonomy.php:90
+#: post/post-taxonomy.php:125 post/post-taxonomy.php:160
+msgid "Popular Items"
+msgstr ""
+
+#: post/post-taxonomy.php:54 post/post-taxonomy.php:126
+#: post/post-taxonomy.php:161
+msgid "Search Items"
+msgstr ""
+
+#: post/post-taxonomy.php:55 post/post-taxonomy.php:92
+#: post/post-taxonomy.php:127 post/post-taxonomy.php:162
+msgid "Not Found"
+msgstr ""
+
+#: post/post-taxonomy.php:56 post/post-taxonomy.php:93
+#: post/post-taxonomy.php:128 post/post-taxonomy.php:163
+msgid "No items"
+msgstr ""
+
+#: post/post-taxonomy.php:57 post/post-taxonomy.php:94
+#: post/post-taxonomy.php:129 post/post-taxonomy.php:164
+msgid "Items list"
+msgstr ""
+
+#: post/post-taxonomy.php:58 post/post-taxonomy.php:95
+#: post/post-taxonomy.php:130 post/post-taxonomy.php:165
+msgid "Items list navigation"
+msgstr ""
+
+#: post/post-taxonomy.php:76 post/post-taxonomy.php:78
+msgid "Columns"
+msgstr ""
+
+#: post/post-taxonomy.php:77
+msgid "column"
+msgstr ""
+
+#: post/post-taxonomy.php:83
+msgid "Add New Column"
+msgstr ""
+
+#: post/post-taxonomy.php:91
+msgid "Search in columns"
+msgstr ""
+
+#: post/post-taxonomy.php:111 post/post-taxonomy.php:112
+#: post/post-taxonomy.php:113
+msgid "Brand Knowledge Topics"
+msgstr ""
+
+#: post/post-taxonomy.php:146 post/post-taxonomy.php:148
+msgid "Sponsors"
+msgstr ""
+
+#: post/post-taxonomy.php:147
+msgid "Sponsor"
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:24
+msgid "Settings Admin"
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:25 vendors/cedrom/cedrom-ftp-xml.php:41
+msgid "Import XML News"
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:42
+msgid ""
+"Click the \"Import\" button to trigger the process. The following actions "
+"will happen:"
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:44
+msgid "Connection to CEDROM-SNI's FTP,"
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:45
+msgid "Copy of the XML files,"
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:46
+msgid "Creation of a Newspaper Date,"
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:47
+msgid "Import the XML News from within the copied files."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:55
+msgid "Import"
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:185
+msgid " was successfully created."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:235
+msgid "</a> was imported. "
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:245
+#, php-format
+msgid "The %s article was imported."
+msgid_plural "The %s articles were imported."
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:248
+msgid " must be deleted prior to reimport."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:277
+msgid "Select a main category from the Theme Options (Newspaper tab)."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:334
+msgid " host."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:339
+msgid "Cannot connect to FTP."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:344
+msgid "Cannot connect to FTP : wrong login info."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:349
+msgid "Cannot set FTP type to \"AUTOASCII\"."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:353
+msgid "Cannot connect to FTP in passive mode."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:362
+msgid "Can't get the list of files in CEDROM-SNI folder."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:372
+msgid "Error copying the files from CEDROM-SNI's FTP."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:378
+#, php-format
+msgid "The XML %s file was copied to local directory from CEDROM-SNI's FTP."
+msgid_plural ""
+"The XML %s files were copied to local directory from CEDROM-SNI's FTP."
+msgstr[0] ""
+msgstr[1] ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:381
+msgid ""
+"No files were copied to local directory from CEDROM-SNI's FTP. Check if XML "
+"files exist on the FTP server."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:385
+msgid " does not exist on the FTP server."
+msgstr ""
+
+#: vendors/cedrom/cedrom-ftp-xml.php:391
+msgid "Login credentials are empty, see \"API Setting page\"."
+msgstr ""
+
+#. Name of the plugin
+msgid "Avatar Toolkit"
+msgstr ""
+
+#. Description of the plugin
+msgid "Avatar main plugin for Avatar WordPress theme"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://tc.cc"
+msgstr ""
+
+#. Author of the plugin
+msgid "Valeriu Tihai"
+msgstr ""

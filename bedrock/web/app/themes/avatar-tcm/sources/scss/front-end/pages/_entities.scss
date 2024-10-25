@@ -1,0 +1,1530 @@
+// Style for entities pages (custom post type : Writer, Feature, Brand)
+article.base-article header {
+  border-bottom: none !important;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  @include breakpoint(xs) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.entity-row {
+  //element - row with left diagonal shape as before/
+  overflow: hidden;
+  padding-bottom: 10px;
+  position: relative;
+  @include breakpoint(sm) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  &__link-top {
+    float: right;
+    font-family: $title-font;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    .advisor-website & {
+      font-family: $title-font-alt;
+    }
+    @include breakpoint(xs) {
+      line-height: 75px;
+    }
+  }
+  &__link-top-text {
+    //element
+    color: $base-lightest-color;
+    .be-website & {
+      color: #666;
+    }
+    &:hover,
+    a:focus {
+      color: $base-lightest-color;
+      text-decoration: underline;
+    }
+  }
+
+  &:before {
+    border-right: 285px solid transparent;
+    border-top: 800px solid rgba(1, 1, 1, 0.12);
+    content: "";
+    left: 0;
+    padding-right: 0px;
+    position: absolute;
+    top: -5px;
+    width: 200px;
+    @include breakpoint(sm) {
+      border-top: 595px solid rgba(1, 1, 1, 0.12);
+    }
+  }
+  &:before,
+  .expert-panel {
+    .be-website & {
+      border-right: 285px solid transparent;
+      border-top: 800px solid transparent;
+      content: "";
+      left: 0;
+      padding-right: 0px;
+      position: absolute;
+      top: -5px;
+      width: 200px;
+      @include breakpoint(sm) {
+        border-top: 595px solid transparent;
+      }
+    }
+  }
+}
+
+.entity-header {
+  //element - used for header of an entity such as writer/brand/etc...
+  background-color: $base-medium-color; //fallback if no background image
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 15px;
+  padding: 0;
+  &--gray {
+    background: #4f4f4f;
+    background-color: #4f4f4f;
+  }
+  &--citybg {
+    //background:url(../avatar-tcm/assets/images/backissue-bg.jpg) no-repeat top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--article-padB {
+    //modifier - for an entity header on an article
+    padding-bottom: 15px;
+  }
+  &--article-padTB {
+    //modifier - for an entity header on an article
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  &__landing-box {
+    //element - contains the title and short description of an entity
+    margin-top: 50px;
+    padding-top: 13px;
+    .text-content {
+      &__excerpt {
+        a {
+          text-decoration: underline;
+          color: $base-lightest-color;
+          &:hover {
+            color: $base-light-color;
+          }
+        }
+      }
+    }
+    @include breakpoint(sm) {
+      margin-bottom: 80px;
+    }
+    &--backissue {
+      //modifier -  backissue page modifications
+      margin-top: 20px;
+      padding-top: 0px;
+      margin-bottom: 20px;
+      text-align: left;
+      @include breakpoint(sm) {
+        margin-top: 50px;
+        padding-top: 13px;
+        margin-bottom: 80px;
+        text-align: left;
+      }
+    }
+    .text-content {
+      &__excerpt {
+        @include titleFont(15px, $base-lightest-color, 400);
+        .advisor-website & {
+          @include titleFont-alt(15px, $base-lightest-color, 400);
+        }
+      }
+    }
+  }
+  &__landing-box--negative-margin {
+    //modifier - for search result page
+    @include breakpoint(sm) {
+      margin-left: -15px;
+    }
+  }
+  &__landing-box--article {
+    //modifier - for aticle header of an entity
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  &__landing-box--search {
+    margin-top: 0px;
+    padding-top: 13px;
+    margin-bottom: 0px;
+    @include breakpoint(md) {
+      margin-top: 50px;
+      padding-top: 13px;
+      margin-bottom: 80px;
+    }
+  }
+  &__landing-box--company {
+    margin-bottom: 15px;
+    @include breakpoint(md) {
+      margin-bottom: 80px;
+    }
+  }
+  &__landing-box--region {
+    margin-bottom: 15px;
+    @include breakpoint(md) {
+      margin-bottom: 80px;
+    }
+    h1 {
+      display: inline-block;
+    }
+    .sponsor-bloc {
+      margin-top: 0 !important;
+      float: none;
+      margin: 10px 0;
+      @include breakpoint(md) {
+        margin-top: 0 !important;
+        float: right;
+        margin-right: 10px;
+      }
+    }
+  }
+  &__date {
+    //element
+    font-family: $title-font;
+    font-weight: normal;
+    text-transform: none;
+    margin-top: 10px;
+    .advisor-website & {
+      font-family: $title-font-alt;
+    }
+  }
+  &__name {
+    //element
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    color: $base-lightest-color;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    text-transform: capitalize;
+    word-break: break-word;
+    .microsite & {
+      font-family: $title-font-alt;
+      border-bottom: none;
+      font-size: 24px;
+    }
+    &.fr_CA {
+      text-transform: none;
+    }
+    @include breakpoint(sm) {
+      font-size: 35px;
+    }
+    &--backissue {
+      font-size: 22px;
+      @include breakpoint(sm) {
+        font-size: 35px;
+      }
+    }
+  }
+  &__name--block {
+    //modifier- display block
+    display: block;
+  }
+  &__name--small {
+    font-size: 25px;
+  }
+  &__name--no-capitalize {
+    //modifier - removes capitalize from title
+    text-transform: none;
+  }
+  &__name--no-border-bottom {
+    //modifier - removes border bottom from title
+    border-bottom: none;
+  }
+  &__link {
+    //element
+    display: block;
+    color: $base-lightest-color;
+    &:hover,
+    a:focus {
+      color: $base-lightest-color;
+      text-decoration: none;
+    }
+  }
+  &__link-article-more {
+    //element
+    text-align: center;
+    @include breakpoint(sm) {
+      margin-top: 30px;
+    }
+    @include breakpoint(md) {
+      text-align: right;
+    }
+  }
+  &__sponsor-cat-name {
+    //element - by default show the category name of the sponsor
+    background: $base-darkest-color;
+    color: $base-lightest-color;
+    display: block;
+    font-family: $title-font;
+    font-size: 11px;
+    margin-top: 15px;
+    margin-left: -15px;
+    padding: 7px;
+    text-transform: uppercase;
+    .advisor-website & {
+      font-family: $title-font-alt;
+    }
+    @include breakpoint(sm) {
+      display: inline-block;
+    }
+    @include breakpoint(md) {
+      display: block;
+    }
+    @include breakpoint(lg) {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  &__figure {
+    //element - by default used as a frame for an entity image found in entity header
+    border-radius: 50%;
+    height: 100px;
+    margin: 15px auto 15px auto;
+    overflow: hidden;
+    position: relative;
+    width: 100px;
+    .adv-only & {
+      border-radius: 0;
+    }
+    .be-website & {
+      border-radius: 0;
+    }
+    @include breakpoint(sm) {
+      height: 70px;
+      margin: 70px auto 15px auto;
+      width: 70px;
+      .microsite & {
+        margin: 28px auto 0px auto;
+      }
+    }
+    @include breakpoint(md) {
+      height: 100px;
+      margin: 50px auto 15px auto;
+      width: 100px;
+      .microsite & {
+        margin: 15px auto 0px auto;
+      }
+    }
+
+    &--noRadius {
+      border-radius: 0;
+    }
+    &--wide {
+      height: 100px;
+      margin: 15px 0 15px;
+      width: 100%;
+      @include breakpoint(sm) {
+        margin: 70px 0 15px;
+        width: 100%;
+      }
+      @include breakpoint(md) {
+        margin: 50px 0 15px;
+        width: 100%;
+      }
+    }
+  }
+  &__figure--article {
+    //modifier - for an entity header in an article
+    margin: 15px 0 15px 15px;
+  }
+  &__image {
+    //element
+    bottom: 0;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  &__backissues {
+    //element
+    position: static;
+    left: 0;
+    top: 0px;
+    z-index: 2;
+    margin-top: 20px;
+    @include breakpoint(sm) {
+      position: static;
+      left: 0;
+      top: 0px;
+      z-index: 2;
+      margin-top: 40px;
+    }
+    @include breakpoint(md) {
+      position: static;
+      left: 0;
+      top: 0px;
+      z-index: 2;
+      margin-top: 50px;
+    }
+    @include breakpoint(lg) {
+      margin-top: 50px;
+    }
+    figure {
+      img {
+        display: inline-block;
+        margin-top: auto;
+        max-width: 85px;
+        @include breakpoint(sm) {
+          max-width: 125px;
+        }
+      }
+    }
+    span {
+      @include titleFont(11px, $base-lightest-color, 400);
+      .advisor-website & {
+        @include titleFont-alt(11px, $base-lightest-color, 400);
+      }
+      text-transform: uppercase;
+      display: inline-block;
+      line-height: 11px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      @include breakpoint(sm) {
+        line-height: 13px;
+      }
+    }
+  }
+
+  &__infos {
+    //element - external informations / sources for an entity in the entity header
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+    a {
+      color: $base-lightest-color;
+    }
+
+    .social-icons {
+      a {
+        background: $base-darkest-color;
+        font-size: 13px;
+        margin: 0;
+      }
+    }
+  }
+  &__tel {
+    //element
+    display: block;
+    font-size: 11px;
+    margin: 10px 0;
+    text-transform: uppercase;
+  }
+  &__presentedBy {
+    color: $base-lightest-color;
+    .microsite & {
+      @include titleFont-alt(16px, $base-lightest-color, 400, 20px);
+    }
+  }
+  &__presentedBy-text {
+    display: block;
+    font-size: 16px;
+  }
+  .sponsor-bloc {
+    margin-top: 5px;
+    padding-bottom: 10px;
+    height: auto;
+    img {
+      max-width: 100px;
+    }
+    @include breakpoint(sm) {
+      margin-top: 35px;
+      padding-bottom: 0;
+      height: 50px;
+      img {
+        max-width: 100px;
+      }
+    }
+    @include breakpointmax(sm) {
+      img {
+        padding-right: 30px;
+      }
+    }
+    figcaption {
+      display: inline-block;
+      @include titleFont-alt(12px, $base-lightest-color, 400);
+      margin-right: 10px;
+    }
+    a {
+      img {
+        display: inline-block;
+        max-height: 90px;
+        max-width: 250px;
+      }
+    }
+  }
+}
+
+.entity-content {
+  //element - by default the content under the entity header (contains aside also)
+  margin-top: 0;
+  @include breakpoint(md) {
+    margin-top: -80px;
+  }
+  &--no-margin-top {
+    //modifier
+    margin-top: 0px !important;
+  }
+  &--brand {
+    //modifier of entity content when it has TOPICS
+    @include breakpoint(md) {
+      margin-top: -60px;
+    }
+  }
+}
+.row-feature-be {
+  @include breakpoint(md) {
+    margin-left: 110px;
+    margin-right: 40px;
+  }
+}
+
+.entity-box-listing.sponsor-bg {
+  background: $marketing-content-bg;
+}
+.entity-box-listing {
+  background-color: $base-lightest-color;
+
+  & > div > div:first-child > div {
+    border-top: none;
+  }
+  @include breakpoint(sm) {
+    border: 1px solid #ccc;
+  }
+  &--multi-category {
+    // multi category listing blocks
+    margin-bottom: 30px;
+    .text-content--border-top {
+      &:first-child {
+        border-top: none;
+      }
+    }
+  }
+  &--podcast {
+    h2 {
+      @include font-awesome-icon-after("\f0da", $default-theme-color, 18px);
+      a {
+      }
+    }
+  }
+  &--headphones {
+    h2 {
+      @include font-awesome-icon-after("\f025", false, 18px);
+      a {
+      }
+    }
+  }
+  .js-regular-listing {
+    &.sponsor-bg {
+      padding: 0 15px;
+      &:first-child {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+.columnist-listing {
+  //listing of colummnist, by default can be seen in single writer
+  div:nth-child(2n + 1) {
+    clear: left;
+  }
+  padding-bottom: 15px;
+  &__head {
+    margin-top: 15px;
+    padding: 10px 15px 20px 15px;
+    background-color: #f6f6f6;
+    &:before {
+      border-right: 45px solid transparent;
+      border-top: 95px solid #e5e5e5;
+      content: "";
+      left: 15px;
+      padding-right: 20px;
+      position: absolute;
+      top: 0;
+      width: 75px;
+      .be-website & {
+        border-top: 95px solid transparent;
+      }
+      @include breakpoint(md) {
+        border-top: 90px solid #e5e5e5;
+        top: 15px;
+        .be-website & {
+          border-top: 90px solid transparent;
+        }
+      }
+      @include breakpoint(lg) {
+        border-top: 95px solid #e5e5e5;
+        .be-website & {
+          border-top: 95px solid transparent;
+        }
+      }
+    }
+    .entity-title {
+      max-width: 206px;
+      &.wide {
+        max-width: 450px;
+      }
+    }
+  }
+  &__head--small {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &:before {
+      left: 0;
+    }
+  }
+}
+
+// specific to custom entities Feature
+
+.sponsor-black-box {
+  //element - by default a black box showing informations about sponsors
+  background: $base-darkest-color;
+  color: $base-lightest-color;
+  font-family: $title-font;
+  padding: 20px;
+  text-align: left;
+  .advisor-website & {
+    font-family: $title-font-alt;
+  }
+  a {
+    color: $base-lightest-color;
+  }
+
+  &__title {
+    //element
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__description {
+    //element
+    font-size: 15px;
+    line-height: 17px;
+    word-wrap: break-word;
+  }
+}
+
+.brand-bloc {
+  //element - by default used to showcase a brand with its posts
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  &__header {
+    padding-top: 15px;
+  }
+  &__logo {
+    //element - image container
+    text-align: center;
+    @include breakpoint(xs) {
+      border-bottom: 2px solid gray;
+      padding-bottom: 15px;
+      text-align: left;
+    }
+  }
+  &__logo-title {
+    //element - title container of image
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  &__title {
+    font-size: 25px;
+    line-height: 27px;
+    margin: 0;
+  }
+  &__link {
+    color: $base-color;
+    &:hover,
+    a:focus {
+      color: $base-color;
+    }
+  }
+  &__infos {
+    border-bottom: 2px solid gray;
+    padding-bottom: 15px;
+  }
+  &__count {
+    //element - by default used to showcase number of articles for a brand
+    bottom: 0;
+    font-family: $title-font;
+    right: 0;
+    text-align: center;
+    top: 0;
+    .advisor-website & {
+      font-family: $title-font-alt;
+    }
+    @include breakpoint(xs) {
+      padding-right: 15px;
+      position: absolute;
+      text-align: right;
+      top: calc(50% - 20px);
+    }
+  }
+  &__count-text {
+    color: $base-color;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &__count-caret {
+    color: $base-light-color;
+    font-size: 22px;
+    padding-left: 5px;
+    position: relative;
+    top: 3px;
+  }
+
+  &__content {
+    padding-bottom: 15px;
+    .text-content {
+      &__excerpt {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .mid-article {
+    padding-top: 15px;
+    figure {
+      padding-top: 0;
+      margin-top: 0;
+      margin-bottom: 15px;
+      img {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .text-content {
+      margin-top: 0;
+    }
+  }
+}
+
+.backissues-title {
+  //element - newspaper page title
+  @include titleFont(22px, $base-lightest-color, 700);
+  .advisor-website & {
+    @include titleFont-alt(22px, $base-lightest-color, 700);
+  }
+  text-transform: uppercase;
+  background: $default-theme-color;
+
+  margin: -1px -16px -1px -16px;
+  text-transform: none;
+  position: relative;
+  overflow: hidden;
+  span {
+    display: inline-block;
+    position: relative;
+    padding: 15px 50px 15px 15px;
+    z-index: 1;
+    &:before {
+      position: absolute;
+      background: #000;
+      @include opacity(0.1);
+      width: 100%;
+      height: 100%;
+      content: "";
+      left: -15px;
+      top: 0;
+      z-index: -1;
+      transform: skewX(-25deg);
+    }
+  }
+}
+.backissue--list-title {
+  .bloc-title {
+    &__text {
+      &--color {
+        color: $default-theme-color;
+      }
+    }
+    &__caret {
+      color: $default-theme-color;
+    }
+  }
+}
+.newspaper-type-listing {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  li {
+    margin-bottom: 30px;
+    min-height: 120px;
+    @include clearfix();
+    figure {
+      float: left;
+      margin: 0 20px 20px 0;
+      min-height: 170px;
+      max-width: 115px;
+      overflow: hidden;
+    }
+    h3 {
+      @include titleFont(16px, $base-darkest-color, 700, 18px);
+      .advisor-website & {
+        @include titleFont-alt(16px, $base-darkest-color, 700, 18px);
+      }
+      margin: 0;
+      padding: 0;
+      a {
+        @include titleFont(16px, $base-darkest-color, 700, 18px);
+        .advisor-website & {
+          @include titleFont-alt(16px, $base-darkest-color, 700, 18px);
+        }
+        &:hover {
+          text-decoration: none;
+          color: $default-theme-color;
+        }
+      }
+    }
+    p {
+      margin-top: 5px;
+      @include times-serif(14px, $base-darkest-color, 400, 16px);
+    }
+  }
+}
+/*video subcatefory right column padding.*/
+.video-subpage {
+  padding-top: 15px;
+}
+
+//tools section blocs////////
+
+.tools-section,
+.tools-module {
+  .bloc {
+    margin-bottom: 15px;
+    .top-border {
+      h2 {
+        border-top: 1px solid $base-light-color;
+        padding-top: 25px;
+      }
+    }
+    h2 {
+      //sub section titles with icon and possible login required span
+      padding-bottom: 15px;
+      position: relative;
+      margin-top: 25px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      @include titleFont(14px, $base-darkest-color, 700, 16px);
+      .advisor-website & {
+        @include titleFont-alt(14px, $base-darkest-color, 700, 16px);
+      }
+      &.ce {
+        @include font-awesome-icon-before("\f19d", false, 16px);
+      }
+      &.advisor {
+        @include font-awesome-icon-before("\f080", false, 16px);
+      }
+      &.webinars {
+        @include font-awesome-icon-before("\f108", false, 16px);
+      }
+      &.fyclients {
+        @include font-awesome-icon-before("\f0c0", false, 16px);
+      }
+      &.eventsIE {
+        @include font-awesome-icon-before("\f073", $base-darkest-color, 22px);
+      }
+      &.whitebook {
+        @include font-awesome-icon-before("\f02d", false, 16px);
+      }
+      &.letters {
+        @include font-awesome-icon-before("\f0e0", false, 16px);
+      }
+      &.retirement {
+        @include font-awesome-icon-before("\f02d", false, 16px);
+      }
+      &.podcast {
+        @include font-awesome-icon-before("\f0da", false, 16px);
+      }
+      &.headphones {
+        @include font-awesome-icon-before("\f025", false, 16px);
+      }
+      &.expectations {
+        @include font-awesome-icon-before("\f03e", false, 16px);
+      }
+      span {
+        color: $default-theme-color;
+        font-weight: 400;
+        font-size: 12px;
+        position: absolute;
+        bottom: 0;
+        left: 26px;
+      }
+      a {
+        color: $base-darkest-color;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &.home-partners-module {
+        border-bottom: 2px solid #959595;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        font-size: 15px;
+      }
+    }
+    ul.row {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 10px;
+        @include breakpoint(sm) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .horiz-list {
+      @include horizontal-listpad(15px);
+      @include breakpoint(sm) {
+        @include horizontal-listpad(7px);
+      }
+    }
+    h3 {
+      margin: 0px 15px 5px 0;
+      @include times-serif(18px, $base-darkest-color, 700, 20px);
+      &.top {
+        @include times-serif(28px, $base-darkest-color, 700, 30px);
+        margin-top: 0px;
+      }
+      &.small {
+        @include times-serif(14px, $base-darkest-color, 700, 16px);
+      }
+    }
+    p {
+      @include times-serif(15px, $base-darkest-color, 400, 17px);
+      margin-right: 15px;
+      &.sponsor-details {
+        @include titleFont(14px, $base-medium-color, 400, 16px);
+        .advisor-website & {
+          @include titleFont-alt(14px, $base-medium-color, 400, 16px);
+        }
+        a {
+          color: $base-medium-color;
+        }
+        span {
+          //white-space: nowrap;
+        }
+      }
+    }
+    &.ce {
+      margin-bottom: 0;
+    }
+  }
+
+  figure {
+    margin-bottom: 0;
+  }
+  .bg {
+    padding-top: 0;
+    padding-bottom: 0;
+    .text {
+      padding-bottom: 15px;
+      padding-top: 15px;
+      margin: 0;
+      @include breakpoint(md) {
+        padding-bottom: 15px;
+        padding-top: 0px;
+      }
+      &--half-bloc {
+        padding-top: 15px;
+
+        @include breakpoint(sm) {
+          padding-bottom: 15px;
+          padding-top: 15px;
+        }
+        h3,
+        p,
+        ul {
+          padding: 0 15px;
+          margin: 0 0 10px 0;
+          @include breakpoint(sm) {
+            margin: 0 0 10px 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+    &.sponsored,
+    &.sponsor-bg {
+      background: $marketing-content-bg;
+      height: 100%;
+      .text {
+        &--half-bloc {
+          padding-top: 15px;
+          @include breakpoint(sm) {
+            padding-bottom: 15px;
+            padding-top: 15px;
+          }
+          h3,
+          p,
+          ul {
+            padding: 0 15px;
+            margin: 0 0 10px 0;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            @include breakpoint(sm) {
+              margin: 0 0 10px 0;
+              padding: 0 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    //background:$default-theme-color;
+    display: inline-block;
+    margin-right: 15px;
+    color: $base-lightest-color;
+    border-color: transparent;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.25s all;
+    @include border-radius(0);
+    &:hover,
+    &:focus {
+      background: none;
+      border: 1px solid $default-theme-color;
+      color: $default-theme-color;
+    }
+  }
+  .home-module {
+    .bg {
+      border-bottom: $default_border;
+    }
+    &:last-child {
+      .bg {
+        border-bottom: none;
+      }
+    }
+  }
+  &--tools-resources {
+    //tools and resources bloc modifications
+    .head {
+      h2 {
+        border-bottom: 2px solid #959595;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        font-size: 15px;
+      }
+    }
+    .webinars {
+      margin-top: 0 !important;
+      &:after {
+        display: none !important;
+      }
+    }
+    .bg {
+      padding: 15px 0;
+      @include clearfix();
+      .text {
+        padding-bottom: 0;
+        .pub-details {
+          color: $default-theme-color;
+          span {
+            color: $default-theme-color;
+            &:first-child {
+              color: $default-theme-color;
+            }
+          }
+        }
+        h3 {
+          margin: 0 0 5px;
+        }
+        p {
+          margin-right: 0;
+        }
+      }
+    }
+    .webinar-list {
+      &:after {
+        padding-bottom: 10px;
+        border-bottom: $default_border;
+        display: block;
+        margin: 0 15px 0;
+      }
+      li {
+        .bg {
+          border-bottom: $default_border;
+        }
+        &:last-child {
+          .bg {
+            border-bottom: none;
+          }
+        }
+        figure {
+          margin-bottom: 0;
+        }
+        .text {
+          padding-top: 0;
+        }
+      }
+    }
+    .foot {
+      display: flex;
+      a {
+        @include titleFont(12px, false, 600, 17px);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        .advisor-website & {
+          @include titleFont-alt(12px, false, 600, 17px);
+        }
+        span {
+          display: inline-block;
+        }
+        border-left: $default_border;
+        &:first-child {
+          border-left: none;
+        }
+        &.ce-place {
+          @include font-awesome-icon-before("\f19d", $base-darkest-color, 15px);
+        }
+        &.advisor {
+          @include font-awesome-icon-before("\f080", $base-darkest-color, 15px);
+        }
+        &.fyclients {
+          @include font-awesome-icon-before("\f0c0", $base-darkest-color, 15px);
+        }
+        &.eventsIE {
+          @include font-awesome-icon-before("\f073", $base-darkest-color, 22px);
+        }
+        &.whitebook {
+          @include font-awesome-icon-before("\f02d", $base-darkest-color, 15px);
+        }
+        &.letters {
+          @include font-awesome-icon-before("\f0e0", $base-darkest-color, 15px);
+        }
+        &.retirement {
+          @include font-awesome-icon-before("\f02d", $base-darkest-color, 15px);
+        }
+        &.podcast {
+          @include font-awesome-icon-before("\f0da", $base-darkest-color, 16px);
+        }
+        &.headphones {
+          @include font-awesome-icon-before("\f025", $base-darkest-color, 16px);
+        }
+        &.expectations {
+          @include font-awesome-icon-before("\f03e", $base-darkest-color, 15px);
+        }
+        @include breakpoint(xs) {
+          display: flex;
+          align-items: center;
+          @include titleFont(14px, false, 600, 16px);
+          .advisor-website & {
+            @include titleFont-alt(12px, false, 600, 14px);
+          }
+
+          &.ce-place {
+            @include font-awesome-icon-before(
+              "\f19d",
+              $base-darkest-color,
+              22px
+            );
+          }
+          &.advisor {
+            @include font-awesome-icon-before(
+              "\f080",
+              $base-darkest-color,
+              22px
+            );
+          }
+          &.fyclients {
+            @include font-awesome-icon-before(
+              "\f0c0",
+              $base-darkest-color,
+              22px
+            );
+          }
+          &.eventsIE {
+            @include font-awesome-icon-before(
+              "\f073",
+              $base-darkest-color,
+              22px
+            );
+          }
+          &.whitebook {
+            @include font-awesome-icon-before(
+              "\f02d",
+              $base-darkest-color,
+              22px
+            );
+          }
+        }
+      }
+    }
+  }
+  .home-partner-list {
+    .home-module {
+      .thumb {
+        padding-top: 15px;
+        margin-bottom: 0;
+      }
+      &:first-child {
+        .thumb {
+          padding-top: 0;
+        }
+      }
+      .text--half-bloc {
+        padding-top: 15px;
+      }
+    }
+  }
+  .dual-col {
+    margin-top: 20px;
+  }
+}
+
+//partners place featured
+
+.min-height-small {
+  min-height: 50px;
+}
+
+//microsite sidebar module
+
+.micro-module {
+  @include clearfix;
+  @include breakpoint(md) {
+    width: 294px;
+  }
+  @include breakpoint(lg) {
+    width: 345px;
+  }
+  .head {
+    h2 {
+      /* border-bottom: 2px solid #959595;
+      padding-bottom: 5px;
+      margin-bottom: 15px; */
+      text-transform: uppercase;
+      @include titleFont-alt(15px, $base-darkest-color, 700, 17px);
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+    li {
+      margin-bottom: 15px;
+      .bg {
+        padding: 15px;
+        background: $menu-gray;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        h3 {
+          @include titleFont-alt(18px, $base-darkest-color, 700, 19px);
+          margin-top: 0;
+        }
+      }
+      .excerpt {
+        @include titleFont-alt(13px, $base-darkest-color, 400, 15px);
+      }
+      .foot {
+        text-align: right;
+        figure {
+          figcaption {
+            display: inline-block;
+            @include titleFont-alt(12px, $base-medium-color, 400, 14px);
+          }
+          img {
+            max-width: 90px;
+          }
+        }
+        .sponsor-label {
+          @include titleFont-alt(12px, $base-medium-color, 400, 14px);
+        }
+        .sponsor-link {
+          @include titleFont-alt(12px, $base-medium-color, 400, 14px);
+        }
+      }
+      //if first of list
+      &:first-child {
+        .bg {
+        }
+        a {
+          h3 {
+            @include titleFont-alt(20px, $base-darkest-color, 700, 22px);
+          }
+        }
+        .excerpt {
+          @include titleFont-alt(15px, $base-darkest-color, 400, 17px);
+        }
+        .foot {
+          text-align: right;
+          figure {
+            figcaption {
+              display: inline-block;
+              @include titleFont-alt(12px, $base-medium-color, 400, 14px);
+            }
+          }
+          img {
+            max-width: 120px;
+          }
+        }
+        .sponsor-label {
+          @include titleFont-alt(13px, $base-medium-color, 400, 15px);
+        }
+        .sponsor-link {
+          @include titleFont-alt(13px, $base-medium-color, 400, 15px);
+        }
+      }
+    } // li
+  } // ul
+
+  .btn {
+    background: $default-theme-color;
+    @include titleFont-alt(14px, $base-lightest-color, 400, 16px);
+    @include transition(background, 0.2s, ease-in-out);
+
+    &:hover {
+      background: $base-medium-color;
+    }
+  }
+  //advisor to go right column filtering
+  &.togo-filter {
+    h2 {
+      margin-top: 20px;
+      line-height: 15px;
+      text-transform: uppercase;
+    }
+    ul {
+      & > li:nth-child(2n + 1) {
+        //element - category listing for video - 2 col x 1 row
+        clear: left;
+      }
+      li {
+        margin-bottom: 10px;
+        a {
+          display: block;
+          padding-left: 10px;
+          border-left: $default_border;
+          @include titleFont-alt(14px, $base-darkest-color, 400, 16px);
+        }
+      }
+    }
+  }
+  .subscriptions {
+    display: flex;
+    gap: 0.1rem;
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media screen and (min-width: 400px) {
+      gap: 0.5rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 1rem;
+    }
+
+    .btn {
+      background: $default-theme-color;
+      width: 100%;
+      @include titleFont-alt(14px, $base-lightest-color, 400, 16px);
+      @include transition(background, 0.2s, ease-in-out);
+
+      &:hover {
+        background: $base-medium-color;
+        color: $base-lightest-color;
+        border: 1px solid $base-medium-color;
+      }
+    }
+
+    /* .btn-flipbook {
+      margin-top: 15px;
+    } */
+  }
+  .social {
+    margin-top: 15px;
+    h2 {
+      text-transform: uppercase;
+      @include titleFont-alt(15px, $base-darkest-color, 700, 17px);
+      /* border-bottom: 2px solid #959595;
+      margin-bottom: 15px;
+      padding-bottom: 5px; */
+    }
+    ul {
+      margin-bottom: 0;
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        a {
+          font-size: 20px;
+          color: $default-theme-color;
+          @include transition(color, 0.2s, ease-in-out);
+          display: block;
+          background-color: transparent;
+          background: none !important;
+
+          &:hover,
+          &:focus {
+            color: $base-medium-color;
+            text-decoration: none;
+            box-shadow: none;
+            webkit-box-shadow: none;
+          }
+          &:before {
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*advisor to go fund link with icons*/
+
+.fund-related {
+  display: inline-block;
+  margin-right: 10px;
+  .article-body & {
+    margin-bottom: 20px;
+  }
+  a {
+    font-size: 14px;
+    @include titleFont-alt(13px, $base-darkest-color, 400, 15px);
+    .category-regular-listing &,
+    .article-body &,
+    .entity-box-listing &,
+    .sponsor-bg & {
+      color: $base-darkest-color;
+    }
+    .color_bg_dark_navy & {
+      color: $base-lightest-color;
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+/*podcast player*/
+
+.pod-player {
+  margin-bottom: 25px;
+}
+
+/*podcast related sections top bar*/
+
+.podtopbar {
+  margin-bottom: 20px;
+  h1 {
+    @include titleFont-alt(24px, $base-lightest-color, 700, 26px);
+    display: inline-block;
+    margin-top: 0;
+  }
+  .excerpt {
+    @include titleFont-alt(14px, $base-lightest-color, 400, 16px);
+  }
+  .sponsor-bloc {
+    figcaption {
+      @include titleFont-alt(12px, $base-lightest-color, 400, 14px);
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    img {
+      display: inline-block;
+      max-width: 100px;
+    }
+  }
+  .reserved {
+    @include titleFont-alt(14px, $base-lightest-color, 600, 16px);
+    display: block;
+    text-align: left;
+    @include breakpoint(md) {
+      text-align: right;
+    }
+  }
+  .disclaimer-link {
+    @include titleFont-alt(12px, $base-lightest-color, 400, 14px);
+    text-decoration: underline;
+    display: block;
+    text-align: left;
+    @include breakpoint(md) {
+      text-align: right;
+    }
+  }
+}
+
+//Advisor microsites custom css classes, leave this at the end of this file at all times
+#advisor-retirement-resource-centre a {
+  font-weight: bold;
+  color: #1a4e59;
+  text-decoration: none;
+}
+#advisor-retirement-resource-centre a:hover,
+#advisor-retirement-resource-centre a:active,
+#advisor-retirement-resource-centre a:focus {
+  text-decoration: underline;
+}
+#advisor-retirement-resource-centre p {
+  margin: 0;
+  padding: 0;
+}
+#advisor-retirement-resource-centre ul li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+#advisor-retirement-resource-centre .retirement-resource-centre-header {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0 5px 0;
+}
+#advisor-retirement-resource-centre .retirement-resource-centre-page-heading {
+  font-size: 1.75em;
+  line-height: 1;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: #555;
+  float: left;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#advisor-retirement-resource-centre .retirement-resource-centre-subheading {
+  font-size: 1.3125em;
+  line-height: 1.19;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-transform: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#advisor-retirement-resource-centre .retirement-resource-centre-sub-subheading {
+  font-size: 1.125em;
+  line-height: 1.16;
+  font-weight: normal;
+  color: #000;
+  margin: 0 0 5px 0;
+  padding: 0;
+  text-transform: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.job-posting-btn-div {
+  text-align: center;
+}

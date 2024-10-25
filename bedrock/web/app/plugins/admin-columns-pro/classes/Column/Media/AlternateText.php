@@ -1,0 +1,26 @@
+<?php
+
+namespace ACP\Column\Media;
+
+use AC;
+use ACP\Editing;
+use ACP\Search;
+use ACP\Sorting;
+
+class AlternateText extends AC\Column\Media\AlternateText implements Editing\Editable, Search\Searchable, Sorting\Sortable
+{
+    public function sorting()
+    {
+        return new Sorting\Model($this);
+    }
+
+    public function editing()
+    {
+        return new Editing\Model\Media\AlternateText($this);
+    }
+
+    public function search()
+    {
+        return new Search\Comparison\Meta\Text($this->get_meta_key(), AC\MetaType::POST);
+    }
+}

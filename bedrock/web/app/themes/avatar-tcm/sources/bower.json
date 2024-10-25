@@ -1,0 +1,34 @@
+{
+  "name": "avatar-ie",
+  "version": "1.0.0",
+  "description": "WordPress theme for Investment Executive",
+  "main": "gulpfile.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "key"
+  ],
+  "authors": [
+    "Valeriu Tihai"
+  ],
+  "license": "GPL",
+  "homepage": "http://tc.cc",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery-ias": "infinite-ajax-scroll#^2.2.2",
+    "bxslider-4": "^4.2.12"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery-ias": "infinite-ajax-scroll#^2.2.2",
+    "bxslider-4": "^4.2.12"
+  }
+}

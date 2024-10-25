@@ -1,0 +1,13 @@
+/*
+ Author:       Jean-Marc Jutras, Julien Lord, Julien Noël, Luc Mongeau, Marc-André Deschamps, Plantevin Jerome, René Jean, Valeriu Tihai
+ Description:  WordPress theme for CO
+ Tags:         one-column, two-columns, right-sidebar, flexible-header, custom-menu, custom-logo, featured-images, footer-widgets, post-formats, sticky-post, theme-options, translation-ready
+ Template:     avatar-tcm
+ Text Domain:  avatar-co
+ Theme Name:   Avatar co
+ Version:      1.0.0
+*/
+.component-quick-subscribe-newsletters__button{
+	font-size: 14px !important;
+	text-transform: none;
+}

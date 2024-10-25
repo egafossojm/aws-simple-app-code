@@ -1,0 +1,362 @@
+{
+    "key": "group_594bbe7c74279",
+    "title": "Feature Options",
+    "fields": [
+        {
+            "key": "field_5966509262082",
+            "label": "Feature's images",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "This should be the same image with 2 different ratio.\r\n 1- One for the listing pages\r\n 2- One for the big banner on feature page",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59513dfd19fbe",
+            "label": "Image",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "35",
+                "class": "",
+                "id": "acf_article_img"
+            },
+            "message": "Main image used everywhere except in the banner.\r\nThe minimum image size must be <b>1200 x 630px<\/b>.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_594bbe89d7958",
+            "label": "Image Banner",
+            "name": "acf_feature_banner",
+            "type": "image",
+            "instructions": "Image Size for Banner Images must be 1200x400 pixels.\r\nWill probably be the same picture as \"<i>Image<\/i>\" with a different ratio.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "35",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 1200,
+            "min_height": 400,
+            "min_size": "",
+            "max_width": 1200,
+            "max_height": 400,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5991b9395174c",
+            "label": "Website Url",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_597759e8c0f2e",
+            "label": "Website Url",
+            "name": "acf_feature_website",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_596650f35ced6",
+            "label": "Parent sub category",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Must be <i>Special Reports<\/i>, <i>Report Cards<\/i>, <i>Magazines<\/i>, or <i>Partner Report<\/i>.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_595150710d243",
+            "label": "Parent sub category",
+            "name": "acf_feature_parent_sub_category",
+            "type": "post_object",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5966515d9d561",
+            "label": "Partner or editorial Feature?",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Editorial\r\n- Special Reports\r\n- Report Cards\r\n- Magazine\r\n\r\nPartner\r\n- Partner Report",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5963bb5cfc695",
+            "label": "Is partner?",
+            "name": "acf_feature_ispartner",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Partner",
+            "ui_off_text": "Editorial"
+        },
+        {
+            "key": "field_5963bae2f18cf",
+            "label": "Partner",
+            "name": "acf_feature_partner",
+            "type": "post_object",
+            "instructions": "The partner has to be set in <a href=\"\/wp-admin\/edit.php?post_type=partner\" target=\"_blank\">Partners<\/a>.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5963bb5cfc695",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "partner"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_5963c956ff96c",
+            "label": "Sponsor's image",
+            "name": "acf_feature_image1",
+            "type": "image",
+            "instructions": "The sponsor has just an image (for editorial features).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5963bb5cfc695",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5963caafd3c50",
+            "label": "Sponsor's name",
+            "name": "acf_feature_image_alt",
+            "type": "text",
+            "instructions": "Sponsor's name for SEO",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5963bb5cfc695",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59515298471ef",
+            "label": "Last Published Date",
+            "name": "acf_feature_published_date",
+            "type": "text",
+            "instructions": "Date in unix timestamp",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_595165aa11478",
+            "label": "IMPORT WP All Import ID",
+            "name": "acf_wp_all_import_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5951662711479",
+            "label": "IMPORT - Asset List",
+            "name": "acf_wp_all_import_asset_list",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b685906e188c",
+            "label": "IMPORT WP All Import Category List",
+            "name": "acf_import_wp_all_import_category_list",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "feature"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "discussion",
+        "comments",
+        "format",
+        "page_attributes",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1533565245
+}

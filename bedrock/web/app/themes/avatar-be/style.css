@@ -1,0 +1,377 @@
+/*
+ Author:       Jean-Marc Jutras, Julien Lord, Julien Noël, Luc Mongeau, Marc-André Deschamps, Plantevin Jerome, René Jean, Valeriu Tihai
+ Description:  WordPress theme for BE
+ Tags:         one-column, two-columns, right-sidebar, flexible-header, custom-menu, custom-logo, featured-images, footer-widgets, post-formats, sticky-post, theme-options, translation-ready
+ Template:     avatar-tcm
+ Text Domain:  avatar-be
+ Theme Name:   Avatar BE
+ Version:      1.0.0
+*/
+
+.component-quick-subscribe-newsletters__button {
+  font-size: 14px !important;
+  text-transform: none;
+}
+
+.component-quick-subscribe-newsletters__social-network-title {
+  margin-bottom: 5px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.micro-module--left-alignment {
+  text-align: left !important;
+}
+
+.events-widget {
+  height: auto;
+  padding: 0 15px 15px 15px !important;
+}
+@media screen and (max-width: 992px) {
+  .events-widget {
+    height: auto;
+  }
+}
+.bg-events-widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-events {
+  text-transform: inherit;
+}
+.cir-color {
+  color: #420D42 !important;
+}
+.cir-bg {
+  background: #420D42 !important;
+}
+.btn.cir-bg:hover {
+  background: #666 !important;
+}
+
+.cir-color:hover {
+  color:#666 !important;
+}
+
+.adv-head-cir {
+  /* background-image: linear-gradient(to right, #420D42 80%, rgba(0,0,0,0) 100%) !important; */
+  background-image: linear-gradient(to right, #420D42 55%, #fff 100%);
+  display: flex;
+  align-items: center;
+}
+.adv-head-cir > img {
+  height: 80px !important;
+}
+.adv-head-cir > a > img {
+  height: 80px !important;
+}
+
+.sticky-banner {
+    position: fixed !important;
+    top: 60px !important;
+    width: calc(100% - 30px) !important;
+    z-index: 1111;
+}
+
+@media screen and (min-width: 768px) {
+  .sticky-banner {
+    width: 720px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sticky-banner {
+    width: 940px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sticky-banner {
+    width: 1125px !important;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .sticky-banner {
+    position: fixed !important;
+    top: 80px !important;
+    /*width: 62% !important;*/
+    z-index: 1111;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  .sticky-banner {
+    top: 80px !important;
+    /*width: 80% !important;*/
+    height: 65px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sticky-banner {
+    top: 75px !important;
+    /*width: 95% !important;*/
+  }
+}
+.people-watch-flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.special-reports-post-block {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  margin: 20px 0 !important;
+  padding: 3em 1em !important;
+  min-height: 300px !important;
+}
+.sponsored-special-report-button-margin {
+  margin: 2em 0 !important;
+}
+.sponsored-special-report-button {
+  -ms-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  width: 70% !important;
+  max-width: 100% !important;
+  font-size: 1.15em !important;
+  padding: 0.5em 1em !important;
+  background: #000000 !important;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000000), color-stop(1, #000000)) !important;
+  background: -ms-linear-gradient(bottom, #000000, #000000) !important;
+  background: -moz-linear-gradient(center bottom, #000000 0%, #000000 100%) !important;
+  background: -o-linear-gradient(#000000, #000000) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0) !important;
+  border: 1px solid !important;
+  border-color: #050505 #000000 #000000 #000000 !important;
+  color: #ffffff !important;
+  -webkit-border-radius: 0em !important;
+  -moz-border-radius: 0em !important;
+  border-radius: 0em !important;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.065) !important;
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.065) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.065) !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) !important;
+}
+@media screen and (max-width: 600px) {
+  .sponsored-special-report-button {
+    font-size: 0.85em !important;
+  }
+}
+@media screen and (max-width: 300px) {
+  .sponsored-special-report-button {
+    font-size: 0.65em !important;
+  }
+}
+.mediakit-topbar {
+  padding: 1em;
+  width: 100%;
+}
+.mediakit-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.topbar-bloc-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFF;
+}
+.mediakit-topbar-content {
+  padding: 1.75em 1em;
+}
+.mediakit-topbar-content-title {
+  padding: 1em 1em 0.25em 0em;
+  border-bottom: 1px solid #FFF;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+}
+.mediakit-topbar-content-subtitle {
+  padding: 0.25em 1em 1em 0em;
+  font-size: 1em;
+  text-align: left;
+}
+.mediakit-topbar-content-description {
+  padding: 0.25em 1em 1em 1em;
+  text-transform: uppercase !important;
+  font-style: italic;
+  font-size: 0.75em;
+}
+#mediakit-content {
+  padding: 1.5em 0;
+  margin: 0 auto;
+  width: 100%;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 630px) {
+  .main-container {
+    justify-content: center;
+  }
+}
+.main-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 300px;
+  justify-content: space-evenly;
+}
+.main-content-container > div {
+  flex: 1 1 300px;
+  text-align: center;
+  padding: 1em;
+}
+.main-content-container > div > span {
+  display: inline-block;
+  text-align: left;
+}
+.main-content-header {
+  padding: 1.5em;
+  text-align: center;
+}
+.main-content-title {
+  font-size: 2em;
+  text-transform: uppercase !important;
+}
+.main-content-title-seperator > hr {
+  border-top: 0.5px dotted #000;
+  width: 80%;
+}
+.main-content-subtitle {
+  font-size: 1.25em;
+  font-style: italic;
+}
+div.download-mediakit-btn {
+  margin: 1.5em 1em;
+  text-align: center;
+}
+div.download-mediakit-btn > a.btn-footer {
+  font-size: 24px;
+  line-height: 24px;
+}
+h2.text-content__title--big--sponsored-content {
+  font-size: 1em !important;
+  text-align: center;
+  line-height: 1.5em !important;
+  text-transform: uppercase !important;
+}
+.partners-place-container {
+  display: flex;
+  justify-content: center;
+}
+figure.image-container {
+  background-color: #eeeeee;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  margin: auto;
+}
+figure.image-container-small {
+  background-color: #eeeeee;
+  height: 100px;
+  width: 100px;
+  display: flex;
+}
+img.display-partner-logo {
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  max-width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+.affix-top {
+  background: transparent !important;
+}
+div.advisory-board > h2 {
+  padding-bottom: 20px;
+}
+div.container-advisory-board {
+  width: 100%;
+}
+div.advisory-board-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+div.advisory-member {
+  width: 50%;
+  padding: 10px 5px;
+}
+@media screen and (max-width: 640px) {
+  div.advisory-member {
+    width: 100%;
+  }
+}
+img.advisory-boards-thumb {
+  float:left;
+  padding:2px;
+  width:70px;
+  height:70px;
+  border:1px solid #DDD;
+  margin:0 10px 10px 0;
+  background:#fff;
+}
+
+.partner-content-excerpt>p {
+  color: #626262;
+  font-size: 0.8em;
+  padding: 0 15px;
+}
+
+.copyright .textwidget img {
+  max-width:120px !important;
+  display:block
+}
+
+img.so-widget-image {
+      margin: auto;
+      display: block;
+}
+
+.content-area .content-wrapper {
+  display: flex;
+  align-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.magazine-unsubscribe-text{
+  font-family: "Roboto",sans-serif,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  width:100%;
+}
+
+.magazine-unsubscribe-text a{
+  color:#ed1c24;
+}
+
+#menu-footer-copyright {
+  display: none;
+}
+
+.c-red{
+  color:#ed1c24 !important;
+}
+
+.c-red * {
+  color:#ed1c24 !important;
+}

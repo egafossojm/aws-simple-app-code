@@ -1,0 +1,416 @@
+{
+    "key": "group_58bdb2928f887",
+    "title": "Auteurs \/ Authors",
+    "fields": [
+        {
+            "key": "field_59416f4039451",
+            "label": "Banner color | Couleur de la bannière",
+            "name": "acf_author_banner_color",
+            "type": "color_picker",
+            "instructions": "Default color is grey for regular authors <br><br> La couleur par défaut est grise pour les auteurs réguliers",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_592dd49e43c41",
+            "label": "Telephone | Téléphone",
+            "name": "acf_author_tel",
+            "type": "text",
+            "instructions": "Example: +1-(855) 123-1234",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58bdb494e2fd9",
+            "label": "Email",
+            "name": "acf_author_email",
+            "type": "email",
+            "instructions": "Email Address<br><br>Adresse e-mail",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_58bdb4c4e2fda",
+            "label": "Website | Site Internet",
+            "name": "acf_author_website",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58bdb4e5e2fdb",
+            "label": "LinkedIn",
+            "name": "acf_author_linkedin",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58bdb4ffe2fdc",
+            "label": "Twitter",
+            "name": "acf_author_twitter",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58d40f28a9097",
+            "label": "Is a columnist ? | Est-ce un chroniqueur?",
+            "name": "acf_author_is_columnist",
+            "type": "true_false",
+            "instructions": "The authors of the section \"Inside Track\" are called \"columnists\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Columnist",
+            "ui_off_text": "Author"
+        },
+        {
+            "key": "field_592dd5afb3a51",
+            "label": "Column",
+            "name": "acf_author_column",
+            "type": "taxonomy",
+            "instructions": "Column assign to this columnist.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58d40f28a9097",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "66",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_column",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5b74750713dff",
+            "label": "Is a speaker ? | Est-ce un conférencier?",
+            "name": "acf_author_is_speaker",
+            "type": "true_false",
+            "instructions": "The authors of the section \"Advisor to Go\" are called \"speakers\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Speaker",
+            "ui_off_text": "Author"
+        },
+        {
+            "key": "field_5b7584ed5f81b",
+            "label": "Fund",
+            "name": "acf_author_fund",
+            "type": "taxonomy",
+            "instructions": "Column assign to this columnist.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b74750713dff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "66",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_fund",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_593eb7a10048d",
+            "label": "Last Published Date | Dernière date de publication",
+            "name": "acf_author_published_date",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y g:i a",
+            "return_format": "d\/m\/Y g:i a",
+            "first_day": 1
+        },
+        {
+            "key": "field_593ef316124ab",
+            "label": "IMPORT WP All Import ID",
+            "name": "acf_wp_all_import_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_593fe0d856905",
+            "label": "Column Value",
+            "name": "acf_wp_all_import_column_value",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b7488648a38c",
+            "label": "Fund List",
+            "name": "acf_wp_all_import_fund_list",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59429d63cd9a7",
+            "label": "Telephone Url | Url de téléphone",
+            "name": "acf_author_tel_url",
+            "type": "number",
+            "instructions": "Example: 18551231234<br><br>Exemple: 18551231234",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5bc9d5f3822aa",
+            "label": "Enterprise Logo \/ Logo d'entreprise",
+            "name": "acf_enterprise_logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b74750713dff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5bc9d7254dc8b",
+            "label": "Enterprise URL \/ URL de l'entreprise",
+            "name": "acf_enterprise_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b74750713dff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d3b2209a5412",
+            "label": "Columnist Site Source",
+            "name": "acf_columnist_site_source",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "main blog site origin",
+                "CIR blog": "Originally from CIR blogs"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "writer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "author",
+        "format",
+        "page_attributes",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1564156933
+}

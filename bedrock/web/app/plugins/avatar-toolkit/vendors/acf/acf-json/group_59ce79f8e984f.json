@@ -1,0 +1,989 @@
+{
+    "key": "group_59ce79f8e984f",
+    "title": "Theme Options",
+    "fields": [
+        {
+            "key": "field_595e41e5b52fb",
+            "label": "Features",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_597f503692aed",
+            "label": "Features Breadcrumb Page",
+            "name": "acf_in_depth_breadcrumb",
+            "type": "post_object",
+            "instructions": "Select the page for Breadcrumb and Hide ads on this page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_59886499f3fa9",
+            "label": "Feature slug (URL)",
+            "name": "acf_feature_slug",
+            "type": "text",
+            "instructions": "The post slug is the user friendly and URL valid name of a post. Most common usage of this feature is to create a permalink for each post.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "feature",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5964dd163c96e",
+            "label": "Features Category",
+            "name": "acf_in_depth_category",
+            "type": "taxonomy",
+            "instructions": "Select \"Features\" Category",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "45",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_595e42dc5bb0e",
+            "label": "Select \"Features\" Categories",
+            "name": "acf_in_depth_categories",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "55",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 3,
+            "max": 3,
+            "layout": "table",
+            "button_label": "Add SubCategory",
+            "sub_fields": [
+                {
+                    "key": "field_595e44295bb0f",
+                    "label": "Select \"In Depth\" SubPages",
+                    "name": "acf_in_depth_category",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                }
+            ]
+        },
+        {
+            "key": "field_595e422cb52fc",
+            "label": "Partner Reports",
+            "name": "acf_in_depth_partner_report",
+            "type": "post_object",
+            "instructions": "Select \"Partner Reports\" Category",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "45",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_599b116d9d009",
+            "label": "Partner Report Title",
+            "name": "acf_in_depth_partner_report_info_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5965256507102",
+            "label": "Partner Report Info",
+            "name": "acf_in_depth_partner_report_info_desc",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_596e05b28bccb",
+            "label": "Brand Knowledge",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_597759e8d9fa4",
+            "label": "Brand Knowledge Page",
+            "name": "acf_brand_knowledge_page",
+            "type": "post_object",
+            "instructions": "Select the page for Breadcrumb and Hide ads on this page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_596fad48d1804",
+            "label": "Brand Knowledge slug (URL)",
+            "name": "acf_brand_knowledge_slug",
+            "type": "text",
+            "instructions": "The post slug is the user friendly and URL valid name of a post. Most common usage of this feature is to create a permalink for each post.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "brandknowledge",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_596fac1c7c66b",
+            "label": "Brand Knowledge Title",
+            "name": "acf_brand_knowledge_info_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_596fac557c66c",
+            "label": "Brand Knowledge Description",
+            "name": "acf_brand_knowledge_info_desc",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": ""
+        },
+        {
+            "key": "field_59b6d1c554ec7",
+            "label": "TV",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59b6d1dc54ec8",
+            "label": "TV Page",
+            "name": "acf_featured_video_page",
+            "type": "post_object",
+            "instructions": "Select the page for Breadcrumb",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5988638ba9dea",
+            "label": "Authors",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59888b4b05da7",
+            "label": "Inside Track Breadcrumb Page",
+            "name": "acf_inside_track_breadcrumb",
+            "type": "post_object",
+            "instructions": "Select the page for Breadcrumb and Hide ads on this page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_601ad4b38156b",
+            "label": "Inside Track Breadcrumb Page CIR",
+            "name": "acf_inside_track_breadcrumb_cir",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_598863a8a9deb",
+            "label": "Author slug (URL)",
+            "name": "acf_author_slug",
+            "type": "text",
+            "instructions": "The post slug is the user friendly and URL valid name of a post. Most common usage of this feature is to create a permalink for each post.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "writer",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59de8bfc20034",
+            "label": "Newspaper Date",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59de8c2920035",
+            "label": "Newspaper Date slug (URL)",
+            "name": "acf_newspaper_slug",
+            "type": "text",
+            "instructions": "The post slug is the user friendly and URL valid name of a post. Most common usage of this feature is to create a permalink for each post.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "newspaper-date",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59e6a8d4452d5",
+            "label": "Newspaper Date Main Category",
+            "name": "acf_newspaper_main_cat",
+            "type": "taxonomy",
+            "instructions": "The post slug is the user friendly and URL valid name of a post. Most common usage of this feature is to create a permalink for each post.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_59e7c44bc0274",
+            "label": "Newspaper Date Page",
+            "name": "acf_newspaper_page",
+            "type": "post_object",
+            "instructions": "The post slug is the user friendly and URL valid name of a post. Most common usage of this feature is to create a permalink for each post.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5a144cdfb5761",
+            "label": "Newspaper E-edition URL",
+            "name": "acf_newspaper_e-edition_url",
+            "type": "url",
+            "instructions": "The post slug is the user friendly and URL valid name of a post. Most common usage of this feature is to create a permalink for each post.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5b05852b139fa",
+            "label": "Newspaper Subscription URL",
+            "name": "acf_newspaper_subscription_url",
+            "type": "url",
+            "instructions": "For conseiller.ca",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/tcm.kckglobal.com\/cons\/New-Subscription.aspx",
+            "placeholder": ""
+        },
+        {
+            "key": "field_599c86150f023",
+            "label": "Mapping",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_599c836f63b2a",
+            "label": "Page to Category",
+            "name": "acf_page_to_cat",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_599c837063b2d",
+                    "label": "Page",
+                    "name": "page",
+                    "type": "post_object",
+                    "instructions": "Choose pages",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                },
+                {
+                    "key": "field_599c837063b2c",
+                    "label": "Category",
+                    "name": "category",
+                    "type": "taxonomy",
+                    "instructions": "Choose categories",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "category",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "add_term": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "id",
+                    "multiple": 0
+                }
+            ]
+        },
+        {
+            "key": "field_59833bd1c4ed1",
+            "label": "<span class=\"dashicons dashicons-admin-customizer\"><\/span> Colors",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_598b258da1060",
+            "label": "Color",
+            "name": "acf_body_css",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_598b259da1061",
+                    "label": "Color classes",
+                    "name": "class",
+                    "type": "select",
+                    "instructions": "Guidline :<hr>\r\n<span style=\"color:#e32028; font-weight:bold; \">Cherry<\/span><br>\r\n<span style=\"color:#e9ab24; font-weight:bold; \">Mustard<\/span><br>\r\n<span style=\"color:#9450b5; font-weight:bold;\">Barney<\/span><br>\r\n<span style=\"color:#cfa25e; font-weight:bold; \">Gold<\/span><br>\r\n<span style=\"color:#334985; font-weight:bold;\">Navy<\/span><br>\r\n<span style=\"color:#00a9c0; font-weight:bold; \">Ocean<\/span><br>\r\n<span style=\"color:#74a4b2; font-weight:bold; \">Cloud<\/span><br>\r\n<span style=\"color:#e76F51; font-weight:bold; \">Ochre<\/span><br>\r\n<span style=\"color:#2c6863; font-weight:bold; \">Adv green<\/span><br>\r\n<span style=\"color:#2d7868; font-weight:bold; \">Conseiller green<\/span><br>\r\n<span style=\"color:#b7c731; font-weight:bold; \">Vert avocat<\/span><br>\r\n<span style=\"color:#410d42; font-weight:bold; \">Purple CIR<\/span><br>",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "color_body_cherry": "Cherry",
+                        "color_body_mustard": "Mustard",
+                        "color_body_barney": "Barney",
+                        "color_body_gold": "Gold",
+                        "color_body_navy": "Navy",
+                        "color_body_ocean": "Ocean",
+                        "color_body_cloud": "Cloud",
+                        "color_body_ochre": "Ochre",
+                        "color_body_darkgreen": "Adv Green",
+                        "color_body_conseillergreen": "Conseiller green",
+                        "color_body_agreen": "Vert avocat",
+                        "color_body_cirpurple": "Purple CIR"
+                    },
+                    "default_value": [
+                        "color_body_cherry"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_598b269625466",
+                    "label": "Categories",
+                    "name": "category",
+                    "type": "taxonomy",
+                    "instructions": "Choose categories",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "35",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "category",
+                    "field_type": "multi_select",
+                    "allow_null": 0,
+                    "add_term": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "id",
+                    "multiple": 0
+                },
+                {
+                    "key": "field_598b287e15541",
+                    "label": "Pages",
+                    "name": "page",
+                    "type": "post_object",
+                    "instructions": "Choose pages",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "35",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "multiple": 1,
+                    "return_format": "id",
+                    "ui": 1
+                },
+                {
+                    "key": "field_5c53567c374c4",
+                    "label": "",
+                    "name": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_59a06a06913d9",
+            "label": "Footer",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59a06ac2913da",
+            "label": "Social Profiles",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Add Social Profile",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5f7dffb5453c8",
+            "label": "Social Network Benefits Canada",
+            "name": "acf_footer_sn_bencan",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5f7dffd3453c9",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f7dffe4453ca",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5f7dfff4453cb",
+            "label": "Social Network CIR",
+            "name": "acf_footer_sn_cir",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5f7e0009453cc",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f7e0010453cd",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_59a070f219aab",
+            "label": "Partner Sites",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Add Partner Sites",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59a0712819aac",
+            "label": "Partner",
+            "name": "acf_footer_parner_site",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_59a081f526ee6",
+                    "label": "Partner Site Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59a0714a19aad",
+                    "label": "Partner Site URL",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_59a0716819aae",
+                    "label": "Partner Site Logo",
+                    "name": "logo",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "avatar_theme_options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1567179376
+}

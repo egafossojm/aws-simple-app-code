@@ -1,0 +1,32 @@
+.btn-footer {
+	background-color: $default-theme-color;
+	color: $base-lightest-color;
+	line-height: 1px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	white-space: inherit;
+	a {
+		border: none !important;
+		font-size: 14px !important;
+		font-weight: 400;
+		padding-top: 3px;
+	}
+}
+.btn-round{
+	border-radius: 30px;
+}
+
+//standard button
+
+.std-btn {
+	background-color: $default-theme-color;
+	color: $base-lightest-color;
+	border: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 10px 16px;
+}
+.js_newspaper_btn:disabled {
+	background-color: $menu-gray;
+	color: $base-medium-color;
+}

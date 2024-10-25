@@ -1,0 +1,29 @@
+.ias-trigger,
+.ias-spinner {
+	clear: both;
+	display: block;
+	height: 31px;
+	margin: 20px auto;
+	text-align: center;
+	width: 100%;
+}
+
+.ias-trigger-next a,
+.ias-trigger-prev a {
+	border-radius: 2px;
+	color: $base-lightest-color;
+	display: inline-block;
+	font-size: 12px;
+	padding: 10px 22px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: background-color 200ms linear;
+	&:hover {
+		background-color: $base-color;
+	}
+}
+
+.pagination,
+.ias-trigger-prev {
+	display: none!important;
+}

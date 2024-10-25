@@ -1,0 +1,85 @@
+{
+    "key": "group_595156c0140ff",
+    "title": "Editors section - Featured Reports | Dossier à la une",
+    "fields": [
+        {
+            "key": "field_595156c080335",
+            "label": "Features | Dossier",
+            "name": "featured_indepth_features",
+            "type": "repeater",
+            "value": null,
+            "instructions": "Add 8 <b>Features<\/b> on the <b>special reports<\/b> section.<br \/>\r\nThe 4 first selected <b>Features<\/b> will display on homepage of the website. <br><br>\r\nAjouter 8 <b>Dossiers<\/b> sur la section <b> Dossier spéciaux <\/b>.<br \/>\r\nLes quatre premiers <b>Dossiers<\/b> seront présentés sur la page d'accueil.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 8,
+            "max": 8,
+            "layout": "block",
+            "button_label": "Add a feature",
+            "sub_fields": [
+                {
+                    "key": "field_595156c0b009f",
+                    "label": "Feature | Dossier",
+                    "name": "featured_indepth_feature",
+                    "type": "post_object",
+                    "value": null,
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "feature"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "featured_reports"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1507645643
+}

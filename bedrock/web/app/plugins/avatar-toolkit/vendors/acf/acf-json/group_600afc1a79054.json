@@ -1,0 +1,119 @@
+{
+    "key": "group_600afc1a79054",
+    "title": "Microsite - Is Partner",
+    "fields": [
+        {
+            "key": "field_600afc26883b1",
+            "label": "Is Partner",
+            "name": "is_partner",
+            "type": "true_false",
+            "instructions": "Choose if the selected microsite is a partner site. By selecting \"Yes\" this microsite will appear in the Partner site section on the sponsored content page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "By selecting \"Yes\" this microsite will appear in the Partner site section on the sponsored content page.",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Yes",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_601d6d4363021",
+            "label": "Is Partner Series",
+            "name": "is_partner_series",
+            "type": "true_false",
+            "instructions": "Choose if the selected microsite is a partner series. By selecting \"Yes\" this microsite will appear in the Partner series section on the sponsored content page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "By selecting \"Yes\" this microsite will appear in the Partner Series section on the sponsored content page.",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6025937154d9b",
+            "label": "Is  Partner Educations",
+            "name": "is_partner_education",
+            "type": "true_false",
+            "instructions": "Choose if the selected microsite is a partner Education. By selecting \"Yes\" this microsite will appear in the Partner Education section on the sponsored content page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "By selecting \"Yes\" this microsite will appear in the Partner Education section on the sponsored content page.",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_632c8b0e4700a",
+            "label": "Is Plan Sponsor Guidebooks",
+            "name": "is_plan_sponsor_guidebooks",
+            "type": "true_false",
+            "instructions": "Choose if the selected microsite is a partner Plan Sponsor Guidebooks. By selecting \"Yes\" this microsite will appear in the Plan Sponsor Guidebooks section on the sponsored content page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "By selecting \"Yes\" this microsite will appear in the Plan Sponsor Guidebook section on the sponsored content page.",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60b81ac4f323e",
+            "label": "Is Directories",
+            "name": "is_directories",
+            "type": "true_false",
+            "instructions": "Choose if the selected microsite is a partner Directories. By selecting \"Yes\", this microsite will appear in the Partner Directories section on the sponsored content page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "By selecting \"Yes\" this microsite will appear in the Partner Directories section on the sponsored content page.",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "microsite"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1664223468
+}

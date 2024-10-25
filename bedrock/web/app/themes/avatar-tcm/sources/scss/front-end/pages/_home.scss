@@ -1,0 +1,111 @@
+// Style for homepage
+.home-title {//element
+	display: none;
+}
+.homepage {
+	margin-top: 15px;
+
+	.top-featured { //element - 1 - first article
+		@include clearfix();
+		border-bottom: $default-border;
+		@include breakpoint(md) {
+			border-bottom: none;
+		}
+		.advisor-website & {
+			padding-top: 15px;
+			padding-bottom: 0;
+			border-bottom: $default-border;
+			@include breakpoint(sm) {
+				padding-top: 0;
+				padding-bottom: 0;
+				border-bottom: none;
+			}
+			.author {
+				@include times-serif-alt(12px, false, 400);
+				margin: 10px 0;
+				a {
+					color: $base-medium-color;
+					@include transition(color, .2s, ease-in-out);
+				}
+			}
+			.text-content {
+				&__excerpt {
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+	.first-featured {
+		.sponsor-bg {
+			margin: 0;
+			padding: 15px 0;
+			.top-featured {
+				border-bottom: none;
+			}
+			&.bg {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+	.secondary-featured {//element - 2 - 3  articles
+		@include breakpoint(md) {
+			border-left: $default-border;
+			.advisor-website & {
+				border-left: none;
+			}
+		}
+		&>div:first-child {//element 2nd article
+			@include breakpoint(md) {
+				padding-top: 0px;
+			}
+		}
+		.text-content {
+				&.sponsor-bg {
+					padding: 15px;
+				}
+			}
+		.advisor-website & {
+			margin-top: 15px;
+			figure {
+				display: block;
+				width: 100%;
+				margin-bottom: 15px;
+				@include breakpoint(sm) {
+					display: block;
+					width: 100%;
+					margin-bottom: 15px;
+				}
+			}
+			.text-content {
+				&.sponsor-bg {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+				&__excerpt {
+					margin: 10px 0;
+				}
+				&--border-bottom {
+					@include breakpoint(sm) {
+						border-bottom: none;
+					}
+					border-bottom: $default-border;
+				}
+			}
+			.author {
+				@include times-serif-alt(12px, false, 400);
+				margin: 10px 0;
+				a {
+					color: $base-medium-color;
+					@include transition(color, .2s, ease-in-out);
+				}
+			}
+		}
+	}
+	.split {
+		.sponsor-bg {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}

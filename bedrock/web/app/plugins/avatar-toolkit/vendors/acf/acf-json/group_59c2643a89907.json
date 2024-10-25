@@ -1,0 +1,47 @@
+{
+    "key": "group_59c2643a89907",
+    "title": "LogIn Page Template",
+    "fields": [
+        {
+            "key": "field_59c264570f023",
+            "label": "Select the page to load after login | Sélectionnez la page à charger après la connexion",
+            "name": "acf_page_after_login",
+            "type": "post_object",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "page-user-login.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1507646057
+}

@@ -1,0 +1,56 @@
+{
+    "key": "group_5944350bd674c",
+    "title": "IndexPage",
+    "fields": [
+        {
+            "key": "field_59443519a5f8c",
+            "label": "Message",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Edit this page in <a href=\"\/wp-admin\/admin.php?page=top_stories\" target=\"_blank\">Editors section >Top Stories<\/a><span class=\"dashicons dashicons-admin-links\"><\/span><br><br>Modifiez cette page dans la section <a href=\"\/wp-admin\/admin.php?page=top_stories\" target=\"_blank\"> Section d'éditeurs > Meilleu <\/a> <span class = \"dashicons dashicons-admin-links\"> <\/ span>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "13"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1507646571
+}

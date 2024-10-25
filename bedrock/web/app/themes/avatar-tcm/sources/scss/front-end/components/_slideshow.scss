@@ -1,0 +1,468 @@
+// This file include scss modified bxslider_article
+body.modal-open #wrap {
+	filter: blur(15px);
+}
+.slideshow_trigger {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	max-width: 100%;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none !important;
+	background: $base-darkest-color;
+	margin-bottom: 20px;
+	span {
+		color: $base-lightest-color;
+		display: block;
+		@include transition(color, .2s, ease-in-out);
+	}
+	figure {
+		position: relative;
+
+		i {
+			position: absolute;
+			z-index: 999;
+			color: $base-lightest-color;
+			font-size: 6em;
+			left: 0;
+			right: 0;
+			top: 25%;
+			opacity: .15;
+			margin: auto;
+			@include transition(color, .2s, ease-in-out);
+		}
+		img {
+			max-width: 100%;
+			@include breakpoint(xs) {
+				max-width: 300px;
+				opacity: 0.5;
+			}
+
+		}
+	}
+	&:hover {
+		figure {
+			i {
+				color: $default-theme-color;
+			}
+			img {
+				opacity: 1;
+			}
+		}
+	}
+}
+.slideshow_trigger:hover {
+	cursor: pointer;
+	span {
+		color: $default-theme-color;
+	}
+}
+.modalAvatar{
+	top: 50px;
+	margin: 0 auto;
+	width: 100%;
+	height: 90vh;
+
+	.container {
+		//background-color: #fefefe;
+		animation-duration: 0.4s;
+		animation-name: animatetop;
+		background: rgba(0, 0, 0, 1);
+		margin: auto;
+		padding: 25px;
+		position: relative;
+		h1,
+		h2,
+		p,
+		span,
+		a {
+			color: $base-lightest-color;
+		}
+		.slideshow-top-ads {
+			img {
+				max-width: 100%;
+			}
+		}
+		 .slideshow-tools {
+			position: absolute;
+			right: 10px;
+			top: 0;
+			@include breakpoint(xs) {
+				line-height: 45px;
+			}
+			.close {
+				color: $base-lightest-color;
+				font-size: 25px;
+				opacity: 1;
+				text-shadow: 2px 2px 2px black;
+				z-index: 1001;
+				 @include breakpoint(xs) {
+					font-size: 30px;
+					z-index: 1001;
+				}
+				@include breakpoint(md) {
+					font-size: 40px;
+					z-index: 1001;
+				}
+			}
+		}
+		.slideshow-tools:hover {
+			cursor: pointer;
+		}
+		.slideshow-header {
+			margin-bottom: 10px;
+			.slideshow-title{
+				display: inline-block;
+				font-family: $title-font;
+				font-size: 25px;
+				font-weight: 600;
+				padding-bottom: 5px;
+				text-shadow: 2px 2px 2px $base-darkest-color;
+				.advisor-website & {
+					font-family: $title-font-alt;
+				}
+				@include breakpoint(xs) {
+					line-height: 45px;
+				}
+			}
+		}
+		.slideshow-left {
+			.slide-photo {
+				max-width: 100%;
+			}
+		}
+		.slideshow-right {
+			float: right;
+			.slide-text-content {
+				color: $base-lightest-color;;
+				font-family: $content-font;
+				font-size: 15px;
+				line-height: 17px;
+				overflow-x: hidden;
+				overflow: auto;
+				.advisor-website & {
+						font-family: $content-font-alt;
+					}
+				@include breakpoint(sm) {
+					max-height: 250px;
+				}
+			}
+
+			.slide-title {
+				font-family: $title-font;
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 20px;
+				margin-bottom: 10px;
+				margin-top: 10px;
+				.advisor-website & {
+					font-family: $title-font-alt;
+				}
+				@include breakpoint(md) {
+					margin-top: 0;
+				}
+			}
+			.slide-sources {
+				margin-top: 15px;
+				span {
+					display: block;
+					font-family: $title-font;
+					font-size: 15px;
+					margin-bottom: 5px;
+					.advisor-website & {
+						font-family: $title-font-alt;
+					}
+				}
+			}
+			.slide-text-content,
+			.slide-sources {
+				margin-bottom: 25px;
+			}
+
+		}
+		#slider-prev {
+			position: absolute;
+			top: -475px;
+			left:  5px;
+			img {
+				width: 50px;
+			}
+		}
+		#slider-next {
+			position: absolute;
+			top: -475px;
+			right: 35px;
+			img {
+				width: 50px;
+			}
+		}
+		.slideshow-bottom-ads {
+			margin-top: 20px;
+			@include breakpoint(md) {
+				 margin-top: -80px;
+			}
+			@include breakpoint(lg) {
+				 margin-top: -192px;
+			}
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+
+	/* Add Animation */
+	@-webkit-keyframes animatetop {
+		from {
+			top: -300px;
+			opacity: 0;
+		}
+		to {
+			top: 0;
+			opacity: 1;
+		}
+	}
+
+	@keyframes animatetop {
+		from {
+			top: -300px;
+			opacity:0
+		}
+		to {
+			top:0;
+			opacity:1
+		}
+	}
+	.bx-pager {
+		margin-left: 13px;
+		.slide-thumbnail {
+			display: inline-block;
+			margin: 10px;
+			overflow: hidden;
+			width: 75px;
+			a img {
+				opacity: 0.5;
+				transition: all .2s ease-in-out;
+			}
+			a.active img {
+				opacity: 1;
+			}
+		}
+		.slide-thumbnail li:hover {
+			a img {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.modal-backdrop {
+	background: #f7f7f7;
+}
+
+.close {
+	font-size: 50px;
+	display: block;
+}
+
+
+// FROM BX SLIDER COMPONENTS
+
+// RESET AND LAYOUT
+.bx-wrapper {
+	position: relative;
+	@include breakpoint(sm) {
+		margin-bottom: 0;
+	}
+
+	padding: 0;
+	*zoom: 1;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+}
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+.bxslider_article {
+	margin: 0;
+	padding: 0;
+}
+ul.bxslider_article {
+	list-style: none;
+}
+.bx-viewport {
+	-webkit-transform: translatez(0);
+}
+
+// theme
+.bx-wrapper {
+
+	.bx-pager {
+		color: $base-medium-color;
+		font-family: Arial;
+		font-size: .85em;
+		font-weight: bold;
+		padding-top: 20px;
+		text-align: center;
+	}
+	.bx-pager.bx-default-pager a {
+		background: $base-medium-color;
+		border-radius: 5px;
+		display: block;
+		height: 10px;
+		margin: 0 5px;
+		outline: 0;
+		text-indent: -9999px;
+		width: 10px;
+	}
+
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+	background: #000;
+}
+.bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	vertical-align: bottom;
+	*zoom: 1;
+	*display: inline;
+}
+.bx-wrapper .bx-pager-item {
+	font-size: 0;
+	line-height: 0;
+}
+
+// DIRECTION CONTROLS (NEXT / PREV)
+
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus {
+	background-position: 0 0;
+}
+.bx-pager{
+	.bx-wrapper {
+		.bx-next{
+			right: 0;
+		}
+		.bx-prev{
+			left: 0;
+		}
+	}
+}
+.bx-wrapper {
+	.bx-next{
+		right: 7px;
+		 @include breakpoint(md) {
+			right: 33.9%;
+		}
+	}
+	.bx-prev{
+		left: 23px;
+	}
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+	background-position: -43px 0;
+}
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 37%;
+	height: 32px;
+	margin-top: -16px;
+	outline: 0;
+	text-indent: -9999px;
+	width: 32px;
+	z-index: 9999;
+
+	@include breakpoint(xs) {
+		top: 35%;
+	}
+	 @include breakpoint(sm) {
+		 top: 40%;
+	}
+	@include breakpoint(md) {
+		top: 60%;
+	}
+}
+.bx-wrapper .bx-controls {
+	display: none;
+	@include breakpoint(xs) {
+		display: block;
+	}
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+// AUTO CONTROLS (START / STOP)
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active,
+.bx-wrapper .bx-controls-auto .bx-start:focus {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active,
+.bx-wrapper .bx-controls-auto .bx-stop:focus {
+	background-position: -86px -33px;
+}
+// PAGER WITH AUTO-CONTROLS HYBRID LAYOUT
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+// IMAGE CAPTIONS
+.bx-wrapper .bx-caption {
+	background: #666;
+	background: rgba(80, 80, 80, 0.75);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+.bx-wrapper .bx-caption span {
+	color: $base-lightest-color;
+	display: block;
+	font-family: Arial;
+	font-size: .85em;
+	padding: 10px;
+}
+
+.slideshow-left {
+	text-align: center;
+	.slide-photo {
+		max-height: 300px;
+		@include breakpoint(sm) {
+		max-height: 450px;
+	}
+		display: inline-block;
+	}
+}
+.slideshow-top-ads {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: -15px;
+	z-index: 1000;
+	@include breakpoint(md) {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: 0;
+		z-index: 1000;
+	}
+}

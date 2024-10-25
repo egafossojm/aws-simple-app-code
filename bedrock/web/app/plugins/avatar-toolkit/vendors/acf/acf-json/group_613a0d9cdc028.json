@@ -1,0 +1,62 @@
+{
+    "key": "group_613a0d9cdc028",
+    "title": "Microsite (CIR only fields) - is Partner",
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "microsite"
+            }
+        ]
+    ],
+    "menu_order": 4,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "fields": [
+        {
+            "key": "field_613a0dda56e74",
+            "label": "Is Partner Roundtables",
+            "name": "is_partner_roundtables",
+            "type": "true_false",
+            "instructions": "Choose if the selected microsite is a partner Roundtables. By selecting \"Yes\", this microsite will appear in the Partner Directories section on the sponsored content page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "By selecting \"Yes\" this microsite will appear in the Partner Directories section on the sponsored content page.",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_613a0dfa56e75",
+            "label": "Is Partner Conferences",
+            "name": "is_partner_conferences",
+            "type": "true_false",
+            "instructions": "Choose if the selected microsite is a partner Conferences. By selecting \"Yes\" this microsite will appear in the Partner Directories section on the sponsored content page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "By selecting \"Yes\" this microsite will appear in the Partner Directories section on the sponsored content page.",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "modified": 1631195548
+}

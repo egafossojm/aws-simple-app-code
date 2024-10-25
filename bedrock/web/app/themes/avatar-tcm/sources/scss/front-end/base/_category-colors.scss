@@ -1,0 +1,155 @@
+//
+//COLORS FOR PARENT CATEOGRIES
+//
+
+//see variables.scss for variable color list
+
+//static classes specific to the theme
+.color_bg_dark_navy { //static class only used for IE TV
+	background-color:#302f3f;
+}
+
+//Mixin for current category color
+@mixin current-category($name,$current-color) {
+	.#{$name }
+	{
+		.icons { //element
+			&:before {
+				color: $current-color;
+			}
+		}
+		h2.icon-chart:after,
+		h2.icon-docs:after,
+		h2.icon-slideshow:after,
+		h2.icon-video:after {
+			color: $current-color;
+		}
+		.bloc-title__caret {//element - arrow shown at the end of the bloc title
+			color: $current-color;
+		}
+		.bloc-title--border-color {//modifier - border of the bloc title
+			border-bottom: 2px solid $current-color;
+		}
+		.bloc-title__text--color {//modifier - text with color of the bloc title
+			color: $current-color;
+		}
+		.entity-row__link-top-text--color {//modifier - link all columns
+			color: $current-color;
+			&:hover {
+				color: $current-color;
+			}
+		}
+		.related-news-module__title--color {//modifier - related news text in article
+			color: $current-color;
+		}
+		.text-content__category-label{//modifier - category label in river news
+			a {
+				color: $current-color;
+			}
+		}
+		.avatar-also_read__link-label--color {//modifier - also read label
+			color: $current-color;
+			&:before {
+				color: $current-color;
+			}
+		}
+		.entity-title__tag--color {//modifier - columnist tag
+			color: $current-color;
+		}
+		.ias-trigger-next a,
+		.ias-trigger-prev a {//element - load more button
+			background-color: $current-color;
+		}
+		.ias-spinner svg circle {//element - load more loading svg
+			stroke: $current-color;
+		}
+		.current-nav-parent {//Menu current parent item
+			&>a{//Menu current parent item link
+
+				 &:first-child{
+					color: $current-color;
+				 }
+			}
+			&.current-nav-parent-has-child {//Condition if on child remove parent border
+			   .dropdown-menu{
+					border-bottom: 0px;
+				}
+				.current-nav-child {//Menu current child item
+					&:after {//current child item border
+						border-bottom: 2px solid $current-color;
+						content: "";
+						position: relative;
+					}
+				}
+			}
+			.dropdown-menu{
+				@include breakpoint(lg) {//only desktop
+					background: $menu-gray;
+					border-bottom: 2px solid $current-color;
+				}
+			}
+
+		}
+
+	}
+}
+//body classes from WP
+@include current-category(color_body_cherry,$cherry-ie);
+@include current-category(color_body_mustard,$mustard-ie);
+@include current-category(color_body_barney,$barney-ie);
+@include current-category(color_body_gold,$gold-ie);
+@include current-category(color_body_navy,$navy-ie);
+@include current-category(color_body_ocean,$ocean-ie);
+@include current-category(color_body_cloud,$cloud-fi);
+@include current-category(color_body_ochre,$red-ochre);
+@include current-category(color_body_lbluefi,$lightblue-fi);
+@include current-category(color_body_agreen,$avocado-green);
+@include current-category(color_body_goldfi,$gold-fi);
+@include current-category(color_body_orangefi,$orange-candy);
+@include current-category(color_body_purplefi,$purple-monster);
+@include current-category(color_body_crimsonfi,$crimson);
+@include current-category(color_body_darkgreen,$darkgreen);
+@include current-category(color_body_conseillergreen,$conseiller-green);
+@include current-category(color_body_cirpurple,$cir-purple);
+
+//Mixin for category colors general usage mostly for homepage
+@mixin homepage-categories($name,$current-color) {
+	.#{$name }
+	{
+		.bloc-title__caret,
+		.column_name
+		.icon-video,
+		.icon-chart,
+		.icon-slideshow,
+		.icon-docs,
+		.entity-title__link-caret,
+		.component-inside-track__column-name{
+			color: $current-color;
+			&:after{
+				color: $current-color;
+			}
+		}
+		.entity-header{
+			background-color: $current-color;
+		}
+	}
+
+ }
+@include homepage-categories(color_cherry,$cherry-ie);
+@include homepage-categories(color_mustard,$mustard-ie);
+@include homepage-categories(color_barney,$barney-ie);
+@include homepage-categories(color_gold,$gold-ie);
+@include homepage-categories(color_navy,$navy-ie);
+@include homepage-categories(color_ocean,$ocean-ie);
+@include homepage-categories(color_cloud,$cloud-fi);
+@include homepage-categories(color_ochre,$red-ochre);
+@include homepage-categories(color_lbluefi,$lightblue-fi);
+@include homepage-categories(color_agreen,$avocado-green);
+@include homepage-categories(color_goldfi,$gold-fi);
+@include homepage-categories(color_orangefi,$orange-candy);
+@include homepage-categories(color_purplefi,$purple-monster);
+@include homepage-categories(color_crimsonfi,$crimson);
+@include homepage-categories(color_darkgreen,$darkgreen);
+@include current-category(color_conseillergreen,$conseiller-green);
+@include current-category(color_cirpurple,$cir-purple);
+

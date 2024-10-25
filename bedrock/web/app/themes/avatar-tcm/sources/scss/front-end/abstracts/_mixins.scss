@@ -1,0 +1,251 @@
+//Avatar Mixins
+
+//breakpoints mixin
+
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (min-width: $screen-xs) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (min-width: $screen-sm) { @content; }
+  }
+
+  @else if $class == md {
+    @media (min-width: $screen-md) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (min-width: $screen-lg) { @content; }
+  }
+
+  @else if $class == iphone6 { ///* iPhone 6+ */
+    @media (min-width: 414px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+@mixin breakpointmax($class) {
+  @if $class == xs {
+    @media (max-width: $screen-xs) { @content; }
+  }
+
+  @else if $class == sm {
+    @media (max-width: $screen-sm) { @content; }
+  }
+
+  @else if $class == md {
+    @media (max-width: $screen-md) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (max-width: $screen-lg) { @content; }
+  }
+
+  @else if $class == iphone6 { ///* iPhone 6+ */
+    @media (max-width: 414px) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+// Multi vendor support transition shortcut
+@mixin transition( $transition-property, $transition-time, $method ) {
+	transition: $transition-property $transition-time $method;
+}
+
+// Clearfix
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+//multi vendor opacity
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+//equal height (put on parent)
+@mixin flex-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+}
+
+/*IE and FI*/
+// Times serif font mixin
+@mixin times-serif($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: $content-font, Helvetica, Arial, sans-serif;
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+// Sans source pro font mixin
+@mixin titleFont($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: $title-font, Helvetica, Arial, sans-serif;
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+/*Advisor*/
+// Times serif font mixin
+@mixin times-serif-alt($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: $content-font-alt, Palatino, Georgia, serif;
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+// Sans source pro font mixin
+@mixin titleFont-alt($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: $title-font-alt, Helvetica, Arial, sans-serif;
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+// Insert font-awesome icon in after pseudo
+@mixin font-awesome-icon-after($content, $colour: false, $size: false){
+
+  &:after {content: '#{$content}';
+		   display: inline-block;
+		   margin-left: 5px;
+		   font-family: $font-icon;
+		   font-style: normal;
+		   font-weight: normal;
+		   line-height: 1;
+  		   @if $size { font-size: $size; }
+  		   @if $colour { color: $colour; }
+		   -webkit-font-smoothing: antialiased;
+		   -moz-osx-font-smoothing: grayscale;
+	   	   }
+}
+
+// Insert font-awesome icon in before pseudo
+@mixin font-awesome-icon-before($content, $colour: false, $size: false){
+
+  &:before {content: '#{$content}';
+		   display: inline-block;
+		   margin-right: 5px;
+		   font-family: $font-icon;
+		   font-style: normal;
+		   font-weight: normal;
+		   line-height: 1;
+  		   @if $size { font-size: $size; }
+  		   @if $colour { color: $colour; }
+		   -webkit-font-smoothing: antialiased;
+		   -moz-osx-font-smoothing: grayscale;
+	   	   }
+}
+
+
+@media (min-width: 768px) {//remove padding from Boostrap col 768px +
+
+    @mixin col-no-padding($side) {
+        @if $side == 'all' {
+            .col-no-padding {
+                padding: 0 !important;
+            }
+        } @else {
+            .col-no-padding-#{$side} {
+                padding-#{$side}: 0 !important;
+            }
+        }
+    }
+
+    @include col-no-padding("left");
+    @include col-no-padding("right");
+    @include col-no-padding("top");
+    @include col-no-padding("bottom");
+    @include col-no-padding("all");
+
+}
+
+@mixin col-no-padding-xs($side) {
+    @if $side == 'all' {
+        .col-no-padding-xs {
+            padding: 0 !important;
+        }
+    } @else {
+        .col-no-padding-xs-#{$side} {
+            padding-#{$side}: 0 !important;
+        }
+    }
+}
+
+@include col-no-padding-xs("left");
+@include col-no-padding-xs("right");
+@include col-no-padding-xs("top");
+@include col-no-padding-xs("bottom");
+@include col-no-padding-xs("all");
+
+//border radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+// Single side border-radius
+
+@mixin border-top-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+  border-top-right-radius: $radius;
+   -webkit-border-top-left-radius: $radius;
+   border-top-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+     -webkit-border-top-right-radius: $radius;
+     border-top-right-radius: $radius;
+     background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+   -webkit-border-bottom-left-radius: $radius;
+   border-bottom-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+     -webkit-border-top-left-radius: $radius;
+     border-top-left-radius: $radius;
+     background-clip: padding-box;
+}
+
+//controlled horizontal list gutter padding (apply to parent)
+
+@mixin horizontal-listpad ($padpix) {
+	li {
+		padding-left: $padpix;
+		padding-right: $padpix;
+		&:first-child {
+			padding-left: 15px;
+		}
+		&:last-child {
+			padding-right: 15px;
+		}
+	}
+}

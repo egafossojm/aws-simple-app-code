@@ -1,0 +1,391 @@
+{
+    "key": "group_5983369c9cacc",
+    "title": "Articles à promouvoir dans les dossiers \/ Schedule areas for Feature",
+    "fields": [
+        {
+            "key": "field_5983369d3bfec",
+            "label": "4- Accueil dossiers \/ Featured",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5983369d3c10a",
+            "label": "",
+            "name": "acf_scheduler_featured_campaigns",
+            "type": "repeater",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add a campaign",
+            "sub_fields": [
+                {
+                    "key": "field_598336a6141f0",
+                    "label": "Name of campaign",
+                    "name": "name",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Partners Reports",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 30
+                },
+                {
+                    "key": "field_5992079d3af52",
+                    "label": "Url of campaign",
+                    "name": "in_depth_partners_campaign_url",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_598336a6143f1",
+                    "label": "Articles",
+                    "name": "articles",
+                    "type": "repeater",
+                    "value": null,
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 1,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "Add an article",
+                    "sub_fields": [
+                        {
+                            "key": "field_598336a6abdae",
+                            "label": "",
+                            "name": "article",
+                            "type": "post_object",
+                            "value": null,
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "id",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_598336a6abf95",
+                            "label": "Start date",
+                            "name": "start",
+                            "type": "date_time_picker",
+                            "value": null,
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "Y-m-d H:i:s",
+                            "return_format": "Y-m-d H:i:s",
+                            "first_day": 1
+                        },
+                        {
+                            "key": "field_598336a6ac193",
+                            "label": "End date",
+                            "name": "end",
+                            "type": "date_time_picker",
+                            "value": null,
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "Y-m-d H:i:s",
+                            "return_format": "Y-m-d H:i:s",
+                            "first_day": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_5983369d3c225",
+            "label": "5- Dossier recommandé \/ Recommended",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5983369d3c34b",
+            "label": "",
+            "name": "acf_scheduler_recommended_feature_campaigns",
+            "type": "repeater",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add a campaign",
+            "sub_fields": [
+                {
+                    "key": "field_598336a8bfbbe",
+                    "label": "Name of campaign",
+                    "name": "name",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Recommended",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 30
+                },
+                {
+                    "key": "field_599207d13af53",
+                    "label": "Url of campaign",
+                    "name": "in_depth_recommended_campaign_url",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_598336a8bfdd0",
+                    "label": "Articles",
+                    "name": "articles",
+                    "type": "repeater",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 1,
+                    "max": 1,
+                    "layout": "table",
+                    "button_label": "Add an article",
+                    "sub_fields": [
+                        {
+                            "key": "field_598336a96d349",
+                            "label": "",
+                            "name": "article",
+                            "type": "post_object",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "id",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_598336a96d571",
+                            "label": "Start date",
+                            "name": "start",
+                            "type": "date_time_picker",
+                            "value": null,
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "Y-m-d H:i:s",
+                            "return_format": "Y-m-d H:i:s",
+                            "first_day": 1
+                        },
+                        {
+                            "key": "field_598336a96d752",
+                            "label": "End date",
+                            "name": "end",
+                            "type": "date_time_picker",
+                            "value": null,
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "Y-m-d H:i:s",
+                            "return_format": "Y-m-d H:i:s",
+                            "first_day": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_598c658e55ef0",
+            "label": "<span class=\"dashicons dashicons-editor-help\"><\/span>",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_598c65a255ef1",
+            "label": "Zones d'affichages \/ Display areas",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<img src=\"wp-content\/themes\/avatar-tcm\/assets\/images\/admin_help_featured-areas.jpg\" class=\"imgZoom\" \/>\r\n<h4>Dans les dossiers<\/h4>\r\n4- Zone <b>Dossiers partenaires<\/b>, s'affiche dans la colonne de droite des pages \"<i>Dossiers<\/i>\".\r\n5- Zone <b>Dossier recommandé<\/b>, s'affiche sur la page \"<i>Dossiers\/Dossiers partenaires<\/i>\".\r\n\r\n<hr \/>\r\n\r\n<h4>In \"In-Depth\"<\/h4>\r\n4- Promoted <b>Partners Reports<\/b> area, display in the right column of \"<i>In-Depth<\/i>\" pages.\r\n5- Promoted <b>Recommended Partner Report<\/b> area, display on \"<i>In-Depth\/Partners Reports<\/i>\" page.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "sponsor_scheduler"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1508257895
+}

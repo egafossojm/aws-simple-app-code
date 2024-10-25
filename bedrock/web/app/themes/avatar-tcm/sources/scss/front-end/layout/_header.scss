@@ -1,0 +1,1249 @@
+header {
+  &.site-main {
+    overflow: hidden;
+  }
+}
+.site-header {
+  //element - website header
+  background: $base-lightest-color;
+  margin-bottom: 0px;
+  overflow: hidden;
+  z-index: 1070;
+  .dark-nav & {
+    border: 0;
+    background: none;
+    .nav .dropdown .dropdown-menu {
+      background: $base-lightest-color;
+    }
+    #menu-main {
+      border-top: 1px solid $base-lightest-color;
+      @include breakpoint(lg) {
+        border-top: 0;
+      }
+    }
+  }
+  @include breakpoint(lg) {
+    overflow: visible;
+    .nav .dropdown .dropdown-menu {
+      margin-top: 1px;
+      min-height: 45px;
+    }
+    .nav .dropdown:hover .dropdown-menu {
+      display: block;
+      padding-bottom: 8px;
+      transition: all 0.25s ease-in-out;
+      z-index: 1111;
+    }
+  }
+  &__container {
+    //element - website header container
+    background: $base-lightest-color;
+    @include breakpoint(md) {
+      //padding-left: 0px;
+      //padding-right: 0px;
+    }
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .dark-nav & {
+      background: $base-darkest-color;
+      @include breakpoint(lg) {
+        background: $base-lightest-color;
+        padding-top: 0;
+      }
+    }
+  }
+  &__hamburger {
+    float: none;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    @include breakpoint(iphone6) {
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+  }
+  &__hamburger-icon {
+    background-color: $base-darkest-color;
+    height: 4px !important;
+    width: 24px !important;
+  }
+  &__center {
+    //element - website header center area
+    @include breakpoint(lg) {
+      padding-bottom: 10px;
+      .dark-nav & {
+        background: $base-darkest-color;
+        padding-top: 10px;
+      }
+    }
+
+    li {
+      display: inline-block;
+    }
+    li:nth-child(2) {
+      border-left: 1px solid gray;
+      border-right: 1px solid gray;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    li a {
+      color: $base-medium-color;
+      font-family: $title-font;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      .advisor-website & {
+        font-family: $title-font-alt;
+      }
+    }
+    .col-lg-4:nth-child(2) {
+      @include breakpoint(lg) {
+        text-align: right;
+      }
+    }
+  }
+  &__center-button {
+    //element - hamburger and user icon in the mobile menu
+    margin-bottom: 0px;
+    margin-right: 0px;
+    transition: 0.2s ease-in-out all;
+    padding: 9px 0px;
+    &:hover {
+      color: $default-theme-color;
+      .site-header__hamburger-icon {
+        background: $default-theme-color;
+        .dark-nav & {
+          background: $base-light-color;
+        }
+      }
+    }
+    @include breakpoint(md) {
+      padding: 9px 10px;
+    }
+    &.navbar-toggle {
+      margin-top: 0;
+      @include breakpoint(iphone6) {
+        margin-top: 8px;
+      }
+      .dark-nav & {
+        color: $base-lightest-color;
+      }
+    }
+  }
+  &__navigation-desktop {
+    font-family: $title-font;
+    padding: 0;
+    position: relative;
+    .advisor-website & {
+      font-family: $title-font-alt;
+    }
+    .container {
+      padding: 0;
+    }
+    .dark-nav & {
+      .user-m-contain {
+        position: relative;
+        @include breakpoint(lg) {
+          position: absolute;
+        }
+      }
+    }
+  }
+  &__menu-main {
+    //element - menu main
+    height: auto;
+    //margin-bottom: 55px;
+    margin-right: -30px;
+    overflow: scroll;
+    .dark-nav & {
+      margin-bottom: 44px;
+      background: $base-darkest-color;
+    }
+    .current-nav-parent {
+      //element - current parent of category in menu
+      & > a {
+        .be-website & {
+          @include breakpoint(lg) {
+            background: transparent !important;
+            font-weight: bold !important;
+            border-bottom: 5px solid #ed1c24 !important;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 8px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+    & > li > a {
+      color: $base-darkest-color;
+      font-weight: bold;
+      margin-left: -5px;
+      .be-website & {
+        font-family: "Overpass Regular", Helvetica, Arial, sans-serif;
+        color: #000000;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: normal;
+      }
+      .dark-nav & {
+        color: $base-lightest-color;
+        &:hover {
+          color: $base-darkest-color;
+          background: $base-lightest-color;
+        }
+      }
+      @include breakpoint(lg) {
+        font-size: 11px;
+        margin-left: 0px;
+        padding: 5px;
+        top: 6px;
+      }
+      @include breakpoint(lg) {
+        font-size: 17px;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+
+    @include breakpoint(sm) {
+      height: auto;
+    }
+    @include breakpoint(md) {
+      height: inherit;
+    }
+    @include breakpoint(lg) {
+      border-bottom: 1.5px solid #d1d1d1;
+      padding-bottom: 5px;
+      overflow: inherit;
+      .dark-nav & {
+        border-bottom: 0;
+      }
+      .be-website & {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  &__logo {
+    //element - logo of the website header
+    height: auto;
+    width: 100%;
+    @include breakpoint(iphone6) {
+      height: 50px;
+      max-width: 230px;
+    }
+    @include breakpoint(lg) {
+      max-width: 365px;
+      height: 74px;
+    }
+  }
+  &__slogan {
+    //element - slogan of the webiste
+    color: $base-medium-color;
+    display: none;
+    font-size: 9px;
+    font-weight: 600;
+    padding-top: 10px;
+    text-transform: uppercase;
+    @include breakpoint(md) {
+      display: block;
+    }
+    p {
+      display: inline-block;
+      padding-right: 5px;
+    }
+    p::first-letter {
+      font-size: 11px;
+    }
+    @include breakpoint(lg) {
+      font-size: 10px;
+    }
+  }
+  &__hamburger-icon {
+    background: $base-darkest-color;
+    .dark-nav & {
+      background: $base-lightest-color;
+    }
+  }
+  &__title-single,
+  &__socials-share {
+    display: none;
+  }
+
+  &__user-icon {
+    //element - user icon for mobile and tablet menu
+    bottom: 5px;
+    font-size: 30px;
+    line-height: 15px;
+    position: relative;
+  }
+  &.affix {
+    .c-logo {
+      z-index: 999;
+      .avantages & {
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+.menu-user {
+  //element - menu seen on top right of the header
+  overflow: hidden;
+
+  &.navbar-collapse {
+    .dark-nav & {
+      border-top: 1px solid $base-lightest-color;
+      @include breakpoint(lg) {
+        border-top: 0;
+      }
+    }
+  }
+  &__list {
+    //element - list
+    text-align: right;
+  }
+  .menu-item {
+    @include breakpoint(lg) {
+      padding-left: 0;
+      text-transform: uppercase;
+    }
+    a {
+      //links - no specific class because WP menu
+      background: none;
+      color: $base-darkest-color;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px !important;
+      .dark-nav & {
+        color: $base-lightest-color;
+      }
+      .be-website & {
+        color: #cccccc;
+        font-family: "Overpass Regular", Helvetica, Arial, sans-serif;
+      }
+      @include breakpoint(lg) {
+        color: $base-medium-color;
+        font-size: 11px;
+        .dark-nav & {
+          color: $base-lightest-color;
+        }
+        .be-website & {
+          color: #cccccc;
+          font-size: 11px;
+          font-family: "Overpass Regular", Helvetica, Arial, sans-serif;
+        }
+      }
+      .active {
+        color: $default-theme-color;
+      }
+    }
+    a:hover,
+    a:focus {
+      background: none !important;
+      color: $base-darkest-color;
+      text-decoration: underline !important;
+      .dark-nav & {
+        color: $base-light-color;
+      }
+    }
+  }
+  .menu-item {
+    a {
+      &:after {
+        @include breakpoint(lg) {
+          color: $base-medium-color;
+          content: "|";
+          display: inline-block;
+          left: 10.5px;
+          position: relative;
+          .dark-nav & {
+            color: $base-lightest-color;
+          }
+          .be-website & {
+            color: #cccccc;
+            font-size: 12px;
+            font-family: "Overpass Regular", Helvetica, Arial, sans-serif;
+          }
+        }
+      }
+    }
+    &:last-child {
+      a {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  li.menu-item {
+    float: inherit;
+  }
+
+  @include breakpoint(lg) {
+    bottom: 55px;
+    float: right;
+    position: absolute !important;
+    right: 15px;
+  }
+}
+
+body.single .affix {
+  //condition - sticky on article page
+  .site-header {
+    //element - site header of the website
+    &__navigation-desktop {
+      //element - navigation for desktop
+      position: relative;
+    }
+    &__title-single {
+      //element - title of an article in the website header
+      display: none;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 30px;
+      margin-top: 10px;
+      max-width: 720px;
+      overflow: hidden;
+      padding-left: 190px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-bottom: 0;
+      @include breakpoint(lg) {
+        display: inline-block;
+      }
+    }
+    &__socials-share {
+      //element - social share icons
+      display: none;
+      float: right;
+      padding-left: 75px;
+      .social-icons dd,
+      .social-icons li {
+        vertical-align: middle;
+      }
+      @include breakpoint(lg) {
+        display: inline-block;
+      }
+    }
+    @include breakpoint(lg) {
+      &__menu-main {
+        //element - main menu from the header
+        display: none;
+        ul {
+          display: none;
+        }
+      }
+    }
+  }
+}
+body.single.dark-nav .affix {
+  .site-header {
+    &__title-single {
+      color: $base-lightest-color;
+    }
+    &__center {
+      @include breakpoint(lg) {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+.affix + .row {
+  padding-top: 160px;
+  @include breakpoint(lg) {
+    padding-top: 228px;
+    .be-website & {
+      padding-top: 100px;
+    }
+  }
+}
+
+body .affix {
+  //condition - sticky header
+  top: 0px;
+  width: 100%;
+  box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.4);
+
+  .site-header {
+    &__slogan {
+      //element
+      display: none;
+    }
+    &__menu-main {
+      //element
+      border-bottom: 0px;
+      margin-bottom: 0px;
+    }
+    &__container {
+      padding-bottom: 0px;
+    }
+    @include breakpoint(lg) {
+      //condition - large devices
+      &__container {
+        padding-top: 0px;
+      }
+      &__menu-main {
+        border-bottom: none;
+        float: left;
+        padding-left: 60px;
+        margin-right: 80px;
+        padding-bottom: 0;
+      }
+
+      &__center {
+        //left: 100px;
+        margin-top: 9px;
+        position: absolute;
+        width: 20%;
+        .col-left {
+          //element - snapping the logo to the left
+          display: none;
+        }
+        .col-xs-8 {
+          z-index: 1;
+        }
+      }
+
+      &__logo {
+        width: 140px;
+        max-height: 30px;
+      }
+      &__navigation-desktop {
+        .menu-item.open a {
+          background: none;
+        }
+        .menu-user__list li,
+        .dropdown-menu {
+          display: none !important;
+        }
+      }
+    }
+  }
+  .current-nav-parent {
+    & > a {
+      background: none;
+    }
+  }
+  .menu-user {
+    //element - menu user of the header
+    @include breakpoint(lg) {
+      display: none;
+    }
+  }
+  .search-box {
+    //element - search box
+    @include breakpoint(lg) {
+      //sticky large display
+      position: static;
+    }
+  }
+  @include breakpoint(lg) {
+    //sticky large display
+    padding-top: 0px;
+  }
+}
+body.dark-nav .affix {
+  .site-header {
+    @include breakpoint(lg) {
+      &__center {
+        padding-top: 0;
+      }
+    }
+  }
+}
+body.be-website .affix {
+  .site-header {
+    @include breakpoint(lg) {
+      //condition - large devices
+
+      &__menu-main li a {
+        font-size: 12px;
+      }
+    }
+  }
+}
+body.logged-in.admin-bar .site-header.affix {
+  //condition - logged in + sticky
+
+  @media only screen and (min-width: 600px) {
+    top: 46px;
+  }
+  @include breakpoint(sm) {
+    top: 32px;
+  }
+}
+.site-header {
+  &.affix {
+    .dark-nav & {
+      background: $base-darkest-color;
+      @include border-radius(0);
+      border-left: 0;
+      border-right: 0;
+    }
+    .site-header {
+      &__container {
+        .dark-nav & {
+          background: $base-darkest-color;
+        }
+      }
+    }
+  }
+}
+
+.affix-top {
+  position: static;
+  top: -35px;
+  width: 100%;
+}
+
+.affix-bottom {
+  position: absolute;
+  width: 100%;
+}
+
+.navbar-nav {
+  //bootstrap class for header menus
+  position: relative;
+  @include breakpoint(lg) {
+    text-align: center;
+    width: 100%;
+    &:nth-child(2) {
+      border-bottom: 1px solid #e5e5e5;
+      box-shadow: none;
+    }
+  }
+  li {
+    display: block;
+    font-size: 15px;
+    @include breakpoint(lg) {
+      display: inline-block;
+      float: none;
+      font-size: 11px;
+      padding-left: 0px;
+      position: static;
+    }
+    @include breakpoint(lg) {
+      font-size: 15px;
+    }
+  }
+  li.dropdown > .custom-caret {
+    background: none;
+    display: block;
+    font-size: 25px;
+    position: absolute !important;
+    right: 15px;
+    text-align: right;
+    top: 0;
+    width: 85px;
+    &:after {
+      content: "+";
+    }
+    .dark-nav & {
+      &:hover {
+        color: $base-lightest-color;
+        background: $base-darkest-color;
+      }
+    }
+  }
+  li.dropdown.open {
+    .dark-nav & {
+      .dropdown-menu {
+        max-height: 300px;
+        padding: 0 8px 16px;
+      }
+    }
+  }
+  li.dropdown.open > .custom-caret {
+    &:after {
+      content: "_";
+      display: block;
+      font-size: 26px;
+      margin-top: -12px;
+    }
+    .dark-nav & {
+      color: $base-darkest-color;
+      background: $base-lightest-color;
+    }
+  }
+  li.dropdown:hover .lien-parent {
+    @include breakpoint(lg) {
+      background: $menu-gray;
+      .dark-nav & {
+        color: $base-darkest-color;
+        &:hover {
+          background: $base-lightest-color;
+        }
+      }
+    }
+  }
+  .dark-nav & {
+    li.dropdown:hover {
+      .custom-caret,
+      .lien-parent {
+        color: $base-darkest-color;
+        background: $base-lightest-color;
+      }
+    }
+  }
+  .open > a {
+    position: relative;
+    .dark-nav & {
+      background: $base-lightest-color;
+      color: $base-darkest-color;
+      @include breakpoint(md) {
+      }
+    }
+  }
+
+  .menu-item-home a {
+    background: none;
+  }
+
+  .caret {
+    display: none;
+  }
+
+  .current-menu-parent .dropdown-menu::-webkit-scrollbar {
+    display: none;
+  }
+  .current-menu-parent .dropdown-menu {
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    @include breakpoint(lg) {
+      overflow-y: inherit;
+    }
+    .dark-nav & {
+      max-height: 300px;
+      //padding: 0 8px 16px;
+    }
+  }
+  .dropdown.open.active {
+    .dropdown-menu:after {
+      @include breakpoint(lg) {
+        content: "";
+        display: block;
+        position: relative;
+        top: 7px;
+      }
+    }
+  }
+  // Opened IE MENU categories color attribution
+}
+.dropdown-menu {
+  border-radius: 0px;
+  border: none;
+  box-shadow: none;
+  margin-top: 5px;
+  padding: 8px;
+  width: 100%;
+  @include breakpoint(lg) {
+    background-color: $menu-gray;
+    text-align: center;
+    .be-website & {
+      // sub-menu background for benefits
+      background-color: $base-lightest-color;
+    }
+    .dark-nav & {
+      background: $base-lightest-color;
+    }
+  }
+  & > li {
+    padding: 0px;
+  }
+  & > li > a {
+    background: none;
+    color: $base-darkest-color;
+    .be-website & {
+      font-family: "Overpass light", Helvetica, Arial, sans-serif;
+      font-weight: lighter;
+      color: #000000;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .dark-nav & {
+      text-decoration: underline;
+    }
+  }
+  & > li > a:hover,
+  & > li > a:focus {
+    //link item in menu
+    color: $default-theme-color;
+    background: none;
+  }
+  .current-nav-child a {
+    //active child link in menu
+    background: none;
+    color: $base-darkest-color;
+    font-weight: 600;
+    .be-website & {
+      font-family: "Overpass Bold", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    &:hover {
+      background: none;
+      color: $base-darkest-color;
+    }
+  }
+  .current-nav-child:after {
+    @include breakpoint(lg) {
+      content: "";
+      display: block;
+      position: relative;
+      top: 8px;
+    }
+  }
+}
+.navbar-collapse {
+  max-height: none !important;
+  position: relative;
+  @include breakpoint(lg) {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  @include breakpoint(lg) {
+    padding-top: 0px !important;
+  }
+}
+.navbar-collapse.in {
+  overflow-x: hidden;
+}
+.navbar-collapse form[role="search"] {
+  width: 97%;
+  @include breakpoint(sm) {
+    margin-left: 100%;
+  }
+}
+.navbar-collapse form[role="search"] button,
+.navbar-collapse form[role="search"] input {
+  background-color: inherit;
+  border-radius: 0px;
+  border-width: 0px;
+  box-shadow: none;
+  outline: none;
+  padding: 8px 12px;
+}
+
+.navbar-collapse form[role="search"] input {
+  box-shadow: none;
+  color: rgb(160, 160, 160);
+  font-size: 14pt;
+  font-style: italic;
+  padding: 16px 12px;
+  width: 97%;
+  @include breakpoint(lg) {
+    display: none;
+    font-size: 18pt;
+    opacity: 0;
+    padding: 25px 12px;
+  }
+}
+
+.navbar-collapse form[role="search"] button[type="reset"] {
+  @include breakpoint(sm) {
+    display: none;
+  }
+}
+
+.navbar-collapse form[role="search"].active {
+  @include breakpoint(sm) {
+    width: 100%;
+  }
+}
+
+.navbar-collapse form[role="search"].active button,
+.navbar-collapse form[role="search"].active input {
+  @include breakpoint(lg) {
+    display: table-cell;
+  }
+  @include breakpoint(lg) {
+    opacity: 1;
+  }
+}
+
+.navbar-collapse form[role="search"].active input {
+  @include breakpoint(lg) {
+    width: 100%;
+  }
+}
+
+.market-watch {
+  //margin-bottom: 10px;
+  background: #222;
+  border-bottom: 10px solid #222;
+  height: 40px;
+  overflow: hidden;
+  padding-bottom: 7.5px;
+  padding-top: 7.5px;
+  .ie-website & {
+    background: #fff;
+    color: black;
+    border-bottom: 0;
+    font-weight: 700;
+  }
+  .be-website & {
+    background: #ed1c24;
+    color: black;
+    border-bottom: 0;
+    //font-weight: 700;
+  }
+
+  p {
+    color: $base-lightest-color;
+    display: inline-block;
+    font-family: $title-font;
+    font-size: 13px;
+    padding-right: 25px;
+    text-transform: uppercase;
+    .advisor-website & {
+      font-family: $title-font-alt;
+    }
+  }
+}
+
+.market-watch.container-fluid.visible-md.visible-lg {
+  a {
+    .ie-website & {
+      color: black;
+    }
+    .be-website & {
+      color: white;
+      font-size: 15px;
+      font-family: "Overpass", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+    }
+  }
+  a:hover {
+    .ie-website & {
+      color: black;
+    }
+    .be-website & {
+      color: #cccccc;
+      font-family: "Overpass Black", Helvetica, Arial, sans-serif;
+    }
+  }
+}
+
+.menu-promotion-menu-container {
+  .ie-website & {
+    background: #fff;
+  }
+  .be-website & {
+    background: #ed1c24;
+  }
+}
+
+.ticker {
+  //element - ticker
+  overflow-x: scroll;
+  .ie-website & {
+    overflow-x: auto;
+
+    li.current-nav-parent {
+      a {
+        color: #000 !important;
+        background: none !important;
+
+        &:hover {
+          //text-decoration: underline;
+          color: #000 !important;
+        }
+      }
+    }
+  }
+
+  .advisor-website & {
+    overflow-x: auto;
+
+    li.current-nav-parent {
+      a {
+        color: $base-lightest-color !important;
+        background: none !important;
+
+        &:hover {
+          //text-decoration: underline;
+          color: $base-light-color !important;
+        }
+      }
+    }
+  }
+  .scroll-wrap {
+    text-align: center;
+    white-space: nowrap;
+    ul {
+      //width: 1150px;
+      display: inline-block;
+      text-align: center;
+      white-space: nowrap;
+      padding: 0;
+      li {
+        color: $base-lightest-color;
+        display: inline-block;
+        font-family: $title-font;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0 7px;
+        text-transform: uppercase;
+        .be-website & {
+          padding: 0 27px;
+        }
+        .advisor-website & {
+          font-family: $title-font-alt;
+        }
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+        span {
+          &.value {
+            margin-left: 5px;
+          }
+          &.variation {
+            margin-left: 5px;
+            &.up {
+              &:before {
+                color: #339933;
+                content: $up-triangle;
+                display: inline-block;
+                font-family: $font-icon;
+                font-size: 22px;
+                margin-right: 5px;
+                width: 12px;
+              }
+            }
+            &.down {
+              &:before {
+                color: $cherry-ie;
+                content: $down-triangle;
+                font-family: $font-icon;
+                font-size: 22px;
+                margin-right: 5px;
+                width: 12px;
+              }
+            }
+          }
+        }
+      }
+      &#menu-header-promotion-menu {
+        li {
+          a {
+            @include titleFont-alt(14px, $base-lightest-color, 700, 16px);
+            @include transition(color, 0.2s, ease-in-out);
+            &:hover {
+              color: $base-light-color;
+              text-decoration: none;
+            }
+          }
+          &.current-nav-parent {
+            a {
+              background: none;
+              //color: #fff!important;
+              //background-color: #000!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.container-breadcrumbs {
+  background: $base-lightest-color;
+  font-family: $title-font;
+  font-size: 15px;
+  line-height: 22px;
+  padding-bottom: 7.5px;
+  padding-top: 7.5px;
+  .advisor-website & {
+    font-family: $title-font-alt;
+  }
+  span a {
+    color: $base-medium-color;
+  }
+  i {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .breadcrumb_last {
+    font-weight: 700;
+  }
+}
+.container-ads {
+  //element - container for ads
+  &__ad {
+    //element Ad
+    .leaderboard {
+      //element - M32 js Ad
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}
+
+#tc-site-context {
+  display: none;
+}
+.search-trigger {
+  //element - search trigger
+  background: none;
+  border: none;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 4px 6px 0 6px;
+  .dark-nav & {
+    color: $base-lightest-color;
+  }
+  @include breakpoint(iphone6) {
+    float: none;
+    font-size: 20px;
+    padding: 0px;
+    margin-right: 15px;
+    margin-top: 8px;
+  }
+  &--menu {
+    //modifier - search trigger seen in the main menu
+    top: 7.5px;
+    left: 3.5px;
+    position: relative;
+  }
+}
+.search-box {
+  //element - search box
+  background: $menu-gray;
+  z-index: 9999;
+  margin-top: 7.5px;
+  .dark-nav & {
+    background: $base-darkest-color;
+  }
+  @include breakpoint(md) {
+    margin-top: 15px;
+  }
+  @include breakpoint(lg) {
+    position: absolute;
+    top: 32px;
+    width: 100%;
+    .dark-nav & {
+      top: 30px;
+    }
+  }
+  &__form {
+    //element - form
+    padding: 5px 0px;
+    vertical-align: middle;
+  }
+  &__input {
+    //element - search box input
+    height: 40px;
+    width: 60%;
+    position: relative;
+    height: auto !important;
+    line-height: 28px;
+    vertical-align: middle;
+    @include breakpoint(sm) {
+      width: 50% !important;
+      height: auto !important;
+      text-align: left;
+      line-height: 28px;
+      vertical-align: middle;
+    }
+    @include breakpoint(md) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+  &__button {
+    //element - search box button
+    border: 1px solid transparent;
+    padding: 9px 16px !important;
+    width: auto !important; //overwrite Bootstrap btn class
+    margin: 0 auto;
+    vertical-align: top;
+    margin-bottom: 0 !important;
+    line-height: 22px;
+  }
+}
+.search-box-result {
+  //element - search box from Search Page Result
+  display: inline;
+  &__title {
+    width: 100%;
+    display: block;
+    color: $base-lightest-color;
+    font-size: 22px;
+    margin-bottom: 10px;
+    @include breakpoint(sm) {
+      font-size: 25px;
+      width: 100%;
+      display: block;
+      color: $base-lightest-color;
+    }
+  }
+  &__form {
+    //element - form
+    display: inline-block;
+    width: 100%;
+    @include breakpoint(xs) {
+      padding: 0px;
+      position: relative;
+      bottom: 3.5px;
+      margin: 15px 0px;
+      padding: 15px 0px;
+    }
+  }
+  &__input {
+    //element - search box input
+    border: 0px;
+    color: $base-darkest-color;
+    margin-right: -10px;
+
+    position: relative;
+
+    @include breakpoint(sm) {
+      text-align: left;
+      font-size: 24px;
+    }
+    @include breakpoint(md) {
+      width: 75% !important;
+    }
+    @include breakpoint(lg) {
+      width: 78% !important;
+    }
+  }
+  &__button {
+    //element - search box button
+    width: auto !important; //overwrite Bootstrap btn class
+    margin: 0 auto;
+    margin-top: 15px;
+    vertical-align: middle !important;
+    @include breakpoint(xs) {
+      margin-top: 0px;
+      margin-bottom: 0 !important;
+      line-height: 19px;
+      vertical-align: middle !important;
+    }
+  }
+}
+
+.single .nav .open > a {
+  //see if needed
+  background: none;
+}
+
+.current-nav-parent {
+  //element - current parent of category in menu
+  & > a {
+    background: $menu-gray;
+    .dark-nav & {
+      background: $base-lightest-color !important;
+      color: $base-darkest-color !important;
+    }
+  }
+}

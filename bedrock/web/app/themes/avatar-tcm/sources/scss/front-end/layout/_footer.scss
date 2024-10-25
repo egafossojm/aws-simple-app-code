@@ -1,0 +1,366 @@
+// the footer is divided in 3 sections
+//	-footer top : top bar #e22028
+//	-footer bottom :  menu  #000
+//	-footer copyright : menu #212121
+
+footer{
+	position: relative;
+	top: 25px;
+	z-index: 98; //takeover side fixed ads have high z-index values, raising footer up to 99.
+	.current-nav-parent {
+		a {
+			background: none !important;
+		}
+	}
+	.leaderboard-fullwrap {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		.leaderboard {
+			padding-bottom: 0;
+		}
+	}
+}
+.footer-top{//element - footer top section
+	align-items: center;
+	background-color: $default-theme-color;
+	color: $base-lightest-color;
+	display: flex;
+	font-family: $title-font;
+	font-size:15px;
+	font-weight: bold;
+	margin-top: 15px;
+	min-height:85px;
+	text-transform:uppercase;
+	.advisor-website & {
+		font-family: $title-font-alt;
+		background-color: $advisor-dark;
+		}
+	.be-website & {
+		background-color: $default-theme-color;
+	}
+	&__link{
+		color: $base-lightest-color;
+		text-shadow: 1px 1px 1px $base-color;
+        .be-website & {
+		text-shadow: none;
+	}
+	}
+	.col-md-4{
+		line-height: 65px;
+		color: $base-lightest-color;;
+	     &:nth-child(2){
+			border-top: $default_border;
+			border-bottom: $default_border;
+			@include breakpoint(md) {
+				border-top: none;
+				border-bottom: none;
+				border-right: $default_border;
+				border-left: $default_border;
+			}
+		}
+	}
+	.full-sm {
+		width: 100%;
+		margin: 0 15px;
+
+		@include breakpoint(md) {
+			width: 1170px;
+			margin: 0 auto;
+		}
+	}
+}
+.footer-top-socials {//element - social icons
+	line-height: 15px;
+	padding-bottom: 30px;
+	padding-top: 0;
+	@include breakpoint(xs) {
+	}
+	@include breakpoint(sm) {
+	}
+	&__title { //element - title from social icons
+		color: $base-lightest-color;
+		text-shadow: 1px 1px 1px $base-color;
+		line-height: 15px;
+		@include breakpoint(sm) {
+	    	margin-top: 15px;
+	    }
+		@include breakpoint(xs) {
+	    	display: block;
+	    }
+	}
+	&__description {//element - description from social icons
+		font-size: 20px;
+	}
+	&__link {//element - links from social icons
+		background: rgba(0,0,0,0.15) !important;
+		&:before {
+			display: block;
+			font: 1.2em/1.75 $font-icon;
+			@include font-smoothing();
+		}
+		@each $social,
+		$icon in $icons {
+			&[href*="#{$social}"] {
+				background-color: map-get($icon, color);
+				&:before {
+					content: map-get($icon, char);
+				}
+			}
+			&[data-share-url*="#{$social}"] {
+				background-color: map-get($icon, color);
+				cursor: pointer;
+				&:before {
+					content: map-get($icon, char);
+				}
+			}
+		}
+
+		top:15px;
+		&:hover,&:focus{
+			box-shadow: 1px 1px 1px $base-darkest-color;
+		}
+	}
+
+}
+.footer-bottom {
+
+	background-color: $base-darkest-color;
+	min-height:388px;
+	.newspaper-thumb {
+		margin: 35px 25px 0 15px;
+	}
+	.col-to-flex{
+		display: inline-flex;
+		text-align: left;
+	}
+
+	ul{
+		font-family: $title-font;
+		list-style-type:none;
+		margin-left: 0;
+		margin-top: 30px;
+		padding-left: 0;
+		.advisor-website & {
+			font-family: $title-font-alt;
+		}
+		a {
+			color: $base-lightest-color !important;
+			font-family: $title-font;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 20px;
+			.advisor-website & {
+				font-family: $title-font-alt;
+
+				}
+
+			&:hover{
+				text-decoration: underline;
+			}
+
+
+		}
+		
+		a:not([href]) {
+			text-decoration: none;
+			color: $base-lightest-color !important;
+			font-family: $title-font;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 20px;
+			.advisor-website & {
+				font-family: $title-font-alt;
+
+				}
+				
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+      .advisor-website & {
+        li.current-nav-parent {
+          a {
+            color: $base-lightest-color !important;
+            background: none !important;
+
+            &:hover{
+         		text-decoration: underline;
+         	}
+          }
+        }
+      }
+
+		li:nth-child(1) {
+			/*catégorie Parente*/
+			padding-bottom: 10px;
+			a {
+				color: $base-lightest-color;
+			    font-size: 15px;
+			    font-weight: 700;
+			}
+
+		}
+		&#menu-footer-newspaper {
+			float: none;
+			text-align: center;
+			li {
+				img {
+					display: inline-block;
+				}
+			}
+			@include breakpoint(md) {
+				float:left;
+				text-align: left;
+			}
+		}
+	}
+
+	span {
+		display:none;
+		@include breakpoint(md) {
+			padding-top: 0;
+		}
+	}
+
+	.col-md-5 {
+		    padding: 0;
+		    margin-top: 15px;
+	}
+	.col-xs-6:nth-child(3){
+		clear: both;
+		@include breakpoint(md) {
+			clear: none;
+		}
+	}
+	.textwidget{
+		.col-md-7 {
+			padding-left: 0;
+		}
+	}
+	.row-newspaper .textwidget {
+		text-align: center;
+		@include breakpoint(md) {
+			text-align: left;
+		}
+
+	}
+	#menu-footer-more{
+		margin-bottom: 30px;
+		text-align: center;
+		@include breakpoint(md) {
+			text-align: center;
+		}
+
+		li{
+			display: inline-block;
+			padding-right: 0px;
+			margin: 0 15px 15px;
+			vertical-align: top;
+			@include breakpoint(lg) {
+				padding-right: 20px;
+				margin: 0;
+			}
+			img{
+				max-height: 35px;
+				max-width: 125px;
+			}
+			a{
+				line-height: 0;
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+.copyright { //element - copyright section in footer
+	background-color: #212121;
+	min-height: 120px;
+	padding: 30px 0;
+	text-align: center;
+	width: 100%;
+	&__container>div>div:first-child {
+		text-align: center;
+		@include breakpoint(md) {
+			text-align: left;
+		}
+	}
+	&__text {//element
+		color: #b0b3b8;
+		display: block;
+		font-size: 11px;
+		padding-bottom: 10px;
+		padding-top: 15px;
+		text-align: center;
+		@include breakpoint(md) {
+		    text-align: left;
+		}
+	}
+	&__infos-supp {
+		@include breakpoint(md) {
+		    text-align: right;
+		}
+	}
+	p {//element - from WP
+		color: $base-lightest-color;
+	   	font-size: 11px;
+	}
+	a {//element - from WP menu
+		color: $base-lightest-color;
+		font-size: 12px;
+		padding-right: 10px;
+		display: inline-block;
+	}
+	.col-md-6 {
+		padding-left: 0;
+	}
+	.menu {//element - from WP menu
+		padding-left: 0;
+		li{
+			display: inline-block;
+		}
+	}
+	.textwidget {//element - from WP
+		img{
+			max-width: 100px;
+			display: block;
+		}
+		p {
+			padding-top: 0px;
+		}
+		p:nth-child(1) {
+			display: inline-block;
+	    	padding-right: 15px;
+	    	padding-top: 0;
+	    }
+
+	}
+}
+.row-newspaper { //element - row newspaper in the footer
+	margin:0 auto;
+	div>ul>li:first-child{ //element - first menu item in the menu
+		padding-left:15px;
+		@include breakpoint(md) {
+			padding-left: 15px;
+		}
+	}
+	div>ul>li:nth-child(2){ //element - second child menu item - image of newspaper
+		// float: left;
+		padding-left:15px;
+		padding-right: 15px;
+		@include breakpoint(md) {
+			padding-left:15px;
+		}
+	}
+
+	.footer-newspaper-image {
+		margin-bottom: 15px;
+		img {
+			max-width: 125px;
+		}
+	}
+	.btn-footer {
+		text-align: center;
+	}
+}
+

@@ -1,0 +1,82 @@
+{
+    "key": "group_59947dd31d8c1",
+    "title": "Editors section - Video",
+    "fields": [
+        {
+            "key": "field_59947dd38b3f8",
+            "label": "Videos | Vidéos",
+            "name": "acf_featured_video",
+            "type": "repeater",
+            "instructions": "Add 4 <b>Video<\/b> on the <b>Homepage<\/b><br><br> Ajoutez 4 <b> Vidéo <\/ b> sur la <b> Page d'accueil <\/ b> <br \/>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 4,
+            "max": 4,
+            "layout": "block",
+            "button_label": "Add a video",
+            "sub_fields": [
+                {
+                    "key": "field_59947dd3be770",
+                    "label": "Video Article | Article vidéo",
+                    "name": "article",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "post"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "featured_video"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1510757710
+}

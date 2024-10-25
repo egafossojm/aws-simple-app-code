@@ -1,0 +1,160 @@
+{
+    "key": "group_59ee36ec06af3",
+    "title": "Newsletter Scheduler",
+    "fields": [
+        {
+            "key": "field_59ee36f693c07",
+            "label": "",
+            "name": "acf_newsletter_scheduler_campaigns",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf_repeater_separator disabled-template",
+                "id": ""
+            },
+            "collapsed": "field_5a0c57c384c62",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add a different template",
+            "sub_fields": [
+                {
+                    "key": "field_5a0c57c384c62",
+                    "label": "Template",
+                    "name": "template",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "field_59ca4c0f386a2"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                },
+                {
+                    "key": "field_59fc87450fdf4",
+                    "label": "Campaign name",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "Used for planification purposes only.<br \/>\r\nDoes not apply to the newsletters.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59fc878f0fdf6",
+                    "label": "Articles",
+                    "name": "articles",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "field_59fc880f0fdf7",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "Add an article",
+                    "sub_fields": [
+                        {
+                            "key": "field_59fc880f0fdf7",
+                            "label": "Article",
+                            "name": "article",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "id",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_59fc882c0fdf8",
+                            "label": "Start date",
+                            "name": "start",
+                            "type": "date_time_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "Y-m-d H:i:s",
+                            "return_format": "Y-m-d H:i:s",
+                            "first_day": 1
+                        },
+                        {
+                            "key": "field_59fc887d67bb2",
+                            "label": "End date",
+                            "name": "end",
+                            "type": "date_time_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "Y-m-d H:i:s",
+                            "return_format": "Y-m-d H:i:s",
+                            "first_day": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "newsletter_scheduler"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1518124904
+}

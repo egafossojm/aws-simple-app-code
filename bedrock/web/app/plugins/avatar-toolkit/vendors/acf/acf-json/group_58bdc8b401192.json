@@ -1,0 +1,175 @@
+{
+    "key": "group_58bdc8b401192",
+    "title": "Categories",
+    "fields": [
+        {
+            "key": "field_5991ad411c3c1",
+            "label": "Order",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "message": "<img src=\"wp-content\/themes\/avatar-tcm\/assets\/images\/admin_help_categories_order.jpg\" class=\"imgZoom\" \/>\r\nIn category pages, set order of the sub categories.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5939a006e7ade",
+            "label": "Order",
+            "name": "category_sub_cat_order",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 99,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": 1
+        },
+        {
+            "key": "field_5992002364b14",
+            "label": "Default category image",
+            "name": "acf_category_image",
+            "type": "image",
+            "instructions": "Recommended size  width : 1080px | height : 600px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": 360,
+            "min_height": 200,
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5b323ffbf09ed",
+            "label": "Sponsor",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "",
+                        "operator": "=="
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Le <i>sponsor<\/i><br \/>\r\n<hr \/>\r\n<i>Sponsor<\/i>\r\n <br \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5b324045f09ee",
+            "label": "Sponsor",
+            "name": "acf_category_sponsor",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "post_sponsor",
+            "field_type": "select",
+            "allow_null": 1,
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5d4ac1237d63a",
+            "label": "Site Origin",
+            "name": "acf_category_site_origin",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Category from main site origin",
+                "CIR": "Category originally from CIR"
+            },
+            "default_value": [
+                "default"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "category"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1565181476
+}

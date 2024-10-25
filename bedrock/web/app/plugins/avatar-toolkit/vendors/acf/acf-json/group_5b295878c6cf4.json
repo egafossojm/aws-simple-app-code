@@ -1,0 +1,83 @@
+{
+    "key": "group_5b295878c6cf4",
+    "title": "Editors section - Podcast",
+    "fields": [
+        {
+            "key": "field_5b295878e5ca4",
+            "label": "Podcast | Baladodiffusion",
+            "name": "acf_featured_podcast",
+            "type": "repeater",
+            "instructions": "Add 4 <b>Podcast<\/b> on the <b>Homepage<\/b><br><br> Ajoutez 4 <b> Baladodiffusion <\/ b> sur la <b> Page d'accueil <\/ b> <br \/>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add a podcast",
+            "sub_fields": [
+                {
+                    "key": "field_5b29587900d2a",
+                    "label": "Podcast Article | Article Baladodiffusion",
+                    "name": "article",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "post"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "featured_podcast"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1535459628
+}

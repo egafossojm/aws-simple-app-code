@@ -1,0 +1,86 @@
+{
+    "key": "group_59e8a2b05d109",
+    "title": "Editors section – NewsPaper Homepage",
+    "fields": [
+        {
+            "key": "field_5a0db35504072",
+            "label": "Bloc title",
+            "name": "acf_homepage_newspaper_bloc_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "From the current issue",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59e8a2c7fe5de",
+            "label": "Select The Newspaper News",
+            "name": "acf_homepage_newspaper",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 4,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add news",
+            "sub_fields": [
+                {
+                    "key": "field_59e8a397fe5df",
+                    "label": "News",
+                    "name": "news",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "post"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "newspaper"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1519051882
+}

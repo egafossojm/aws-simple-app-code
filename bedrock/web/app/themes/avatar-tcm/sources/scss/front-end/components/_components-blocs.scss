@@ -1,0 +1,372 @@
+// Stylesheet for components of categories
+.component { //by default a block
+	position: relative;
+	margin-bottom: 15px;
+}
+.component-home {
+	.bloc-title a {
+		color: $base-darkest-color;
+	}
+	.cat-title-default i {
+		color: #969696;
+	}
+	.cat-title {
+		margin-bottom: 0;
+	}
+	.col-sub {
+		padding: 15px;
+		span {
+			display: block;
+			margin: 10px 0;
+			font-weight: 700;
+		}
+	}
+
+}
+//In Depth component
+.component-home-in-depth {
+	&__name {
+		color: $base-color;
+		display: block;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 14px;
+		margin: 10px 0 0;
+		@include breakpoint(sm) {
+			font-size: 15px;
+			line-height: 17px;
+			margin: 10px 0;
+		}
+	}
+	&__image {
+		max-width: 100%;
+		height: auto;
+	}
+}
+//In Depth sub category component : Partners Reports
+.component-partner-report {
+	background: $marketing-content-bg;
+	clear: both;
+	padding-bottom: 15px;
+	&__listing {
+	}
+	.primary & {//if in primary aside, remove left negative margin on title label for certain resolutions
+		.sponsor-title {
+				margin-left: 0;
+			@include breakpoint(sm) {
+				margin-left: -15px;
+			}
+			@include breakpoint(md) {
+				margin-left: 0;
+			}
+		}
+	}
+}
+.component-partner-report-recommended{
+	padding-bottom: 15px;
+}
+//Inside track component
+.component-inside-track {
+	&__auth-name {//element - author name for Inside Track Component
+		color: #7e7e7e;
+		display: block;
+		font-size: 17px;
+		font-weight: 600;
+		min-height: 30px;
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	&__auth-name-link {//element - author name link for Inside Track Component
+		color: #7e7e7e;
+	}
+	&__column-name {//element - column name for Inside Track Component
+		display: block;
+		font-size: 11px;
+		font-weight: 600;
+		min-height: 15px;
+		text-transform: uppercase;
+	}
+	&__listing {//element - listing of the columnist
+		&>div:not(:last-child) {
+			@include breakpoint(md) {
+				border-right: 1px solid #d0d0d0;
+			}
+		}
+		&>div {
+			padding: 15px;
+
+		}
+		.col-inside-track:nth-child(2n+1) {
+			clear: left;
+		}
+		.entity-figure {//element - used in category page and component
+			display: block;
+			float: none;
+			height: 100px;
+			margin-bottom: 10px;
+			margin: 0 auto;
+			width: 100px;
+			.adv-only & {
+				border-radius: 0;
+			}
+		}
+	}
+}
+
+//Sponsor scheduler component
+.component-sponsor-scheduler {
+	padding-bottom: 15px;
+}
+//Top five component
+.component-top-five {
+	border: 1px solid gainsboro;
+	color: gray;
+	height: 300px;
+	width: 100%;
+	h2 {
+		line-height: 300px;
+		position: relative;
+	}
+}
+//IE TV component
+.component-ie-tv {
+	padding: 15px 0;
+	h3 {
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: normal;
+	}
+	.sponsor-bg-post{//element - condition if component IE TV don't display gray bg
+		background:none;
+	}
+}
+.component-ie-tv--light {//modifier
+   padding: 0px 0px 15px 0px;
+}
+//Cxsense Most component
+.component-cxense-most{
+	background: $base-lightest-color;
+	color: $base-color;
+	font-family: $title-font;
+	overflow: hidden;
+	padding: 0 15px;
+	.advisor-website & {
+		font-family: $title-font-alt;
+	}
+	@include breakpoint(md) {
+		padding: 0;
+	}
+	&__header {
+		background: #d0d0d0;
+		padding: 5px 0 0 0;
+		margin-bottom: 7.5px;
+		.nav-tabs{
+			border: none;
+
+		}
+	}
+	&__item {//element - list item for Most Component
+		border-radius: 3px 3px 0 0;
+		cursor: pointer;
+		padding: 0 2px;
+		text-transform: uppercase;
+		transition: 0.25s all ease-in-out;
+	}
+	&__title{//element - title inside link
+		font-size: 12px;
+		@include breakpoint(md) {
+			font-size: 14px;
+		}
+		font-weight: 600;
+		margin: inherit;
+	}
+	&__item:first-child {
+		padding-left: 10px;
+	}
+	&__item.active>a {
+		background: white !important; //required to prevent Bootstrap override
+		color: $base-color;
+	}
+	&__item:hover {
+		a {
+			background: $base-lightest-color;
+			color: $base-color;
+		}
+	}
+	&__link { //element - link for Most Component
+		background: #f3f3f3;
+		border: none;
+		color: #676767;
+		-webkit-border-radius: 0 !important;
+		border-radius: 0 !important;
+		padding: 5px 10px !important; //overwrite Bootstrap default value
+	}
+	.sponsor-bg & {
+		background-color: transparent;
+		@include breakpoint(md) {
+		}
+	}
+
+}
+.most-top-list { //element for Component Most Popular/Shared Cxwnse
+	padding-left: 15px;
+	padding-right: 15px;
+	&__item {
+		position: relative;
+		display: flex;
+		border-bottom: $default-border;
+		padding: 7.5px 0;
+		align-items: center;
+	}
+	&__text {//element - text
+		font-size: 16px;
+		line-height: 18px;
+		margin-bottom: 0px;
+		margin-top: 2px;
+	}
+	&__link{
+		color: $base-color;
+		font-weight: 600;
+	}
+	&__item:last-child{
+		border-bottom: 0;
+	}
+	&__rank{
+		position: relative;
+		font-weight: 600;
+		font-size: 25px;
+		margin-top: 0;
+		color: $default-theme-color;
+	}
+
+	}
+//
+.component-brand-knowledge-listing,
+.component-partners-reports-listing {
+	.row {
+		&>div {
+			padding: 0 25px;
+			padding-bottom: 15px;
+		}
+	}
+
+}
+.component-quick-subscribe-newsletters {//element - component seen on home page
+	padding:15px;
+	#email_input {
+		font-size: 12px;
+		height: 41px;
+		vertical-align: middle;
+		@include breakpoint(sm) {
+			width: 50%;
+			vertical-align: middle;
+		}
+		@include breakpoint(lg) {
+			font-size: 15px;
+			width: 50%;
+		}
+	}
+	&__button{//element - button Subscribe
+		width: 100%;
+		margin-bottom: 0px;
+		margin-top: 10px;
+		 vertical-align: middle;
+		 @include breakpoint(xs) {
+			 vertical-align: middle;
+			   width: inherit;
+			   margin-top: 0;
+			   margin-bottom: 0;
+			  vertical-align: middle;
+			  font-size: 11px !important;
+		}
+	 	 @include breakpoint(sm) {
+		 	vertical-align: middle;
+	 	}
+		 @include breakpoint(md) {
+			 vertical-align: inherit;
+		 }
+	}
+	@include breakpoint(md) {
+		width: 294px;
+	}
+	@include breakpoint(lg) {
+		width: 345px;
+	}
+	.sponsor_brand &,
+	.sponsor-bg &,
+	.sponsor_content & {//newsletter quick subscribe background color change when in brand knowledge section
+		background: $base-lightest-color;
+		border: $default_border;
+	}
+}
+// Component Newspaper Date on HomePage
+.component-newspaper {
+	//background-color: #e6eef2;
+	padding: 5px 15px;
+	.bloc-title {
+		margin-top: 5px;
+	}
+	a.bloc-title__link,
+	.bloc-title__caret {
+		color: $default-theme-color;
+	}
+	.text-content {
+		text-align: center;
+		img {
+			display: inline-block;
+			max-width: 154px;
+		}
+		@include breakpoint(sm) {
+			padding-bottom: 0;
+			text-align: left;
+		}
+		.pub-details {
+			margin-bottom: 0;
+		}
+	}
+	.view-link {
+		margin-top: 5px;
+		display: block;
+		text-align: center;
+		a {
+			@include titleFont(14px, $base-color, 700);
+			.advisor-website & {
+				@include titleFont-alt(14px, $base-color, 700);
+			}
+		}
+	}
+	&__btn {
+		margin-top: 15px;
+		margin-bottom: 10px; 
+		.btn {
+			font-size: 12px;
+			@include breakpoint(sm) {
+				font-size: 14px;
+			}
+		}
+	}
+	&__btn_required {
+		color: $default-theme-color;
+		text-transform: uppercase;
+		font-size: 12px;
+		margin-top: 10px;
+		.advisor-website & {
+			display: none;
+		}
+	    .be-website & {
+			display: none;
+		}
+	}
+}
+
+.single-newspaper {
+	.news-subscribe {
+		//width: 100%;
+		@include breakpoint(md) {
+			width: 294px;
+		}
+		@include breakpoint(lg) {
+			width: 345px;
+		}
+	}
+}

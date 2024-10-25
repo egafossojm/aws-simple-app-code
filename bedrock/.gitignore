@@ -1,0 +1,42 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*/
+web/app/themes/twentytwentyfour/
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+web/app/cache/*
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml
+
+# Plugins
+!web/app/plugins/avatar-*
+!web/app/plugins/advanced-custom-fields-pro
+!web/app/plugins/admin-columns-pro
+!web/app/plugins/amazon-s3-and-cloudfront-assets-pull
+!web/app/plugins/amazon-s3-and-cloudfront-pro
+!web/app/plugins/wp-amazon-s3-and-cloudfront-tweaks-master
+!web/app/plugins/ac-addon-pro
+!web/app/plugins/librairies
+!web/app/plugins/wordpress-seo-premium
+!web/app/plugins/wp-rocket
+!web/app/plugins/iframe
+!web/app/plugins/wordpress-seo-premium
+!web/app/plugins/wp-rocket

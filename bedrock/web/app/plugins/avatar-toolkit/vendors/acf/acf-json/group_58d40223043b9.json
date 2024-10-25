@@ -1,0 +1,167 @@
+{
+    "key": "group_58d40223043b9",
+    "title": "Brand | Entreprise",
+    "fields": [
+        {
+            "key": "field_58d40279a627d",
+            "label": "Website URL | URL site",
+            "name": "acf_brand_website",
+            "type": "url",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58d402aea627e",
+            "label": "Facebook",
+            "name": "acf_brand_facebook",
+            "type": "url",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58d402bda627f",
+            "label": "LinkedIn",
+            "name": "acf_brand_linkedin",
+            "type": "url",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58d402d7a6280",
+            "label": "Twitter",
+            "name": "acf_brand_twitter",
+            "type": "url",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5970b9fe80dab",
+            "label": "Image",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": "acf_article_img"
+            },
+            "message": "Main image used everywhere except in the banner.\r\nThe minimum image size must be <b>1200 x 630px<\/b>. <br><br>\r\nImage principale utilisée partout sauf dans la bannière.\r\nLa taille minimale de l'image doit être <b> 1200 x 630px <\/ b>.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5970f59c2b6dc",
+            "label": "Image Banner | Bannière d'image",
+            "name": "acf_brand_banner",
+            "type": "image",
+            "value": null,
+            "instructions": "Image Size for Banner Images must be 1200x400 pixels.\r\nWill probably be the same picture as \"<i>Image<\/i>\" with a different ratio. <br><br> La taille de l'image pour la bannière doit être de 1200x400 pixels.\r\nSera probablement la même image que \"<i> Image <\/ i>\" avec un ratio d'aspect différent.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 1200,
+            "min_height": 400,
+            "min_size": "",
+            "max_width": 1200,
+            "max_height": 400,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_597648d7df579",
+            "label": "Last Published Date | Dernière date de publication",
+            "name": "acf_brand_published_date",
+            "type": "text",
+            "value": null,
+            "instructions": "Date in unix timestamp<br><br>Date dans le format timestamp Unix",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "brand"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1507644019
+}

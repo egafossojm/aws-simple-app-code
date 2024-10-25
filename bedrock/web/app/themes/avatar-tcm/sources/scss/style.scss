@@ -1,0 +1,36 @@
+/*!
+Theme Name: Avatar TC-Media
+Author: Jean-Marc Jutras, Julien Lord, Julien Noël, Luc Mongeau, Marc-André Deschamps, Plantevin Jerome, René Jean, Valeriu Tihai
+Description: WordPress theme for TC-Media
+Version: 1.0.0
+License URI: http://tctranscontinental.com/en/privacy-policy
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-menu, custom-logo, featured-images, footer-widgets, post-formats, sticky-post, theme-options, translation-ready
+Text Domain: avatar-tcm
+*/
+
+@import 'front-end/abstracts/variables';
+@import 'front-end/abstracts/functions';
+@import 'front-end/abstracts/mixins';
+
+@import 'front-end/base/fonts';
+@import 'front-end/base/base';
+
+@import 'front-end/layout/navigation';
+@import 'front-end/layout/grid';
+@import 'front-end/layout/header';
+@import 'front-end/layout/footer';
+@import 'front-end/layout/forms';
+
+@import 'front-end/components/buttons';
+@import 'front-end/components/carousel';
+@import 'front-end/components/load-more';
+@import 'front-end/components/slideshow';
+@import 'front-end/components/components-blocs';
+@import 'front-end/components/_konami';
+
+@import 'front-end/pages/home';
+@import 'front-end/pages/article';
+@import 'front-end/pages/category';
+@import 'front-end/pages/entities';
+@import 'front-end/pages/user';
+@import 'front-end/base/category-colors';

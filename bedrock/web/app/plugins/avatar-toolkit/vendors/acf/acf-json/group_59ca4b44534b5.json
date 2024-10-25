@@ -1,0 +1,1281 @@
+{
+    "key": "group_59ca4b44534b5",
+    "title": "Newsletters Email | Infolettres",
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "newsletter"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1615295400,
+    "fields": [
+        {
+            "key": "field_59ea40d4d6141",
+            "label": "Main content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a00c8a61eda2",
+            "label": "Attention",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<span class=\"dashicons dashicons-warning\"><\/span> The <i>send date<\/i> field, should be at least 20 minutes later than actual time\/date.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59ca4c0f386a2",
+            "label": "Template",
+            "name": "acf_newsletter_template",
+            "type": "select",
+            "instructions": "Choose a template for this email.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "Please select a template",
+                "template_ie_am": "IE - News AM",
+                "template_ie_pm": "IE - News PM",
+                "template_ie_weekly": "IE - News Weekly",
+                "template_ie_monthly": "IE - News Monthly",
+                "template_ie_etf": "IE - ETF Newsletter",
+                "=========================": "=========================",
+                "template_fi_quotidien": "FI - infolettre quotidienne",
+                "template_fi_hebdo": "FI - infolettre hebdomadaire",
+                "template_fi_mensuel": "FI - infolettre mensuelle",
+                "template_fi_fireleve": "FI - infolettre FI releve",
+                "template_fi_specialefnb": "FI - infolettre spéciale FNB",
+                "========================": "========================",
+                "template_ad_ambulletin": "AD - AM Bulletin",
+                "template_ad_midday": "AD - Mid-Day Bulletin",
+                "template_ad_pmbulletin": "AD - PM Bulletin",
+                "template_ad_breakingnews": "AD - Special Edition",
+                "template_ad_weekinreview": "AD - Week In Review",
+                "template_ad_bestofthemonth": "AD - Best of the Month",
+                "template_ad_togo": "AD - To Go",
+                "==========================": "==========================",
+                "template_co_ambulletin": "CO - Vos nouvelles du matin",
+                "template_co_pmbulletin": "CO - Vos nouvelles du soir",
+                "template_co_specialoffers": "CO - Édition spéciale",
+                "template_co_weekinreview": "CO - Vos nouvelles préférées de la semaine",
+                "template_co_endirect": "CO - Gestionnaires en direct",
+                "=============================": "==============================",
+                "template_av_vosnouvellesdumardi": "AV - Vos nouvelles du mardi",
+                "template_av_vosnouvellesdujeudi": "AV - Vos nouvelles du jeudi",
+                "template_av_vosnouvellesprefereesdumois": "AV - Vos nouvelles préférées du mois",
+                "template_av_editionspeciale": "AV - Édition spéciale",
+                "==============================": "==============================",
+                "template_beca_beca-newsletter": "Benefits Canada Daily Newsletters",
+                "template_beca_beca-3rd-party-sponsored": "Benefits Canada Partners",
+                "template_beca_beca-events": "Benefits Canada Conference Alerts",
+                "template_beca_beca-special-offers": "Benefits Canada Offers",
+                "template_cir_cir-newsletter": "Canadian Investment Review News Update",
+                "template_cir_cir-3rd-party-sponsored": "Canadian Investment Review Partners",
+                "template_cir_cir-events": "Canadian Investment Review  Conference Alerts",
+                "template_cir_cir-special-offers": "Canadian Investment Review Offers"
+            },
+            "default_value": [
+                "none"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "array",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59ca6b9f56322",
+            "label": "Send date",
+            "name": "acf_newsletter_send_date",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "Y-m-d H:i:s",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_59ce6d4cf5dd9",
+            "label": "Subject",
+            "name": "acf_newsletter_subject",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59e4af047ba86",
+            "label": "Type of content",
+            "name": "acf_newsletter_block",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59ca4c0f386a2",
+                        "operator": "!=",
+                        "value": "none"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "hide_text_truefalse",
+                "id": "newsletter_flexible_content"
+            },
+            "layouts": {
+                "601066f601951": {
+                    "key": "601066f601951",
+                    "name": "acf_newsletter_main_section_title",
+                    "label": "Section main Title",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6010671501952",
+                            "label": "Title",
+                            "name": "acf_newsletter_title",
+                            "type": "text",
+                            "instructions": "Display a section title",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "59e4af0e23f31": {
+                    "key": "59e4af0e23f31",
+                    "name": "acf_newsletter_dailynews",
+                    "label": "Standard News",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f376fc9aa22",
+                            "label": "Is Alert?",
+                            "name": "acf_newsletter_section_alert",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_59e4c015ee172",
+                            "label": "Articles",
+                            "name": "acf_newsletter_articles",
+                            "type": "repeater",
+                            "instructions": "Display the block with the main color of the website.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "js_newsletter_article",
+                                "id": ""
+                            },
+                            "collapsed": "field_59e4c016ee173",
+                            "min": 1,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add an article",
+                            "sub_fields": [
+                                {
+                                    "key": "field_59e76a8b72305",
+                                    "label": "Display thumbnail",
+                                    "name": "acf_newsletter_article_display_thumbnail",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 1,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_59e4c016ee173",
+                                    "label": "Article",
+                                    "name": "acf_newsletter_article",
+                                    "type": "post_object",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "80",
+                                        "class": "js_acf_newsletter_article",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "post"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "return_format": "id",
+                                    "ui": 1
+                                },
+                                {
+                                    "key": "field_59e747f2437a3",
+                                    "label": "Bypass title",
+                                    "name": "acf_newsletter_article_bypass_title",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_59e7482f437a4",
+                                    "label": "New title",
+                                    "name": "acf_newsletter_article_new_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_59e747f2437a3",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "80",
+                                        "class": "js_acf_newsletter_article_new_title",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_59ee1ab05e65a",
+                                    "label": "Display excerpt",
+                                    "name": "acf_newsletter_article_display_excerpt",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5b3e5e3bbedf6",
+                                    "label": "Display date",
+                                    "name": "acf_newsletter_display_date",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 1,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_59ee1acb5e65b",
+                                    "label": "Excerpt",
+                                    "name": "acf_newsletter_article_excerpt",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_59ee1ab05e65a",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "80",
+                                        "class": "js_acf_newsletter_article_excerpt",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 3,
+                                    "new_lines": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5b3bcde577827": {
+                    "key": "5b3bcde577827",
+                    "name": "acf_newsletter_headlines",
+                    "label": "Headlines",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b3bcde577829",
+                            "label": "Articles Headline",
+                            "name": "acf_newsletter_articles",
+                            "type": "repeater",
+                            "instructions": "Display the block with the main color of the website.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "js_newsletter_article",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "Add an article",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b3bcde57782b",
+                                    "label": "Article",
+                                    "name": "acf_newsletter_article",
+                                    "type": "post_object",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "100",
+                                        "class": "js_acf_newsletter_article",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "post"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "return_format": "id",
+                                    "ui": 1
+                                },
+                                {
+                                    "key": "field_5b48b252c60dc",
+                                    "label": "Bypass title",
+                                    "name": "acf_newsletter_article_bypass_title",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5b48b2efc60dd",
+                                    "label": "New title",
+                                    "name": "acf_newsletter_article_new_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5b48b252c60dc",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "80",
+                                        "class": "js_acf_newsletter_article_new_title",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b48b36bc60de",
+                                    "label": "Display excerpt",
+                                    "name": "acf_newsletter_article_display_excerpt",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5b48b397c60df",
+                                    "label": "Excerpt",
+                                    "name": "acf_newsletter_article_excerpt",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5b48b36bc60de",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "80",
+                                        "class": "js_acf_newsletter_article_excerpt",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5a1ec9f5eec9c": {
+                    "key": "5a1ec9f5eec9c",
+                    "name": "acf_newsletter_partners_place",
+                    "label": "Partners place",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a1edc37d6601",
+                            "label": "Partners place block will automatically be populated",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "59e4b91f1a18a": {
+                    "key": "59e4b91f1a18a",
+                    "name": "acf_newsletter_categories",
+                    "label": "Categories",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59ca4d5ab9de4",
+                            "label": "Category",
+                            "name": "acf_newsletter_category",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "40",
+                                "class": "js_acf_newsletter_category",
+                                "id": ""
+                            },
+                            "taxonomy": "category",
+                            "field_type": "select",
+                            "allow_null": 0,
+                            "add_term": 0,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_59f3744f0f769",
+                            "label": "Bypass category name",
+                            "name": "acf_newsletter_bypass_category_name",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_59f374660f76a",
+                            "label": "New category name",
+                            "name": "acf_newsletter_new_category_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_59f3744f0f769",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "40",
+                                "class": "js_acf_newsletter_new_category_name",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59e74d7e6de0a",
+                            "label": "",
+                            "name": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_59e4c015ee172"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "59e4beda6cd98": {
+                    "key": "59e4beda6cd98",
+                    "name": "acf_newsletter_indepth",
+                    "label": "In-Depth",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f356430ba6e",
+                            "label": "Title",
+                            "name": "acf_newsletter_section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59e74e8ae7a63",
+                            "label": "Features",
+                            "name": "acf_newsletter_features_repeater",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "js_acf_newsletter_features_repeater",
+                                "id": ""
+                            },
+                            "collapsed": "field_59e74e8ae7a64",
+                            "min": 1,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Add a feature",
+                            "sub_fields": [
+                                {
+                                    "key": "field_59f9c113f1c24",
+                                    "label": "Display thumbnail",
+                                    "name": "acf_newsletter_feature_display_thumbnail",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_59e74e8ae7a64",
+                                    "label": "Feature",
+                                    "name": "acf_newsletter_feature",
+                                    "type": "post_object",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "80",
+                                        "class": "js_acf_newsletter_feature",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "feature",
+                                        "post"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "return_format": "id",
+                                    "ui": 1
+                                },
+                                {
+                                    "key": "field_59e74e8ae7a65",
+                                    "label": "Bypass Feature name",
+                                    "name": "acf_newsletter_bypass_feature_name",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_59e74e8ae7a66",
+                                    "label": "New feature name",
+                                    "name": "acf_newsletter_new_feature_name",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_59e74e8ae7a65",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "80",
+                                        "class": "js_acf_newsletter_new_feature_name",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_59f9c15af1c25",
+                                    "label": "Display excerpt",
+                                    "name": "acf_newsletter_feature_display_excerpt",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5b3e5e9c1faa3",
+                                    "label": "Display Date",
+                                    "name": "acf_newsletter_display_date",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 1,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_59f9c1abf1c26",
+                                    "label": "Excerpt",
+                                    "name": "acf_newsletter_feature_excerpt",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_59f9c15af1c25",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "80",
+                                        "class": "js_acf_newsletter_feature_excerpt",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 3,
+                                    "new_lines": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "59f20e80399ef": {
+                    "key": "59f20e80399ef",
+                    "name": "acf_newsletter_brandknowledge",
+                    "label": "Brand Knowledge",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a01d7ea1e8b2",
+                            "label": "Brand Knowledge block will automatically be populated",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "59ea1777e32e3": {
+                    "key": "59ea1777e32e3",
+                    "name": "acf_newsletter_customblock",
+                    "label": "Custom HTML Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f356100ba6d",
+                            "label": "Title",
+                            "name": "acf_newsletter_section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59ea17b4e32e5",
+                            "label": "",
+                            "name": "acf_newsletter_customhtml",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add a block",
+            "min": "",
+            "max": ""
+        },
+        {
+            "key": "field_59ee2b9e2742a",
+            "label": "Ads",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59ea05bddcd14",
+            "label": "Show top leaderboard Ad",
+            "name": "acf_newsletter_show_top_leaderboard_ad",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59ee2bcb2742d",
+            "label": "Show Ad in first \"Standard News\" block",
+            "name": "acf_newsletter_show_standard_news_ad",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59ee2bc92742b",
+            "label": "Show bottom banner",
+            "name": "acf_newsletter_show_bottom_banner_ad",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60184990eb555",
+            "label": "Footer",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_601849a4eb556",
+            "label": "People Watch List",
+            "name": "acf_newsletter_footer_people_watch_list",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_6023f95772c70",
+                    "label": "Custom Title",
+                    "name": "acf_newsletter_footer_custom_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_601849b6eb557",
+                    "label": "Appointment Notice",
+                    "name": "acf_newsletter_footer_appointment_notice",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "post"
+                    ],
+                    "taxonomy": [
+                        "category:appointment-notice",
+                        "category:sponsored-appointment-notice"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "object",
+                    "ui": 1
+                }
+            ]
+        },
+        {
+            "key": "field_601849f1eb558",
+            "label": "Link to People Watch page",
+            "name": "acf_newsletter_footer_link_to_people_watch_page",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/benefitscanada.com\/people-watch\/",
+            "placeholder": ""
+        },
+        {
+            "key": "field_604688480eafc",
+            "label": "Contact Page (replace People Watch List on the CIR templates)",
+            "name": "acf_newsletter_footer_contact_page",
+            "type": "repeater",
+            "instructions": "This part is only used on the CIR newsletter, It is displayed instead of the \"People Watch List\" in the footer.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_604688a00eafd",
+                    "label": "Label",
+                    "name": "acf_newsletter_footer_contact_page_label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_604688ee0eafe",
+                    "label": "Email",
+                    "name": "acf_newsletter_footer_contact_page_email",
+                    "type": "email",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_60184a2deb559",
+            "label": "Events List",
+            "name": "acf_newsletter_footer_events_list",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_60184a45eb55a",
+                    "label": "Title",
+                    "name": "acf_newsletter_footer_event_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60184a62eb55b",
+                    "label": "Link",
+                    "name": "acf_newsletter_footer_event_link",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_60184a72eb55c",
+            "label": "Link to event page",
+            "name": "acf_newsletter_footer_events_link_to_event_page",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/events.benefitscanada.com\/conferences\/",
+            "placeholder": ""
+        }
+    ]
+}

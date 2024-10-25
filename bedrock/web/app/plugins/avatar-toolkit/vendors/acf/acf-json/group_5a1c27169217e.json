@@ -1,0 +1,83 @@
+{
+    "key": "group_5a1c27169217e",
+    "title": "Editor's Section - Partners Place",
+    "fields": [
+        {
+            "key": "field_5a1c2753325d2",
+            "label": "Partners Place",
+            "name": "acf_partners_place_repeater",
+            "type": "repeater",
+            "instructions": "Select 2 to 4 articles to be highlighted for this section.<br \/>\r\nThe first 2 articles will be displayed in the right hand column of the Home Page .<br \/>\r\nUp to 4 articles will be displayed on the Tools section page.<br \/>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 2,
+            "max": 4,
+            "layout": "block",
+            "button_label": "Add an article",
+            "sub_fields": [
+                {
+                    "key": "field_5a1c273c325d1",
+                    "label": "Article",
+                    "name": "acf_partners_place_article",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "post"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "partners_place"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1622570907
+}

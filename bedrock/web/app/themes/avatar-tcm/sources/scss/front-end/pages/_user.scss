@@ -1,0 +1,762 @@
+//Stylesheet for all pages concerning user such as register, confirmation, sign in, profil informations, etc...
+.user-header{//element - header for user
+	position: relative;
+	&__sign-in{//element - sign-in section
+		padding-bottom: 15px;
+		text-align: right;
+	}
+	&__link{
+		color:$default-theme-color;
+	}
+	&__text{//element - text for sign-in section
+		color:$base-medium-color;
+		font-size: 12px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__page-title{//element - page title container
+		background-position: center center; //static, change in child theme
+		background-size: cover;
+		height: 125px;
+		@include breakpoint(md) {
+			height: 250px;
+		}
+		position: relative;
+	}
+	&__page-title-text{//element - page title text
+		color: $base-lightest-color;
+		font-family: $title-font;
+		font-size: 30px;
+		left: 0;
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		text-shadow: 2px 2px 5px $base-darkest-color;
+		text-transform: uppercase;
+		transform: translate(0%, -50%);
+		top: 50%;
+		.advisor-website & {
+			font-family: $title-font-alt;
+		}
+	    .be-website & {
+	    text-shadow: none;
+	    color:#231f20;
+	    font-weight: 700;	
+	    }
+		@include breakpoint(md) {
+			font-size: 40px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	&__informations{//element - informations after the page title
+		background: $user-informations-bg;
+	}
+}
+// user-form for benefitsCanada
+.sign-in-benefit-content {
+	padding-top: 15px;
+	margin-left: -15px;
+}
+.user-form__btn-create-account-benefit {
+	      //border: 5px solid #0071bd !important;
+	      //background: #ff9295 !important;
+	     // color: #333 !important;
+	       &:hover {
+	       color: #fff !important;
+	       border: 1px solid #fff !important;
+	       }
+			@include breakpoint(lg){
+		    float: right;
+		    display:inline;		    
+		   }
+		  @include breakpointmax(lg){
+		    margin-top: 10px;
+		    display:block;
+		    max-width: 210px;
+		   }	
+}
+.user-form__btn-log-in-left-benefit {
+	      //border: 5px solid #0071bd !important;
+	     // background: #ff9295 !important;
+	       &:hover {
+	         color: #fff !important;
+	         border: 1px solid #fff !important;
+	       }
+			@include breakpoint(lg){
+		    display:inline;		    
+		   }
+		  @include breakpointmax(lg){
+		    display:block;
+		   }
+		  	
+}//end user-form for benefitsCanada
+
+.job-posting-btn {//element - button JOB POSTING
+	width: 40%;
+}
+.user-form{//element - user form
+	background: $user-form-bg;
+	padding-bottom: 30px;
+	padding-top: 15px;
+	fieldset{//element - HTML fieldset
+		margin-bottom: 30px;
+		@include breakpoint(sm) {
+			margin-bottom: 45px;
+		}
+	}
+	&__legend{//element - legend
+		border: 0px;
+		margin-bottom: 7.5px;
+		@include breakpoint(sm) {
+			margin-bottom: 25px;
+		}
+	}
+	&__legend-title{//element - title of the legend
+		color:$default-theme-color;
+		display: block;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 22px;
+		padding-bottom: 3.75px;
+		text-align: left;
+		text-transform: uppercase;
+		@include breakpoint(sm) {
+			text-align: right;
+		}
+	}
+	&__legend-text{//element - text such as required field
+		border-bottom: $default-border;
+		color: $base-color;
+		display: block;
+		font-size: 13px;
+		padding-bottom: 7.5px;
+		text-align: left;
+		@include breakpoint(sm) {
+			border-bottom: 0px;
+			padding-bottom: 0px;
+			text-align: right;
+		}
+	}
+	&__link{//element - link
+		color: $base-lightest-color;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 14px;
+		&:hover,&:focus{
+			color: $base-lightest-color;
+			text-decoration: underline;
+		}
+	}
+	&__label{//element - label
+		margin-bottom: 3px;
+		font-weight: 400;
+		color: $base-medium-color;
+		a{//if label has link
+			color: $base-medium-color;
+			cursor: pointer;
+		}
+	}
+	&__label-radio{//element - label for radio inputs
+		color: $base-medium-color;
+		margin-right: 15px;
+	}
+	&__label-radio-boolean{//element - label for boolean radio inputs
+		display: block;
+	}
+	&__inputs{//element - container
+		@include breakpoint(sm) {
+			border-left: $default-border;
+		}
+	}
+	&__radio-boolean{//element - radio for the YES or NO inputs
+		@include breakpoint(md) {
+			display: inline-block;
+		}
+	}
+	&__panel{//element panel
+		border: $default-border;
+	}
+	&__panel-title{//element - title in panel
+		color:$default-theme-color;
+		display: block;
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 18px;
+		text-transform: uppercase;
+	}
+	&__btn-submit{//element - submit button
+		background:$default-theme-color;
+		color: $base-lightest-color;
+		border-color: transparent;
+		font-size: 14px;
+		text-transform: uppercase;
+		transition: 0.25s all;
+		&:hover,&:focus{
+			background: none;
+			border: 1px solid $default-theme-color;
+			color: $default-theme-color;
+		}
+		&--search {//modifier for top site search button
+			padding: 10px;
+			margin-top: 0;
+			@include breakpoint(sm) {
+				padding: 10px 16px;
+				margin-left: 2px;
+			}
+		}
+	}
+	&__btn-submit--negative{//modifier - submit button
+		background:$default-theme-color;
+		color: $base-lightest-color;
+		font-size: 14px;
+		text-transform: uppercase;
+		transition: 0.25s all;
+		&:hover,&:focus{
+			background: none;
+			border: 1px solid $base-lightest-color;
+			color: $base-lightest-color;
+		}
+	}
+	.form-control{//element - Bootstrap class for inputs
+		margin-bottom: 15px !important; //important required - Bootstrap
+	}
+}
+.post-a-job-form {
+	padding:15px; 
+	margin-left: 0; 
+}
+.post-a-job-pricing {
+	border-style: solid;
+    border-width: medium;
+    border-color: #ece7e7;
+    @include breakpoint(md) {
+            width: 294px;
+        }
+     @include breakpoint(lg) {
+        width: 345px;
+     }
+}
+.user-form-confirmation{//elemnt - user form confirmation content
+	background: $user-form-bg;
+	padding: 15px;
+	@include breakpoint(sm) {
+		padding: 15px 0;
+	}
+	&__title{//element - title of thank you
+		border-bottom:2px solid $default-theme-color;
+		color: $default-theme-color;
+		display: inline-block;
+		font-size: 20px;
+		margin-bottom: 15px;
+		padding-bottom: 7.5px;
+		font-weight: 700;
+		text-transform: uppercase;
+		@include breakpoint(sm) {
+		   font-size: 27.5px;
+		}
+	}
+	&__icon{//element - icon letter
+		color: $default-theme-color;
+		display: block;
+		font-size: 40px;
+		margin-bottom: 7.5px;
+		@include breakpoint(sm) {
+		   font-size: 60px;
+		}
+	}
+	&__text{//element - text
+		color: $base-medium-color;
+		display: block;
+		font-size: 15px;
+		font-weight: 400;
+		margin-bottom: 7.5px;
+		@include breakpoint(sm) {
+		   font-size: 17.5px;
+		}
+	}
+	&__text--thick{//modifier - thick text
+		color: $base-darkest-color;
+		font-weight: 700;
+	}
+	&__text--italic{//modifier - italic text
+		font-style: italic;
+	}
+	&__link{//element - link
+		margin-top: 7.5px;
+		font-size: 14px;
+		color: $default-theme-color;
+	}
+}
+.user-side-box{//element - why informations displayed on the right by default on desktop
+	padding-top: 15px;
+	&--sign-in{//modifier - for sign in page
+		padding-top: 0px;
+		padding-bottom: 15px;
+		
+		@include breakpoint(md) {
+			text-align: left;
+		}
+	}
+	&__title{//element - title
+		color: $default-theme-color;
+		font-size: 23px;
+		font-weight: 700;
+		line-height: 23px;
+		text-transform: uppercase;
+	}
+	&__title--small{//modifier - title
+		font-size: 18.5px;
+		line-height: 18.5px;
+		text-transform: inherit;
+	}
+	&__list{//element - list
+		list-style: none;
+		padding-left: 0px;
+	}
+	&__item{//element - list item
+		color: $base-light-color;
+		font-size: 15px;
+		line-height: 15px;
+		padding:15px 0;
+		&:before{
+			content: "-";
+			padding-right: 5px;
+		}
+	}
+	&__item:last-child{//condition - last child of list item
+		border-bottom: none;
+	}
+}
+.switch-box{//element - switch box toggle checkbox
+	margin-bottom: 15px;
+	&__text{//element - text beside checkbox
+		color: $base-medium-color;
+		font-weight: 400;
+		padding-top: 7.5px;
+	}
+	&__text--lightest{//modifier - text beside checkbox
+		color: $base-lightest-color;
+		//.be-website & {
+		//	color: #333;
+		//}
+	}
+	&__button{//element - switch button
+		cursor: pointer;
+		display: inline-block;
+		background: $base-lightest-color;
+		border-radius: 50px;
+		border: 1px solid $base-light-color;
+		height: 20px;
+		position: relative;
+		transition: 0.5s all;
+		vertical-align: middle;
+		width: 50px;
+		&:after{//element - pseudo
+			background: $base-light-color;
+			border-radius: 50px;
+			content: '';
+			height: 16px;
+			left: 2px;
+			position: absolute;
+			top: 1px;
+			transition: 0.5s all;
+			width: 16px;
+			.be-website & {
+				background: #404040;
+			}
+		}
+	}
+
+	&__button--newsletters{//modifier for newsletter box
+		bottom: 15px;
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+	}
+	input[type="checkbox"]{//element - default html checkbox
+		position: absolute; //WCAG
+		left:-9999px; //WCAG
+		margin-left: -15px; //WCAG
+		&:checked + label{//condition - when checkbox is checked
+			.switch-box__button{//element - switch button
+				background: $base-lightest-color;
+			}
+			.switch-box__button{
+				&:after{
+					left: 30px;
+					background: $positive-highlight;
+				}
+			}
+		}
+	}
+}
+.validation-box{//element - validation box used for forms
+	background: transparent;
+	border: 2px solid $brand-danger; //Modified Bootstrap variable
+	color: $brand-danger; //Modified Bootstrap variable
+	padding: 15px;
+	&--success{//modifier - success
+		border: 2px solid $brand-success; //Modified Bootstrap variable
+		color: $brand-success; //Modified Bootstrap variable
+	}
+	&__message{//element - message on the top of the validation box
+		display: block;
+		font-size: 15px;
+		font-weight: 700;
+		text-align: left;
+		text-transform: uppercase;
+		@include breakpoint(sm) {
+			font-size: 17.5px;
+			text-align: right;
+		}
+	}
+	&__message--small{//modifier - smaller version of message
+		font-size: 15px;
+		font-weight: 400;
+		margin-bottom: 15px;
+		text-align: left;
+		text-transform: inherit;
+	}
+	&__list{//element - list
+		display: inline-block;
+		list-style-type: none;
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	&__item{//element - list item
+		background: $brand-danger; //Bootstrap variable
+		border-radius: 5px;
+		color: $base-lightest-color;
+		font-size: 14px;
+		margin-bottom: 5px;
+		padding: 5px 10px;
+	}
+	&__item--success{//modifier - success
+		background: $brand-success; //Bootstrap variable
+	}
+}
+
+.form-control-postal-code{//element - postal-code input
+	width: initial; //overwrite bootstrap default value
+}
+
+//user profil
+.user-profile-header{//element - user profil header
+	margin-bottom: 15px;
+	&__title{
+		color: $default-theme-color;
+		display: block;
+		font-size: 20px;
+		font-weight: 700;
+		padding-top: 15px;
+		text-transform: uppercase;
+		@include breakpoint(md) {
+			font-size: 25px;
+			padding-top: 0px;
+		}
+	}
+}
+.user-profile-menu{//element - menu profile
+	&__item{//element - list item
+		border-bottom: none;
+		float: left;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: capitalize;
+		.fr_CA {
+			text-transform: none;
+		}
+		@include breakpoint(md) {
+			float:  none;
+			border-bottom: $default-border;
+		}
+	}
+	&__item.active{//condition - active list item
+		background: $user-form-bg;
+		.user-profile-menu__link{//element - link
+			color: $default-theme-color;
+		}
+		.user-profile-menu__icon{//element - icon
+			color: $default-theme-color;
+		}
+	}
+	&__item:last-child{//condition - last list item
+		border-bottom: none;
+	}
+	&__link{//element - link
+		color: $base-darkest-color;
+		float: left;
+		padding: 2px;
+		border-radius: 4px 4px 0 0;
+		border: 1px solid transparent;
+		line-height: 1.42857;
+		@include breakpoint(md) {
+			float: none;
+			display: flex !important; //Bootstrap
+		}
+		&:hover,&:focus{
+			color: $default-theme-color;
+			background: transparent !important; //Bootstrap
+			.user-profile-menu__icon{
+				color: $default-theme-color;
+			}
+		}
+	}
+	&__icon{//element - icon
+		color:$base-darkest-color;
+		vertical-align: middle;
+		font-size: 25px;
+		@include breakpoint(md) {
+			font-size: 15px;
+		}
+	}
+	&__title-left{//element - left title (icon)
+		width: 100%;
+		float: none;
+		@include breakpoint(md) {
+			width: 25%;
+		}
+	}
+	&__title-right{//element - right title (text)
+		width: 75%;
+	}
+}
+.user-profile-col{//element - content
+	background: $user-form-bg;
+}
+.user-profile-content{//element - content
+	padding: 15px 45px;
+	&__title{//element - title of the content from a tab
+		display: block;
+		font-size: 22px;
+		font-weight: 500;
+		margin-bottom: 3.5px;
+	}
+	&__intro-text{//element - intro text of the content from a tab
+		color: $base-medium-color;
+		font-size: 17.5px;
+		line-height: 17.5px;
+		margin-bottom: 15px;
+	}
+	#newspaper-subscription {
+		.cover {
+			float: left !important;
+			@include breakpoint(sm) {
+				float: right !important;
+			}
+		}
+	}
+}
+//Newsletters subscription
+.user-profile-newsletters{//element - user profile newsletters content
+	&__row{//element - row
+		&>div{//condition - col
+			&:last-child{//condition - last col
+				.newsletters-box{
+					margin-bottom: 0px;
+					@include breakpoint(sm) {
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+.newsletters-box{//element - newsletters box
+	&__label{//element - label
+		cursor: pointer;
+		width: 100%;
+	}
+	&__label-box{//element - label box with its picture and text
+		align-items : center;
+		background-color: $base-darkest-color; //fallback
+		background-size: cover !important;
+		border: 3px solid $base-lightest-color;
+		display: flex;
+		height: 200px;
+		position: relative;
+		@include breakpoint(md) {
+			height: 200px;
+		}
+	}
+	&__label-text{//element - text seen in label
+		color: $base-lightest-color;
+		font-size: 20px;
+		font-weight: 700;
+		margin:0 auto;
+		text-transform: uppercase;
+	}
+	&__infos-text{//element - text under the newsletter box image
+		display: block;
+		font-size: 17px;
+		line-height: 17px;
+	}
+	&__infos-text--date{//modifier - date
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 15px;
+	}
+}
+.sign-in-header{ //element - header sign in page
+	margin-bottom: 15px;
+}
+.sign-in-box {//element - sign in box
+	background-color: rgba(0,0,0,0.5);
+	//.be-website & {
+	//  background-color: #ff9295;	
+	//}
+	//box-shadow: -8px 0px 19px rgba(0,0,0,0.6);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	@include breakpoint(sm) {
+		padding-top: 7.5px;
+		padding-bottom: 7.5px;
+		background-color: rgba(0,0,0,0.75);
+	}
+	@include breakpoint(md) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	&__title { //element
+		color: $base-lightest-color;
+		font-size: 31.5px;
+		line-height: 31.5px;
+		margin-bottom: 15px;
+		margin-top: 7.5px;
+		//.be-website & {
+		//	color: #333;
+		//}
+		 @include breakpoint(md) {
+			padding-top: 0px;
+		}
+	}
+	&__validation-message {
+		background: $brand-danger;
+		border-radius: 5px;
+		color: $base-lightest-color;
+		display: inline-block;
+		margin-top: 15px;
+		padding: 5px 10px;
+		font-size: 14px;
+	}
+	&__validation-message--success {//modifier - success
+		background: $brand-success;
+	}
+}
+//WP FORM
+.tab-pane-sign-in { //element - tab pane for sign in
+	&__text {//element - text
+		color: $base-lightest-color;
+		font-size: 14px;
+		line-height: 15px;
+		//.be-website & {
+		//color: #333;
+	    //}
+	}
+	&__link {//element - link in tab pane sign in
+		color: $base-lightest-color;
+		cursor: pointer;
+		float: right;
+		font-size: 14px;
+		padding-bottom: 7.5px;
+		//.be-website & {
+		//color: #333;
+	   // }
+		&:hover,
+		&:focus {
+			color: $base-lightest-color;
+			text-decoration: underline;
+		}
+	}
+}
+
+//element - sign in form
+.sign-in-form {}
+
+//using wp_login_form() default classes
+.login-username label,
+.login-password label,
+.login-remember label {
+		@extend .user-form__label;
+		color: $base-lightest-color;
+		//.be-website & {
+		//	color: #333;
+		//}
+}
+.login-username input,
+.login-password input {
+	//form-control from Bootstrap used
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	display: block; //exception
+	font-size: 15px;
+	height: 39px;
+	padding: 6px 12px;
+	width: 100%;
+	@include breakpoint(xs) {
+		width: 55%; //exception
+	}
+	@include breakpoint(sm) {
+		width: 95%; //exception
+	}
+	 @include breakpoint(md) {
+		margin:inherit;
+	}
+}
+.login-submit {
+	input {
+		$base-lightest-color-space: nowrap;
+		border-radius: 4px;
+		border: 1px solid transparent;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 18px;
+		line-height: 1.42857;
+		margin-bottom: 0;
+		padding: 6px 12px;
+		text-align: center;
+		user-select: none;
+		vertical-align: middle;
+		//.be-website & {
+		//	    border: 5px solid #0071bd;
+         //       background: #ff9295;
+         //       color: #333;
+         //       &:hover {
+	      //      color: #fff;
+	     // }
+		//}
+	}
+}
+.login-remember label {
+	cursor: pointer;
+}
+.forgot-recaptcha {
+	margin-bottom: 15px;
+	transform:scale(0.87);
+	transform-origin:0 0;
+	@include breakpoint(sm) {
+		transform:scale(0.65);
+		transform-origin:0 0;
+	}
+	@include breakpoint(md) {
+		transform:scale(0.81);
+		transform-origin:0 0;
+	}
+	@include breakpoint(lg) {
+		transform:scale(1);
+		transform-origin:0 0;
+	}
+}
+.register-recaptcha {
+	transform:scale(0.70);
+	transform-origin:0 0;
+	@include breakpoint(md) {
+		transform:scale(1);
+		transform-origin:0 0;
+	}
+}

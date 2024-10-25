@@ -1,0 +1,6 @@
+.current-nav-parent .dropdown-menu{
+	
+	@include breakpoint(lg) {
+		display: block;
+	}
+}

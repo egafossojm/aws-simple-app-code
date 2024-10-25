@@ -1,0 +1,521 @@
+{
+    "key": "group_59d2715598034",
+    "title": "API Keys",
+    "fields": [
+        {
+            "key": "field_59d27155ca09b",
+            "label": "<span class=\"dashicons dashicons-chart-area\"><\/span> Google Tag Manager",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59d27155ca1d9",
+            "label": "Google Tag Manager ID",
+            "name": "acf_google_tag_manager_id",
+            "type": "text",
+            "instructions": "Add  Google Tag Manager ID (GTM-XXXX)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59d27155ca30a",
+            "label": "<span class=\"dashicons dashicons-chart-bar\"><\/span> Cxense Insight API",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59d27155ca3f0",
+            "label": "Cxense Site ID",
+            "name": "acf_cxense_site_id",
+            "type": "text",
+            "instructions": "Click on your user-login name in the top right corner of in to https:\/\/insight.cxense.com to get your Site ID.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59d27155ca4c2",
+            "label": "Cxense API key",
+            "name": "acf_cxense_api_key",
+            "type": "text",
+            "instructions": "Click on your user-login name in the top right corner of in to https:\/\/insight.cxense.com to get your API key.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59d27155ca5b4",
+            "label": "Cxense Username",
+            "name": "acf_cxense_username",
+            "type": "text",
+            "instructions": "The email address you use when you sign in to https:\/\/insight.cxense.com",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59d27155ca6b8",
+            "label": "<span class=\"dashicons dashicons-media-document\"><\/span> M32 settings for Ads",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59d27155ca786",
+            "label": "M32 Advertising Code",
+            "name": "acf_ad_code_site",
+            "type": "text",
+            "instructions": "Add  M32 Advertising Code Site",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_602ac13919710",
+            "label": "<span class=\"dashicons dashicons-media-document\"><\/span>[CIR]  M32 settings for Ads",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "Add  M32 Advertising Code Site",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_602ac16719711",
+            "label": "[CIR] M32 Advertising Code",
+            "name": "acf_ad_code_site_cir",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a286d239e8b9",
+            "label": "<span class=\"dashicons dashicons-media-document\"><\/span> ads.txt",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5a286d419e8ba",
+            "label": "ads.txt content",
+            "name": "acf_adstxt",
+            "type": "textarea",
+            "instructions": "The ads.txt helps publishers list names of authorised partners in support of IAB's Tech Lab initiative.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_59d27155ca855",
+            "label": "<span class=\"dashicons dashicons-video-alt3\"><\/span> Brightcove",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5a1f250babc71",
+            "label": "Brightcove End Point",
+            "name": "acf_brightcove_endpoint",
+            "type": "text",
+            "instructions": "The site's Brightcove API URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/oauth.brightcove.com\/v3\/access_token?grant_type=client_credentials",
+            "placeholder": "https:\/\/oauth.brightcove.com\/v3\/access_token?grant_type=client_credentials",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59d27155ca934",
+            "label": "Brightcove Account Id",
+            "name": "acf_brightcove_account_id",
+            "type": "text",
+            "instructions": "The site's Brightcove  account id",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59d27155ca9ec",
+            "label": "Brightcove Client Id",
+            "name": "acf_brightcove_client_id",
+            "type": "text",
+            "instructions": "The Client Id used for obtaining a token from Brightcove",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59d27155caaa4",
+            "label": "Brightcove Client Secret",
+            "name": "acf_brightcove_client_secret",
+            "type": "text",
+            "instructions": "The client secret used to obtain token from Brightcove",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a5e5474e0eaa",
+            "label": "Brightcove vastUrl",
+            "name": "acf_brightcove_vast_url",
+            "type": "text",
+            "instructions": "vastUrl",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a5e54c02ab7e",
+            "label": "Brightcove Player Id",
+            "name": "acf_brightcove_player_id",
+            "type": "text",
+            "instructions": "Brightcove Player Id",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59d27155cae6d",
+            "label": "<span class=\"dashicons dashicons-forms\"><\/span> reCaptcha",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59d27155caf28",
+            "label": "Site key",
+            "name": "acf_recaptcha_site_key",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59d27155caffb",
+            "label": "Secret key",
+            "name": "acf_recaptcha_secret_key",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59e4b9baeeaf1",
+            "label": "<span class=\"dashicons dashicons-networking\"><\/span> Cedrom-SNI",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "bg_gray",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59e4b9e9eeaf2",
+            "label": "FTP Host",
+            "name": "acf_cedrom_host",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59e4ba29eeaf3",
+            "label": "FTP User",
+            "name": "acf_cedrom_user",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59e4ba47eeaf4",
+            "label": "FTP Password",
+            "name": "acf_cedrom_pass",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59e79cfaf9e53",
+            "label": "FTP Path",
+            "name": "acf_cedrom_path",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "avatar_api_key"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1613414848
+}

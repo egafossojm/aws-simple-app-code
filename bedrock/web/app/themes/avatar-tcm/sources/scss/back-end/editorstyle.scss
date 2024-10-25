@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Tinos:400,400i,700,700i");
+#tinymce {
+	max-width: 750px;
+	font-family: "Tinos", serif;
+	font-size: 18px;
+	line-height: 25px;
+}
+#tinymce .avatar-also_read {
+	font-weight: 600;
+	margin: 10px 0;
+	width: 95%;
+	background: #fdfdfd;
+	padding: 0.5em;
+	border: 1px dashed #e32028;
+}
+#tinymce .avatar-also_read a {
+	text-decoration: none;
+	color: #333333;
+	font-size: 16px;
+}
+#tinymce .avatar-also_read a:hover,a:focus {
+	color: #e32028;
+}
+#tinymce .avatar-also_read p {
+	margin: 0;
+}
+#tinymce .avatar-also_read .link-label {
+	display: block;
+	clear: both;
+	color: #e32028;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+}
+#tinymce .avatar-also_read .link-label:before {
+	font-family: Dashicons;
+	content: "\f522";
+	margin-right: 5px;
+}
