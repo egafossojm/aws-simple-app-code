@@ -1,1 +1,1 @@
-FROM amazon/amazon-ecs-sample
+FROM httpd:latest
