@@ -1,7 +1,7 @@
 FROM httpd:latest
 
 # Define VERSION as a build argument
-ARG VERSION
+ENV VERSION=bookworm
 
 # Set the environment variable DIR using the build argument
 ENV DIR=${VERSION}
