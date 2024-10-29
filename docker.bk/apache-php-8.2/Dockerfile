@@ -1,1 +1,1 @@
-FROM httpd:latest
+FROM httpd:${VERSION}
