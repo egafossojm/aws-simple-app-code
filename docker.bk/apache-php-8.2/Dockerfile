@@ -1,2 +1,5 @@
-ARG VERSION
-FROM httpd:${VERSION}
+FROM httpd:latest
+
+ENV DIR=${VERSION}
+
+RUN mkdir ${VERSION}
