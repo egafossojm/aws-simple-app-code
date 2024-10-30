@@ -1,4 +1,0 @@
-ARG VERSION
-
-FROM httpd:${VERSION}
-
