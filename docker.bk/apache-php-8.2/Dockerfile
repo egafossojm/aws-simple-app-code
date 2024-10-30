@@ -1,3 +1,5 @@
+ARG VERSION
+
 FROM httpd:latest
 
 # Define VERSION as a build argument
